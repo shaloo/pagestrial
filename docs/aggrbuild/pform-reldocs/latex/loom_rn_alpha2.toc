@@ -1,6 +1,0 @@
-\select@language {english}
-\contentsline {section}{\numberline {1}What\IeC {\textquoteright }s New in Loom Alpha2 Release}{1}{section.1}
-\contentsline {subsection}{\numberline {1.1}New Features}{1}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Fixed in Alpha2}{2}{subsection.1.2}
-\contentsline {section}{\numberline {2}Loom Alpha2 Limitations}{4}{section.2}
-\contentsline {section}{\numberline {3}Known Issues \& Workarounds}{4}{section.3}

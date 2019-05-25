@@ -1,7 +1,0 @@
-:orphan:
-
-.. _copyright_vrts_mcdmp_2017:
-
-----
-
-© 2017 Veritas Technologies LLC. All rights reserved. Veritas, the Veritas Logo and Loom are trademarks or registered trademarks of Veritas Technologies or its affiliates in the U.S. and other countries. Other names may be trademarks of their respective owners.

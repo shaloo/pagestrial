@@ -1,9 +1,0 @@
-.. _content_loom_registration:
-
-###################
-Loom Registration 
-###################
-
-In order to get on board Veritas Loom Platform and begin using Loom Applications deployed therein, you need to first register as a Loom Customer.  The trial versions, various product packaging and terms and conditions can be referred to in the document :ref:`Loom License Overview<lic_overview>`.
-
-You need to fill up :download:`Registration Form<forms/reg-form.docx>`. Refer to :ref:`loom_early_beta_user_reg` for details.  
