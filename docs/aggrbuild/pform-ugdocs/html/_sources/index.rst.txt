@@ -1,0 +1,26 @@
+.. Loom documentation master file, created by
+   sphinx-quickstart on Thu Aug  3 16:59:23 2017.
+   Loom team can adapt this file completely to Veritas Branding requirements,
+   but it should at least contain the root `toctree` directive.
+
+Welcome to Loom User Guides Documentation!
+===========================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Table of Contents
+
+   
+   Getting Started with Loom <loom_getting_started_guide.rst>
+   Loom Concepts, Terminology & Online Help <mcdmp_concepts.rst>
+   Pre-requisites for Onboarding Loom <loom_dep_pre_rq.rst>
+   Loom On-Premise Data Plane Deployment Guide <on_prem_dp_install_mcdmp.rst>
+   Loom App User Guides <mcdmp_app_ug.rst>
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`search`
+
+.. * :ref:`modindex`

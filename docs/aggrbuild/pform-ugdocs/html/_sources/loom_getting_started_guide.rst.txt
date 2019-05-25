@@ -1,0 +1,42 @@
+.. _content_getting_started_guide:
+
+#########################
+  Getting Started Guide
+#########################
+
+.. contents::
+   :depth: 2
+   :local: 
+
+----
+
+.. include:: ./gsg/whats_new_mcdmp.inc
+
+----
+
+.. include:: ./gsg/about_mcdmp.inc
+
+----
+
+.. include:: ./gsg/who_should_use_mcdmp.inc
+
+----
+
+.. include:: ./gsg/how_it_works.inc
+
+----
+
+.. include:: ./gsg/interacting_mcdmp.inc
+
+----
+
+.. include:: ./gsg/loom_usage_workflows.inc
+
+----
+
+.. include:: ./gsg/platform_tech_specs.inc
+
+----
+
+.. include:: ./gsg/gsg_next_steps.inc
+~                                                                                            

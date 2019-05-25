@@ -1,0 +1,493 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Loom Alpha1 Datasheet &mdash; Loom 0.7.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="Loom 0.7.0 documentation" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Loom
+          
+
+          
+            
+            <img src="../../_static/loom.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.7.0 (Beta-1-Dev)
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../mcdmp_ds.html">Loom Data Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Loom</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Loom Alpha1 Datasheet</li>
+    
+    
+    <p>
+        <a href="https://stash.veritas.com/projects/MCDMP/repos/pform-docs/browse/source/col/ds/mcdmp_ds_alpha1.rst" class="fa fa-bitbucket" aria-hidden="true">&nbsp; Edit on Bitbucket</a>
+    
+        
+    
+    </p> 
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="loom-alpha1-datasheet">
+<span id="mcdmp-ds-alpha"></span><h1>Loom Alpha1 Datasheet<a class="headerlink" href="#loom-alpha1-datasheet" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../../_images/mcdmp_ds_header4.png"><img alt="../../_images/mcdmp_ds_header4.png" class="align-center" src="../../_images/mcdmp_ds_header4.png" style="width: 968.0px; height: 130.0px;" /></a>
+<p>In today’s data and information centric era, many enterprises are embracing multiple clouds and machine learning and artificial intelligence to gain deep insights from their data to adapt business models, improves operations and build new products and customer engagement models. Gartner predicts that 15 Zettabytes of data will be created annually by 2020 while 90%+ of it will be in the cloud.  To cope up with this ever-increasing data, organizations are leveraging multiple private and public clouds, SaaS, cloud storage and traditional storage solutions. Data that is being collected and stored is also changing from structured to semi-structured and unstructured. Organizations’ data and storage environment is becoming complex and diverse, and will be unmanageable.</p>
+<p>Many organizations are looking for digital information management solutions that can control costs while managing this complex data environment, provide visibility and deeper insights into their data, and meet regulations while governing and securing the data. Current solutions are point products that are built prior to cloud and web scale technologies. These are difficult to deploy and manage and do not offer a unified digital information management platform to address customer challenges.</p>
+<p>Veritas Multi-Cloud Data Management Platform is industry’s first intelligent unified platform that helps organizations to address all of the data related challenges by providing a comprehensive set of applications and services, and a platform that is web scale, and enables 3rd party applications to govern and eventually monetize enterprise information assets.</p>
+<p>Figure below gives a high-level view of the Veritas Multi-Cloud Data Management Platform.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/loom-overview.png"><img alt="Loom Overview" src="../../_images/loom-overview.png" style="width: 729.0px; height: 349.5px;" /></a>
+</div>
+<div class="section" id="unique-benefits-of-loom-platform">
+<h2>Unique Benefits of Loom Platform<a class="headerlink" href="#unique-benefits-of-loom-platform" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Rich set of Applications and Services - include Veritas Data Management and Governance apps and other 3rd party apps</li>
+<li>Unparalleled Visibility with Unified Policy and Security across entire organization’s data irrespective of its location  , type and store</li>
+<li>Single Pane of Control and Management through a unified dashboard across applications</li>
+</ul>
+<p>These benefits are delivered through three components – Intelligent Unified Platform, Applications and Data Services, and a Single Point of Control and Management.</p>
+<div class="section" id="intelligent-unified-platform">
+<h3>Intelligent Unified Platform<a class="headerlink" href="#intelligent-unified-platform" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Abstracts out underlying data environment through a Unified Connection Framework for all content sources
+across Private  , Public Clouds, Cloud Storage, Traditional and Legacy storage</li>
+<li>Builds a unified asset database of the entire organization’s data to provide Google-like search with
+automated aggregations</li>
+<li>Common identity and access management, policy and security across the entire data</li>
+<li>Provides a comprehensive set of APIs to quickly develop new applications or business specific work flows by
+3rd party and customers</li>
+<li>Enables intelligent and deeper insights into data using ML/AI capabilities</li>
+</ul>
+</div>
+<div class="section" id="applications-data-services">
+<h3>Applications &amp; Data Services<a class="headerlink" href="#applications-data-services" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Applications to address data governance, compliance &amp; risk management, data management, data security, data protection, data loss prevention needs</li>
+<li>3rd party applications for vertical specific needs</li>
+<li>Workflows that span multiple apps or meet specific business needs</li>
+<li>Real Time Predictive Analytics</li>
+<li>Though alpha release includes only the following apps, the solution at Release 1.0 will include several other apps such as GDPR (Readiness, SAR, DAR)
+- DataVision App includes key capabilities of InfoMap to provide visibility, Data Insights to provide ownerships, information and user risks, classification, policy and actions. Initial alpha release will have visibility and classification of data sources</li>
+</ul>
+</div>
+<div class="section" id="single-point-of-control-management">
+<h3>Single Point of Control &amp; Management<a class="headerlink" href="#single-point-of-control-management" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Single window into all the data irrespective of location, type and store</li>
+<li>Single dashboard for all Veritas and 3rd Party Applications</li>
+<li>Single point for license management</li>
+<li>Single place for all Access and Security policies</li>
+<li>Automate Workflow Orchestration</li>
+</ul>
+<p>Loom Platform is offered as a service (SaaS) in Release 1.0. In future releases, it will be offered in an appliance form-factor, as a VMware based virtual appliance, to run in on-premises deployments. The solution does not  move the customer data from its original location. Instead it offers a local data engine to connect with data sources for gathering metadata and other intelligence about the data. This data engine can be deployed on-premises (VMWare) or in public clouds (AWS, Azure) wherever the data is located.</p>
+</div>
+</div>
+<div class="section" id="key-platform-concepts">
+<h2>Key Platform Concepts<a class="headerlink" href="#key-platform-concepts" title="Permalink to this headline">¶</a></h2>
+<p>Veritas Multi-Cloud Data Management Platform is built from ground up as a cloud native, micro-services and web scale solution similar to Google and FaceBook applications. Some of the key concepts of the platform are described in the table below:</p>
+<table border="1" class="longtable colwidths-given docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Concept</strong></th>
+<th class="head"><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Control &amp; Data
+Collection</td>
+<td>Single Control Plane and multiple-Data Collection Plane model for data management and
+scalability. The Control Plane is geared towards workflow management and orchestration
+whereas Data Collection Planes are primarily focused around data source connections and
+data pipelining aspects.</td>
+</tr>
+<tr class="row-odd"><td>Connection Framework</td>
+<td><p class="first">Connection framework abstracts all the complexity of underlying data location, stores
+and types. Alpha release supports the following connectors:</p>
+<p><strong>Cloud (Storage, IaaS)</strong></p>
+<ul class="simple">
+<li>Microsoft One Drive,</li>
+<li>Box,</li>
+<li>Google G-Suite G Drive</li>
+<li>GCP Storage</li>
+<li>Microsoft SharePoint 365</li>
+<li>Azure Blob Storage,</li>
+<li>Amazon S3,</li>
+<li>Microsoft Exchange O365,</li>
+<li>Google G-Suite Email</li>
+</ul>
+<p><strong>On-Premises (Private, Traditional, Legacy)</strong></p>
+<ul class="simple">
+<li>IBM Filenet,</li>
+<li>OpenText Documentum and LiveLink (via CMIS)</li>
+<li>Microsoft SharePoint</li>
+<li>Oracle Database Server, Microsoft SQL Server</li>
+<li>Microsoft Exchange</li>
+<li>Native File Servers: EMC Celerra, EMC Isilon, Hitachi NAS, NetApp Cluster,
+NetApp Standalone, Windows Filer Server (CIFS), Veritas File Server</li>
+</ul>
+<p><strong>Veritas Integrations (On-Premises)</strong></p>
+<ul class="last simple">
+<li>NetBackup</li>
+<li>Enterprise Vault File Archives</li>
+<li>Enterprise Vault Email Archives</li>
+<li>Microsoft Access</li>
+<li>Backup Exec</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>Unified Access Database</td>
+<td><p class="first">A single master database of metadata of all customer’s assets. It provides unparalleled
+capabilities or applications to be developed by Veritas and as well as 3rd party and
+customers.</p>
+<ul class="last simple">
+<li>Asset Database<ul>
+<li>Infrastructure metadata</li>
+<li>Information metadata</li>
+</ul>
+</li>
+<li>Automatically identify duplicate backups</li>
+<li>Automated Aggregations</li>
+<li>Google-like Search</li>
+<li>Elastic and scales to trillions of objects</li>
+<li>Extremely fast access with sub-millisecond latency</li>
+<li>99.99% Availability</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>Unified Policy and
+Security</td>
+<td><p class="first">Single place where a user can define access and action policies across all data sources
+and for all applications:</p>
+<p><strong>Access Policies</strong></p>
+<ul class="simple">
+<li>RBACLs – Role Based ACLs</li>
+<li>Identity Management – Who is it?</li>
+<li>Integration with LDAP / AD / SAML / OAuth2 / OpenID</li>
+<li>Multi-Factor Authentication</li>
+</ul>
+<p><strong>Action Policies</strong></p>
+<ul class="simple">
+<li>Discover</li>
+<li>Scan</li>
+<li>Classification</li>
+<li>Protection</li>
+<li>Deletion</li>
+<li>Move and Copy</li>
+</ul>
+<p><strong>Security</strong></p>
+<p>Provides a comprehensive set of security capabilities to protect the data at rest or
+data in motion:</p>
+<ul class="simple">
+<li>Tenant Isolation</li>
+<li>Secure Credentials and Certification Management</li>
+<li>Data Encryption at Rest</li>
+<li>Data Encryption in Motion</li>
+<li>Mutual Transport Layer Security (TLS) Communication within and across Platform</li>
+<li>3rd Party APIs (https, REST API)</li>
+</ul>
+<p class="last"><strong>Key Management</strong>
+* Customer Master Key or Custom Keys
+* Per tenant keys
+* Key Rotation Policies</p>
+</td>
+</tr>
+<tr class="row-even"><td>Data Analytics Job
+Scheduling</td>
+<td>Scheduling enables the Platform to pull information from systems during optimal times
+based on organization preferences.</td>
+</tr>
+<tr class="row-odd"><td>Analytics Engine</td>
+<td>Pre-defined visualizations help organizations quickly understand and make decisions on
+data.</td>
+</tr>
+<tr class="row-even"><td>Classification Engine</td>
+<td>The Integrated Classification Engine (ICE) enables organizations to quickly scan and
+tag data to ensure that sensitive or risky information is properly managed and
+protected.</td>
+</tr>
+<tr class="row-odd"><td>Dashboard</td>
+<td>Single simple user interface for ease of administration of the platform and standard
+applications.</td>
+</tr>
+</tbody>
+</table>
+<p>Loom Alpha release will include the following Loom Application(s):</p>
+<ul class="simple">
+<li><strong>DataVision</strong></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/ds-datavision.png"><img alt="../../_images/ds-datavision.png" class="align-center" src="../../_images/ds-datavision.png" style="width: 718.5px; height: 298.5px;" /></a>
+</div>
+<div class="section" id="loom-alpha-features-benefits">
+<h2>Loom Alpha Features &amp; Benefits<a class="headerlink" href="#loom-alpha-features-benefits" title="Permalink to this headline">¶</a></h2>
+<p>Veritas Multi-Cloud Data Management Platform provides a robust, scalable ecosystem that enterprise organizations can use to drive action based on analytics and metadata.</p>
+<div class="section" id="early-adopter-product-features">
+<h3>Early Adopter Product Features<a class="headerlink" href="#early-adopter-product-features" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Secure connectivity to enterprise data sources</li>
+<li>Standard data analytics job management, framework to analyze metadata and utilize pre-defined insights such as data ownership, storage cost of data, data location and data usage</li>
+</ul>
+</div>
+<div class="section" id="early-adopter-product-benefits">
+<h3>Early Adopter Product Benefits<a class="headerlink" href="#early-adopter-product-benefits" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Boost productivity of Enterprise Information Governance professionals and line-of-business groups</li>
+<li>Obtain a view into file share data assets to gain actionable insights and lower operational costs</li>
+<li>Flexibility to implement content-enabled Standard Applications and business solutions either as single departmental
+solution or deploy them across your entire enterprise</li>
+</ul>
+</div>
+</div>
+<div class="section" id="enterprise-use-cases">
+<h2>Enterprise Use Cases<a class="headerlink" href="#enterprise-use-cases" title="Permalink to this headline">¶</a></h2>
+<p>Data Governance executives such as Data Protection Officer, Chief Information Security Officer, Chief Information Officers require a unified view of enterprise data assets in order to monitor, govern, identify and plug in vulnerabilities and protect these resources. Multi-Cloud Data Management Platform addresses customer pain points such as:</p>
+<ul class="simple">
+<li>Data Visualization,</li>
+<li>Classification,</li>
+<li>Information Governance and Compliance,</li>
+<li>Data Protection,</li>
+<li>Information security risk mitigation,</li>
+<li>Improving Operational efficiencies.</li>
+</ul>
+<p>Following are some of the enterprise use cases of the platform:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="76%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Actionable Insights</strong></td>
+<td>Gather intelligent information insights that can help enterprises to understand the
+location of their data assets and make informed business decisions.</td>
+</tr>
+<tr class="row-even"><td rowspan="2"><strong>Better Operational
+Efficiencies</strong></td>
+<td>Storage Tiering: Use analytics to drive data movement across on-premises and cloud
+to manage costs and optimize storage.</td>
+</tr>
+<tr class="row-odd"><td>TCO Savings: Use analytics to determine the cost of information and save costs.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="loom-technical-specifications">
+<h2>Loom Technical Specifications<a class="headerlink" href="#loom-technical-specifications" title="Permalink to this headline">¶</a></h2>
+<p>Loom Platform can be deployed as a cloud based SaaS offering or on premises using VMware based private cloud infrastructure.  Loom Alpha release supports only SaaS based deployment on Microsoft Azure cloud, fully managed by Veritas.</p>
+<a class="reference internal image-reference" href="../../_images/ds-loom-system-req.png"><img alt="../../_images/ds-loom-system-req.png" class="align-center" src="../../_images/ds-loom-system-req.png" style="width: 975.0px; height: 637.0px;" /></a>
+<p>Loom alpha users can connect any cloud based content sources supported by the Loom Connection Framework. To connect any on-premises content sources, Loom alpha users need to deploy an on-premises data engine component.</p>
+<p>For further details regarding Loom Technical Specifications, refer to the <a class="reference external" href="http://10.67.141.149/shaloo/aggr/pform-ugdocs/html/on_prem_dp_install_mcdmp.html#sys-req" title="(in Loom v0.7.0 (Beta-1-Dev))"><span class="xref std std-ref">System Requirements</span></a> section in the <a class="reference external" href="http://10.67.141.149/shaloo/aggr/pform-ugdocs/html/on_prem_dp_install_mcdmp.html#ing-com-on-prem-dp-install" title="(in Loom v0.7.0 (Beta-1-Dev))"><span class="xref std std-ref">Loom On Premise Data Engine Deployment Guide</span></a>.</p>
+<a class="reference internal image-reference" href="../../_images/ds-footer.png"><img alt="../../_images/ds-footer.png" class="align-center" src="../../_images/ds-footer.png" style="width: 846.0px; height: 369.0px;" /></a>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Veritas Technologies LLC.
+      Last updated on Apr 7, 2018, 11:08:28 PM.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+    <p>
+    <ul>
+    <a href="../pform-idocs/archive_index.html" style="float:left;">Loom Documentation Archives</a>
+    </ul>
+    </p>
+     
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.7.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

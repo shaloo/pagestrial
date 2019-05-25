@@ -1,0 +1,10 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}ENTERPRISE INFORMATION MANAGEMENT}{2}{section.1}
+\contentsline {section}{\numberline {2}PROTECT, GOVERN \& MONETIZE ENTERPRISE DATA ASSETS ON PREMISE AND IN THE CLOUD}{2}{section.2}
+\contentsline {section}{\numberline {3}INTRODUCING LOOM - THE VERITAS MULTI-CLOUD DATA MANAGEMENT PLATFORM}{3}{section.3}
+\contentsline {section}{\numberline {4}PERFORMANCE, SECURITY \& COMPLIANCE}{3}{section.4}
+\contentsline {section}{\numberline {5}LOOM DEPLOYMENT MODELS}{3}{section.5}
+\contentsline {section}{\numberline {6}PRODUCT HIGHLIGHTS}{4}{section.6}
+\contentsline {section}{\numberline {7}TECHNICAL SPECIFICATIONS}{4}{section.7}
+\contentsline {section}{\numberline {8}FEATURES \& BENEFITS}{4}{section.8}
+\contentsline {section}{\numberline {9}SUPPORT \& LICENSING}{5}{section.9}

@@ -1,0 +1,38 @@
+:orphan:
+
+.. _content_platform_tech_specs_summary:
+
+This section summarizes Loom Platform Technical Specifications.  For details refer to :ref:`content_platform_tech_specs`.
+
++-------------------------------------+------------------------------------------------+
+|  Technical Specifications           |  Details                                       |
++-------------------------------------+------------------------------------------------+
+|  Scalability                        | Max supported Data Volume (per Enterprise)     |
+|                                     | Exabytes?                                      |
+|                                     +------------------------------------------------+
+|                                     | Max number of Platform Applications            |
+|                                     +------------------------------------------------+
+|                                     | Minimum number of Infrastructure resources (?) |
+|                                     | Cloud Resources ?                              |
+|                                     | On-premise Resources ?                         |
+|                                     +------------------------------------------------+
+|                                     | Max number of supported users per Tenant?      |
+|                                     | Max number of files / data objects per Tenant? |
++-------------------------------------+------------------------------------------------+
+|  Supported Data Sources             | Microsoft Azure                                |
+|                                     +------------------------------------------------+
+|                                     | Box                                            |           
+|                                     +------------------------------------------------+
+|                                     | Other supported Data Sources, refer to         |
+|                                     | :ref:`roadmap here <future_data_sources>`      |
++-------------------------------------+------------------------------------------------+
+|  Supported Web Browsers             | Chrome, Firefox (Beta)                         |
+|                                     | Safari, IE (later)                             |
+|                                     | See version details in section                 |
+|                                     | titled :ref:`web_browser_version`              |
++-------------------------------------+------------------------------------------------+
+
+Content-TBD
+
+Other details that need to be added under Technical Specifications include Security standards adhered to in Loom Platform, Data Encryption details, Data Protocols supported such as CIFS, NFS, Veritas Products Integration Support for e.g., Information Map, Data Insight, Backup Exec, NetBackup, EV, others.
+

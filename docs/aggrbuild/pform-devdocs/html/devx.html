@@ -1,0 +1,406 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>DevX User Guide &mdash; Loom 0.7.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Loom 0.7.0 documentation" href="index.html"/>
+        <link rel="next" title="DocX: Resources" href="mcdmp_docx_res.html"/>
+        <link rel="prev" title="Loom SDK API Documentation" href="mcdmp_devdocs.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Loom
+          
+
+          
+            
+            <img src="_static/loom.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.7.0 (Beta-1-Dev)
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="loom_installation_guide.html">Loom Deployment Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loom_trbs_faq.html">Loom Troubleshooting Guide &amp; FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mcdmp_devdocs.html">Platform SDK API Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">DevX User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introducing-devx">Introducing DevX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#devx-elevator-pitch">DevX Elevator Pitch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#devx-use-cases">DevX Use Cases</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#inter-dependent-micro-service-architecture-integration-testing">Inter-dependent Micro Service Architecture Integration Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#new-loom-feature-development-or-loom-application-development">New Loom Feature Development or Loom Application Development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flexibility-in-choosing-the-type-of-test-infrastructure">Flexibility in choosing the type of test infrastructure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#replicating-test-environments-across-teams-and-geographies">Replicating Test Environments across teams and geographies</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-use-devx">How to use DevX?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#devx-workflow">DevX Workflow</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#devx-security">DevX Security</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#devx-tutorial-video">DevX Tutorial Video</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#other-devx-references">Other DevX References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mcdmp_docx_res.html">DocX Resources</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Loom</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>DevX User Guide</li>
+    
+    
+    <p>
+        <a href="https://stash.veritas.com/projects/MCDMP/repos/pform-docs/browse/source/devx.rst" class="fa fa-bitbucket" aria-hidden="true">&nbsp; Edit on Bitbucket</a>
+    
+          <a href="../latex/devx.pdf" class="fa" style="float:right;">Download PDF</a>
+    
+    </p> 
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="devx-user-guide">
+<span id="content-all-devx"></span><h1>DevX User Guide<a class="headerlink" href="#devx-user-guide" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#introducing-devx" id="id6">Introducing DevX</a></li>
+<li><a class="reference internal" href="#devx-elevator-pitch" id="id7">DevX Elevator Pitch</a></li>
+<li><a class="reference internal" href="#devx-use-cases" id="id8">DevX Use Cases</a><ul>
+<li><a class="reference internal" href="#inter-dependent-micro-service-architecture-integration-testing" id="id9">Inter-dependent Micro Service Architecture Integration Testing</a></li>
+<li><a class="reference internal" href="#new-loom-feature-development-or-loom-application-development" id="id10">New Loom Feature Development or Loom Application Development</a></li>
+<li><a class="reference internal" href="#flexibility-in-choosing-the-type-of-test-infrastructure" id="id11">Flexibility in choosing the type of test infrastructure</a></li>
+<li><a class="reference internal" href="#replicating-test-environments-across-teams-and-geographies" id="id12">Replicating Test Environments across teams and geographies</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#how-to-use-devx" id="id13">How to use DevX?</a><ul>
+<li><a class="reference internal" href="#devx-workflow" id="id14">DevX Workflow</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#devx-security" id="id15">DevX Security</a></li>
+<li><a class="reference internal" href="#devx-tutorial-video" id="id16">DevX Tutorial Video</a></li>
+<li><a class="reference internal" href="#other-devx-references" id="id17">Other DevX References</a></li>
+</ul>
+</div>
+<hr class="docutils" id="para-intro" />
+<div class="section" id="introducing-devx">
+<h2><a class="toc-backref" href="#id6">Introducing DevX</a><a class="headerlink" href="#introducing-devx" title="Permalink to this headline">¶</a></h2>
+<p>DevX Tool can help you speed up Loom Integration Testing, Loom Application development and integration with Veritas Products. Key audience comprises of Veritas Product Dev, Service Integration Dev, Micro-service based product development and verification Engineers who need a fast, reliable way to obtain cluster resources on demand and return it to the pool for other Veritas users.</p>
+<p>The following slide captures the value proposition of DevX Tool in a single line:</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/devx-1-line-value-prop.png"><img alt="DevXValueProp" src="_images/devx-1-line-value-prop.png" style="width: 1145.6px; height: 643.2px;" /></a>
+<p class="caption"><span class="caption-text">Figure: DevX Value Proposition</span></p>
+</div>
+<p>DevX provides runtime Kubernetes cluster infrastructure for deploying one or more inter-dependent container based micro-services quickly through REST APIs. DevX supports one micro-service per container setup that is hosted using Kubernetes and defined using Helm, Kube OpenAPI Spec definitions.</p>
+</div>
+<hr class="docutils" id="para-ep" />
+<div class="section" id="devx-elevator-pitch">
+<h2><a class="toc-backref" href="#id7">DevX Elevator Pitch</a><a class="headerlink" href="#devx-elevator-pitch" title="Permalink to this headline">¶</a></h2>
+<p>The core value proposition of DevX is automation of micro-services application development environment.  The figure below explains at a very high level some of the key features offered by DevX.</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/what-is-devx.png"><img alt="DevXEP" src="_images/what-is-devx.png" style="width: 614.0px; height: 514.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: What is DevX?</span></p>
+</div>
+<p>The following figure shows the main DevX web interface. In future, there will be a more sophisticated product UI that will be available for this tool.</p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/devx-dashboard.png"><img alt="DevXDashboard" src="_images/devx-dashboard.png" style="width: 696.0px; height: 541.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: DevX Web Interface</span></p>
+</div>
+<p>The key points of DevX Elevator Pitch are highlighted in the figure below:</p>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/devx-elevator-pitch.png"><img alt="DevXElevatorPitch" src="_images/devx-elevator-pitch.png" style="width: 706.0px; height: 602.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: DevX Elevator Pitch</span></p>
+</div>
+</div>
+<hr class="docutils" id="para-usecases" />
+<div class="section" id="devx-use-cases">
+<h2><a class="toc-backref" href="#id8">DevX Use Cases</a><a class="headerlink" href="#devx-use-cases" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Inter-dependent Micro Service Architecture Integration Testing</li>
+<li>New Loom Feature Development or Loom Application Development</li>
+<li>Flexibility in choosing the type of test infrastructure</li>
+<li>Replicating Test Environments across teams and geographies</li>
+</ul>
+<div class="section" id="inter-dependent-micro-service-architecture-integration-testing">
+<h3><a class="toc-backref" href="#id9">Inter-dependent Micro Service Architecture Integration Testing</a><a class="headerlink" href="#inter-dependent-micro-service-architecture-integration-testing" title="Permalink to this headline">¶</a></h3>
+<p>Micro-services architecture based products are fairly complex. Inter-dependency of these micro-services and variance in the rate of evolution of co-dependent services can cause a significant spurt in integration testing and validation efforts.  This also drives up the need for cluster resources, especially when HA, replication and other inter-linked features come into the picture. For products such as Loom, developers often require different versions of inter-dependent micro-services and there is a need to quickly validate a micro-service that is under development, whether it works with one or more newly updated or bug-fixed micro-service dependency. DevX Tool can immensely help in such cases by quickly spinning up test cluster resources and once a developer has completed the use of the cluster, all the resources are automatically returned to the DevX pool for other developers to use.  This not only boosts developer productivity but also channelizes and optimizes shared resource usage in complex micro-services cluster environments.</p>
+</div>
+<div class="section" id="new-loom-feature-development-or-loom-application-development">
+<h3><a class="toc-backref" href="#id10">New Loom Feature Development or Loom Application Development</a><a class="headerlink" href="#new-loom-feature-development-or-loom-application-development" title="Permalink to this headline">¶</a></h3>
+<p>Loom deployment architecture is fairly complex. There are several moving blocks, each of which themselves are under evolution. In such cases, it can be tricky to identify and obtain a recommended development environment setup. For new feature development or application development, getting a verified and recommended Loom environment, which is approved and known to work, and can be used as a base to enhance one or more micro-services or create a new Loom Application which is deployed on Loom itself, can be a time consuming task, prone to errors.  DevX Tool can help you choose the right environment for your specific Loom development needs. You can choose from DevX Environment Directory Listing and Build repository (Artifactory) Listing interfaces and rest assured that you will be able to obtain and spin up your Kubernetes test cluster in a jiffy.</p>
+</div>
+<div class="section" id="flexibility-in-choosing-the-type-of-test-infrastructure">
+<h3><a class="toc-backref" href="#id11">Flexibility in choosing the type of test infrastructure</a><a class="headerlink" href="#flexibility-in-choosing-the-type-of-test-infrastructure" title="Permalink to this headline">¶</a></h3>
+<p>DevX offers a generic Kubernetes test cluster on any cloud, VMware based resources on-premises or OpenStack based infrastructure. Each developer need not have to worry about provider specific credentials or deployment specifics.  DevX takes care of that part.  Developers can simply use their enterprise SSO credentials to avail DevX API benefits and web based interface to get started with DevX.</p>
+</div>
+<div class="section" id="replicating-test-environments-across-teams-and-geographies">
+<h3><a class="toc-backref" href="#id12">Replicating Test Environments across teams and geographies</a><a class="headerlink" href="#replicating-test-environments-across-teams-and-geographies" title="Permalink to this headline">¶</a></h3>
+<p>DevX ,in future, will also enable users to snapshot complex deployment environments and replicate them elsewhere.  This can significantly speed up and ease replication of test environments during testing and production phases or during shared development of micro-services based products and Applications using such products or deployed on a micro-services platform architecture.</p>
+<p>The following figure highlights benefits of DevX Tool:</p>
+<div class="figure align-center" id="id5">
+<a class="reference internal image-reference" href="_images/devx-benefits.png"><img alt="DevXBenefits" src="_images/devx-benefits.png" style="width: 1610.0px; height: 798.75px;" /></a>
+<p class="caption"><span class="caption-text">Figure: DevX Benefits</span></p>
+</div>
+</div>
+</div>
+<hr class="docutils" id="para-how-to-use" />
+<div class="section" id="how-to-use-devx">
+<h2><a class="toc-backref" href="#id13">How to use DevX?</a><a class="headerlink" href="#how-to-use-devx" title="Permalink to this headline">¶</a></h2>
+<p>DevX Tool provides REST APIs for all its functionality of Kubernetes Cluster Abstraction. Refer to <a class="reference external" href="http://devx-swagger-canary.cicd.veritas.com">DevX Canary Site</a> for details and list of DevX APIs available for use.</p>
+<div class="section" id="devx-workflow">
+<h3><a class="toc-backref" href="#id14">DevX Workflow</a><a class="headerlink" href="#devx-workflow" title="Permalink to this headline">¶</a></h3>
+<p>Following are the basic instructions to get started with DevX:</p>
+<ol class="arabic">
+<li><p class="first">Step 1: <strong>Authenticate</strong></p>
+<p>Before you can get started with DevX, you need to authenticate yourself using your Veritas SSO credentials at the <a class="reference external" href="http://devx-swagger-canary.cicd.veritas.com">DevX Canary Site</a>.  You can use this web interface directly to authenticate yourself.</p>
+</li>
+</ol>
+<ol class="arabic">
+<li><p class="first">Step 2: <strong>List available DevX Environment Definitions</strong></p>
+<p>Next, you can obtain a list of available DevX environments and use one of them to setup your cluster.  Alternatively you can create (and delete) your own cluster environment using DevX APIs.</p>
+</li>
+</ol>
+<ol class="arabic">
+<li><p class="first">Step 3: <strong>List available builds to be deployed</strong></p>
+<p>To help developers identify which Loom or other micro-service builds are available for deployment and their version numbers, DevX provides Artifactory API which acts as a directory of builds that can be deployed for application development and testing.</p>
+</li>
+</ol>
+<ol class="arabic">
+<li><p class="first">Step 4: <strong>Execute</strong></p>
+<p>Once you have specified the environment and which builds to deploy, you can Execute DevX Environment of your choice – using its ID or ??? (List environment API returns ID, right?). TBD -   How does one ‘activate’ the cluster and access it (by name?) – how do you get its IP address? TBD</p>
+</li>
+</ol>
+<ol class="arabic">
+<li><p class="first">Step 5: <strong>Scale up on down on demand</strong>:</p>
+<p>Scale DevX Environment of your choice – Replication factor, per microservice, load balancing and controller functionality are abstracted internally.  How to??</p>
+</li>
+</ol>
+</div>
+</div>
+<hr class="docutils" id="para-sec" />
+<div class="section" id="devx-security">
+<h2><a class="toc-backref" href="#id15">DevX Security</a><a class="headerlink" href="#devx-security" title="Permalink to this headline">¶</a></h2>
+<p>DevX and Kubernetes APIs authenticate users who present credentials, and then authorize them based on their Veritas SSO and role. Developers typically make REST API calls from web interface via their browsers. Every container that runs on the cluster is associated with a service account. This account is also used to list and pull,push images, builds and deployment components.</p>
+</div>
+<hr class="docutils" id="para-tutorial" />
+<div class="section" id="devx-tutorial-video">
+<h2><a class="toc-backref" href="#id16">DevX Tutorial Video</a><a class="headerlink" href="#devx-tutorial-video" title="Permalink to this headline">¶</a></h2>
+<p>The following is a placeholder video that shows a typical DevX usage flow.  We plan to provide specific short videos to describe how to do specific tasks using DevX in subsequent revisions.</p>
+<p>Click on this link to see sample <a class="reference internal" href="#devx-tutorial-video">DevX Tutorial Video</a>.</p>
+</div>
+<div class="section" id="other-devx-references">
+<h2><a class="toc-backref" href="#id17">Other DevX References</a><a class="headerlink" href="#other-devx-references" title="Permalink to this headline">¶</a></h2>
+<p>TBD</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="mcdmp_docx_res.html" class="btn btn-neutral float-right" title="DocX: Resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="mcdmp_devdocs.html" class="btn btn-neutral" title="Loom SDK API Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Veritas Technologies LLC.
+      Last updated on Apr 7, 2018, 11:18:09 PM.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+    <p>
+    <ul>
+    <a href="../pform-idocs/archive_index.html" style="float:left;">Loom Documentation Archives</a>
+    </ul>
+    </p>
+     
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.7.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

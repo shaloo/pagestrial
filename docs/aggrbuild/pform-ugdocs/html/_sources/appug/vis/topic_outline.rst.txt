@@ -1,0 +1,72 @@
+:orphan:
+
+.. _content_topic_outline:
+
+------
+PART 1
+------
+
+#. Introduction/Getting Started
+
+   * About Veritas Visibility
+   * Invoking the Veritas Visibility application
+   * Finding your way around the application
+   * Workflows that highlight the key use cases of the application (This section can include case studies with links to relevant topics.).
+
+#. Using Veritas Visibility
+
+   * Workspace view
+   * Filters
+   * Dashboard view
+
+     - Chart tiles
+     - List tiles
+     - Ages tile
+     - Dashboard Entities
+     - Other views
+
+       - Map view
+       - Item List Preview
+       - List views
+       - Tags view
+
+------
+PART 2
+------
+
+#. Configuring classification policies
+
+   * About setting up classification policies
+   * Finding your way around the classification application
+
+#. Policies
+
+   * About policies
+   * About built-in policies
+   * Creating or editing policies
+   * About policy conditions
+   * Regular expression syntax
+   * Enabling and disabling policies
+   * Exporting and importing policies
+   * Resetting policies
+   * Deleting policies
+
+#. Patterns
+
+   * About patterns
+   * Creating and editing patterns
+   * Exporting and importing patterns
+   * Deleting patterns
+
+#. Tags
+
+   * About tags
+   * Creating and editing tags
+   * Exporting and importing tags
+   * Deleting tags
+
+#. Remediation actions
+
+   * Initiating classification of files
+   * Viewing the status of classification requests
+   * Deleting files

@@ -1,0 +1,2179 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Getting Started Guide &mdash; Loom 0.7.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Loom 0.7.0 documentation" href="index.html"/>
+        <link rel="next" title="Loom: Concepts &amp; Glossary" href="mcdmp_concepts.html"/>
+        <link rel="prev" title="Welcome to Loom User Guides Documentation!" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Loom
+          
+
+          
+            
+            <img src="_static/loom.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.7.0 (Beta-1-Dev)
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started with Loom</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-s-new">What’s New?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-loom">What is Loom?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#why-loom">Why Loom?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loom-vs-traditional-data-management">Loom vs. Traditional Data Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loom-components">Loom Components</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-a-user-can-achieve-with-loom">What a user can achieve with Loom?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loom-usage-workflow">Loom Usage Workflow</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#who-should-use-loom">Who should use Loom?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#information-officers">Information Officers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#devops-creating-information-apps">DevOps creating Information Apps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loom-roles-user-personas">Loom Roles &amp; User Personas</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-loom-works">How Loom works?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interacting-with-loom">Interacting with Loom</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#loom-ui">Loom UI</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#title-bar">Title Bar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#navigation-bar">Navigation Bar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#main-display">Main Display</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#loom-dashboard">Loom Dashboard</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#summary-bar">Summary Bar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#asset-map">Asset Map</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#widgets">Widgets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#loom-health-dashboard">Loom Health Dashboard</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#organizations">Organizations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#loom-applications">Loom Applications</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#application-chooser-or-application-switcher">Application Chooser or Application Switcher</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#loom-sidebar">Loom Sidebar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#multi-tenancy">Multi Tenancy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#role-based-access-control">Role Based Access Control</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#access-management">Access Management</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#setting-up-loom-credentials">Setting up Loom Credentials</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#data-plane-orchestration">Data Plane Orchestration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#connector-framework">Connector Framework</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#loom-data-sources">Loom Data Sources</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#application-management">Application Management</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#policy-management">Policy Management</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#data-management-job-scheduling">Data Management Job Scheduling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#audit-logging">Audit Logging</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#troubleshooting-loom-user-interface">Troubleshooting Loom User Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#error-messages">Error Messages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#related-information">Related Information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#loom-workflows">Loom Workflows</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#loom-access-workflows">Loom Access Workflows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#loom-deployment-workflows">Loom Deployment Workflows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#loom-user-management-workflows">Loom User Management Workflows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#datavision-workflows">DataVision Workflows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gdpr-workflows">GDPR  Workflows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sarlite-workflows">SARLite Workflows</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#platform-technical-specifications">Platform Technical Specifications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#scalability-specifications">Scalability Specifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#supported-data-types-data-sources-technologies">Supported Data Types, Data Sources &amp; Technologies</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#supported-cloud-providers">Supported Cloud Providers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#supported-data-sources">Supported Data Sources</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#other-data-sources-in-future">Other Data Sources (In Future)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#web-browsers-support">Web Browsers Support</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#additional-information">Additional Information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#loom-platform-software-dependency-versions">Loom Platform Software Dependency Versions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#next-steps">Next Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mcdmp_concepts.html">Loom Concepts, Terminology &amp; Online Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loom_dep_pre_rq.html">Pre-requisites for Onboarding Loom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="on_prem_dp_install_mcdmp.html">Loom On-Premise Data Plane Deployment Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mcdmp_app_ug.html">Loom App User Guides</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Loom</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Getting Started Guide</li>
+    
+    
+    <p>
+        <a href="https://stash.veritas.com/projects/MCDMP/repos/pform-docs/browse/source/loom_getting_started_guide.rst" class="fa fa-bitbucket" aria-hidden="true">&nbsp; Edit on Bitbucket</a>
+    
+          <a href="../latex/gsg.pdf" class="fa" style="float:right;">Download PDF</a>
+    
+    </p> 
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="getting-started-guide">
+<span id="content-getting-started-guide"></span><h1>Getting Started Guide<a class="headerlink" href="#getting-started-guide" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#what-s-new" id="id50">What’s New?</a></li>
+<li><a class="reference internal" href="#overview" id="id51">Overview</a><ul>
+<li><a class="reference internal" href="#what-is-loom" id="id52">What is Loom?</a></li>
+<li><a class="reference internal" href="#why-loom" id="id53">Why Loom?</a></li>
+<li><a class="reference internal" href="#loom-vs-traditional-data-management" id="id54">Loom vs. Traditional Data Management</a></li>
+<li><a class="reference internal" href="#loom-components" id="id55">Loom Components</a></li>
+<li><a class="reference internal" href="#what-a-user-can-achieve-with-loom" id="id56">What a user can achieve with Loom?</a></li>
+<li><a class="reference internal" href="#loom-usage-workflow" id="id57">Loom Usage Workflow</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#who-should-use-loom" id="id58">Who should use Loom?</a><ul>
+<li><a class="reference internal" href="#information-officers" id="id59">Information Officers</a></li>
+<li><a class="reference internal" href="#devops-creating-information-apps" id="id60">DevOps creating Information Apps</a></li>
+<li><a class="reference internal" href="#loom-roles-user-personas" id="id61">Loom Roles &amp; User Personas</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#how-loom-works" id="id62">How Loom works?</a></li>
+<li><a class="reference internal" href="#interacting-with-loom" id="id63">Interacting with Loom</a><ul>
+<li><a class="reference internal" href="#loom-ui" id="id64">Loom UI</a></li>
+<li><a class="reference internal" href="#loom-dashboard" id="id65">Loom Dashboard</a></li>
+<li><a class="reference internal" href="#loom-workflows" id="id66">Loom Workflows</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#platform-technical-specifications" id="id67">Platform Technical Specifications</a><ul>
+<li><a class="reference internal" href="#scalability-specifications" id="id68">Scalability Specifications</a></li>
+<li><a class="reference internal" href="#supported-data-types-data-sources-technologies" id="id69">Supported Data Types, Data Sources &amp; Technologies</a></li>
+<li><a class="reference internal" href="#loom-platform-software-dependency-versions" id="id70">Loom Platform Software Dependency Versions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#next-steps" id="id71">Next Steps</a></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="what-s-new">
+<h2><a class="toc-backref" href="#id50">What’s New?</a><a class="headerlink" href="#what-s-new" title="Permalink to this headline">¶</a></h2>
+<p>This page documents production updates to Veritas Loom. You can periodically check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.</p>
+<p>The very first release of Loom is called Alpha1.  Here is a summary its features:</p>
+<ul class="simple">
+<li>Customers can access Loom Platform Services and Loom Applications via a Veritas hosted and managed SaaS deployment on Microsoft Azure cloud infrastructure.</li>
+<li>360 Data Analysis &amp; Classification is supported for both cloud as well as on-premise content sources.</li>
+<li>Only a few cloud providers are supported in the initial release.</li>
+<li>Refer to latest Loom Release Note for details on which on-premises Data Connectors are supported.</li>
+</ul>
+<p>For specifics, refer to <a class="reference external" href="http://10.67.141.149/shaloo/aggr/pform-reldocs/html/relnotes/rn-loom-alpha1.html#content-rn-loom-alpha1" title="(in Loom v0.7.0 (Beta-1-Dev))"><span class="xref std std-ref">Loom Alpha1 Release Notes</span></a>. You can also refer to <a class="reference external" href="http://10.67.141.149/shaloo/aggr/pform-reldocs/html/loom_relnotes.html#content-loom-relnotes" title="(in Loom v0.7.0 (Beta-1-Dev))"><span class="xref std std-ref">Loom Release Notes</span></a> which contains references to all Loom Release notes for published releases.</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="overview">
+<h2><a class="toc-backref" href="#id51">Overview</a><a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>This overview is designed to help you understand the overall concepts of Veritas Loom - the Multi Cloud Data Management Platform (<abbr title="Multi-Cloud Data Management Platform">MCDMP</abbr>). The intended audience for this document are the end users who will use Loom through its Dashboard User Interface and Loom Applications such as 360 Data Analysis, GDPR (not available in Alpha1) and others in future.</p>
+<p>This Getting Started Guide is meant for quick onboarding of Loom Alpha1 On-boarders. The primary audience are the Tenant Admins and Tenant Users for Loom SaaS Deployment. It covers key Loom concepts, features and benefits. Besides that it highlights Loom components such as Dashboard, Applications, Connection Center, Organizations and Monitoring.</p>
+<div class="section" id="what-is-loom">
+<h3><a class="toc-backref" href="#id52">What is Loom?</a><a class="headerlink" href="#what-is-loom" title="Permalink to this headline">¶</a></h3>
+<p>Loom or the Multi-Cloud Enterprise Data Management Platform (MCDMP) enables businesses to control, protect, manage and monetize enterprise information intelligently. It’s a platform to address information governance needs pertaining to unstructured, structured or semi-structured data owned by an enterprise, through a unified information dashboard, irrespective of the location of data: on premise, public, private or hybrid cloud.</p>
+<p>Loom, in future, will also expose its functionality through REST APIs SDK.  DevOps can use these APIs to quickly create and deploy business workflows and information orchestration applications, that require information from data sources spread across the enterprise, in order to monetize enterprise information assets swiftly.</p>
+<div class="figure align-center" id="id9">
+<a class="reference internal image-reference" href="_images/MCDMP-HL.png"><img alt="High Level Loom overview picture" src="_images/MCDMP-HL.png" style="width: 445.5px; height: 277.5px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Loom High Level Overview</span></p>
+</div>
+</div>
+<div class="section" id="why-loom">
+<h3><a class="toc-backref" href="#id53">Why Loom?</a><a class="headerlink" href="#why-loom" title="Permalink to this headline">¶</a></h3>
+<p>Loom and its Applications (360 Data Analysis, GDPR, others) together provide a unified, flexible, scalable and extensible data management ecosystem that:</p>
+<ol class="arabic simple">
+<li>Brings together all the value that Veritas has to offer to its customers and markets at large.</li>
+<li>Has the ability to access multiple data sources irrespective of where they are: on premise, cloud, or geographically dispersed across the globe.</li>
+<li>Can efficiently classify all enterprise data, no matter where it is.</li>
+<li>Provides ability to control and manage data access and chain of custody for regulatory compliance and information governance.</li>
+<li>Helps consolidate the data preparation for Machine learning Analytics Applications that can tap into enterprise data assets for actionable insights and monetization.</li>
+<li>Provides the core services required to develop new enterprise data management applications or integrate existing applications for data management use cases through RESTful APIs.</li>
+</ol>
+</div>
+<div class="section" id="loom-vs-traditional-data-management">
+<h3><a class="toc-backref" href="#id54">Loom vs. Traditional Data Management</a><a class="headerlink" href="#loom-vs-traditional-data-management" title="Permalink to this headline">¶</a></h3>
+<p>Loom enables enterprises to transform traditional silos of storage and data management towards comprehensive information management. It helps customers to retain data visibility across different storage environments (cloud, on-premises, hybrid etc.) and ensure security and compliance policies intelligently adapt to the type of environment that data is being stored or accessed from.</p>
+<div class="figure align-center" id="id10">
+<a class="reference internal image-reference" href="_images/mcdm-vs-traditional-data-mngt.png"><img alt="Loom vs traditional picure" src="_images/mcdm-vs-traditional-data-mngt.png" style="width: 864.75px; height: 295.5px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Loom - Unified Interface for Information Management</span></p>
+</div>
+<p>Loom brings in value to the enterprises by addressing data and information management needs including data protection. With Loom, businesses can move up the information maturity model and cater to newer opportunities and business demands through orchestration. Traditional data management focus is primarily on data protection whereas Loom helps enterprises evolve towards information governance and monetizing for maximum return on data assets.</p>
+<div class="figure align-center" id="id11">
+<a class="reference internal image-reference" href="_static/mcdmp-protect-to-monetize-value.png"><img alt="mcdmp-protect-to-monetize-value picture" src="_static/mcdmp-protect-to-monetize-value.png" /></a>
+<p class="caption"><span class="caption-text">Figure: Enterprise Information Management Evolution towards monetizing data</span></p>
+</div>
+</div>
+<div class="section" id="loom-components">
+<h3><a class="toc-backref" href="#id55">Loom Components</a><a class="headerlink" href="#loom-components" title="Permalink to this headline">¶</a></h3>
+<p>Loom components that a user needs to know about. TBD</p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><p class="first"><strong>Placeholder:</strong> What are some of the components of Loom that a user needs to
+know to get started. For example, we could say – Loom comprises of the
+following components:</p>
+<ul class="last simple">
+<li>Web based console or Dashboard</li>
+<li>Administration &amp; User Management</li>
+<li>Policy</li>
+<li>Tasks</li>
+<li>Actions</li>
+<li>Applications – GDPR, visibility</li>
+<li>SDK</li>
+<li>Services (?) any that user interacts with</li>
+<li>Other components</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="what-a-user-can-achieve-with-loom">
+<h3><a class="toc-backref" href="#id56">What a user can achieve with Loom?</a><a class="headerlink" href="#what-a-user-can-achieve-with-loom" title="Permalink to this headline">¶</a></h3>
+<p>You may want to use Loom if you require the ability to address the enterprise challenges with unstructured data including:</p>
+<ol class="arabic simple">
+<li><strong>Information Discovery:</strong> The need to understand what data you have and why you should keep it, delete it or archive it.</li>
+<li><strong>Information Classification:</strong> Identify who has access to your enterprise data - including sensitive or regulated information.</li>
+<li><strong>Information Insights:</strong> Find relevant information quickly when there is a business need, investigation, litigation event or GDPR and other compliance regulation audits.</li>
+</ol>
+<p>In addition to the above, Loom can do a lot more!</p>
+<ul class="simple">
+<li>Provide single sign-on across your information management applications.</li>
+<li>Control of myriad data sources across the enterprise spanning applications deployed using various deployment models: on-premise, hosted SaaS, cloud, bare-metal or VM.</li>
+<li>Simplify development of newer information and data management applications, integration of existing data management solutions.</li>
+<li>Machine Learning based information classification capability</li>
+<li>Advanced information analytics that leverage Veritas storage technologies as an integrated suite</li>
+<li>Tenants and user management for secure, audited information access across the enterprise</li>
+<li>Policy based information access, retrieval, retention</li>
+<li>Others TBD</li>
+</ul>
+</div>
+<div class="section" id="loom-usage-workflow">
+<h3><a class="toc-backref" href="#id57">Loom Usage Workflow</a><a class="headerlink" href="#loom-usage-workflow" title="Permalink to this headline">¶</a></h3>
+<p>Following figure shows a simplified workflow describing how a typical user interacts with Loom.</p>
+<p>Steps 1-9 highlighted in the figure refer to the following user actions:</p>
+<ol class="arabic simple">
+<li><strong>Deployment</strong><ul>
+<li>Loom deployment by Loom Admin (Super Admin). Alpha1 deployment managed as Azure SaaS Offering by Veritas. Future releases will support all deployment models - on premise, cloud, appliance</li>
+</ul>
+</li>
+<li><strong>Customer Onboarding &amp;  Basic Configuration</strong><ul>
+<li>Onboarding Customer Organization by Veritas SaaS business partners or MSPs through creation of a Customer Administrator account and a default tenant.</li>
+<li>Addition of Loom users with respective roles as per customer organization policies (Tenant Admin, Data Officers, Security Officers, Compliance Officers) by designated Customer Administrator</li>
+<li>Setting up of various policies according to an organization’s needs and practices by Data, Security and Compliance Officers.</li>
+</ul>
+</li>
+<li><strong>Connect Content Sources</strong><ul>
+<li>Enabling connectivity to organization’s content repositories on premise and in the cloud by Tenant Admin.</li>
+</ul>
+</li>
+<li><strong>Discovery</strong><ul>
+<li>Discover Information and gain knowledge about organization’s data spread across the enterprise landscape and silos. Perform 360 Data Analysis to obtain a comprehensive view of information irrespective of its location, content type, and identify usage pattern, age and other meta data related insights.</li>
+</ul>
+</li>
+<li><strong>Map of Organization Content Sources</strong><ul>
+<li>Obtain a quick overview of organization’s content sources and key metrics associated with who is accessing what information and where within the organization.</li>
+</ul>
+</li>
+<li><strong>Analysis of Information owned by an Organization</strong><ul>
+<li>Use Loom Content Classification Engine and securely schedule and analyze information analysis based on filters and policies set up as per organization’s practices during Loom setup and configuration.</li>
+<li>Analyze Information to gain insights into who owns what data within the organization, where it is located and whether the information is business sensitive or PII or other type. Initiate deeper drill down and information scans based on analysis through Loom workflows.</li>
+</ul>
+</li>
+<li><strong>Reports</strong><ul>
+<li>Use timely notifications, reports and Loom based insights related to organization’s policy breach or compliance issues in order to manage, control and govern enterprise information and make informed decisions.</li>
+</ul>
+</li>
+<li><strong>Governance</strong><ul>
+<li>Implement business decisions to delete, retain (archive) and/or protect your organization’s information assets appropriately.</li>
+<li>Optimize, save costs and improve operational efficiencies by deleting what is not required, retaining what is necessary and protecting critical content source from unauthorized accesses or take timely actions to address breaches if any.</li>
+</ul>
+</li>
+<li><strong>Monetize Organization Information Assets</strong><ul>
+<li>Gain control of your organization’s information assets for not only effective governance but also for monetizing information by building newer data management solutions over Loom platform using the SDK APIs.</li>
+</ul>
+</li>
+</ol>
+<div class="figure align-center" id="id12">
+<a class="reference internal image-reference" href="_static/mcdmp-usage-workflow.png"><img alt="" src="_static/mcdmp-usage-workflow.png" /></a>
+<p class="caption"><span class="caption-text">Figure: Loom High Level Usage Workflow</span></p>
+</div>
+<hr class="docutils" />
+</div>
+</div>
+<div class="section" id="who-should-use-loom">
+<h2><a class="toc-backref" href="#id58">Who should use Loom?</a><a class="headerlink" href="#who-should-use-loom" title="Permalink to this headline">¶</a></h2>
+<p>Loom can help customers answer the “where,” “who,” and “what” of all their data and identify which data is important and which is redundant, obsolete, or trivial (ROT). With Loom, enterprise Data Officer can identify and control information to answer questions such as:
+* Is your enterprise information safe?
+* Do you have control over your data?
+* Is it possible to defensively delete personal information pertaining to a specific user within your data landscape?
+* Can you prove it for new information privacy and compliance regulation needs?</p>
+<div class="section" id="information-officers">
+<h3><a class="toc-backref" href="#id59">Information Officers</a><a class="headerlink" href="#information-officers" title="Permalink to this headline">¶</a></h3>
+<p>Built for executives responsible for setting up and enforcing information governance policies within an enterprise, Loom offers a unified interface that spans data storage, data protection and data management functions in a highly available and secure manner.  It also provides REST SDK and APIs using which newer information management applications and solutions can be created on top of Loom Platform.</p>
+</div>
+<div class="section" id="devops-creating-information-apps">
+<h3><a class="toc-backref" href="#id60">DevOps creating Information Apps</a><a class="headerlink" href="#devops-creating-information-apps" title="Permalink to this headline">¶</a></h3>
+<p>By offloading aggregation and integration of data storage and management functions on Loom, developers can not only utilize capabilities offered by Veritas data storage and management products but also bring new applications to market faster, reduce development and operations costs, simplify the FED certification process and future information compliance and governance needs in a secured, scalable and swift way.</p>
+</div>
+<div class="section" id="loom-roles-user-personas">
+<h3><a class="toc-backref" href="#id61">Loom Roles &amp; User Personas</a><a class="headerlink" href="#loom-roles-user-personas" title="Permalink to this headline">¶</a></h3>
+<p>The figure below shows some of the user personas that interact with Loom.</p>
+<div class="figure align-center" id="id13">
+<a class="reference internal image-reference" href="_images/5-user-personas.png"><img alt="5 user personas picture" src="_images/5-user-personas.png" style="width: 525.0px; height: 368.25px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Examples of user personas for Loom Platform</span></p>
+</div>
+<hr class="docutils" />
+</div>
+</div>
+<div class="section" id="how-loom-works">
+<h2><a class="toc-backref" href="#id62">How Loom works?</a><a class="headerlink" href="#how-loom-works" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>TBD: How MDCMP works under the covers - before a user can attempt to interact with it via the preliminary steps listed in the next section ‘Interacting with Loom’ let us highlight a few things about how Loom works. Say what all happens under the covers in terms of system component interactions (that a user can understand in context of the use case) so that end user can manage information using Loom. High level mechanics that the user needs to know. This will not cover the engineering details unless specifically required. (Check with Platform team, Apps team, others?)</li>
+</ul>
+<p>As an example, refer to this link - we need to show something at this level of abstraction to explain how Loom works - we need not go into architectural details here. <a class="reference external" href="https://onetrust.com">https://onetrust.com</a></p>
+<p>For example: Loom works across enterprise data silos - on-premise, cloud or hybrid.</p>
+<div class="figure align-center" id="id14">
+<img alt="Example picture of how something works" src="_images/how-mcdmp-works-example1.png" />
+<p class="caption"><span class="caption-text">Figure: Placeholder figure to show something similar - this one is an example from onetrust</span></p>
+</div>
+<hr class="docutils" />
+</div>
+<div class="section" id="interacting-with-loom">
+<span id="gsg-interacting-mcdmp"></span><h2><a class="toc-backref" href="#id63">Interacting with Loom</a><a class="headerlink" href="#interacting-with-loom" title="Permalink to this headline">¶</a></h2>
+<p>This section covers the user interface components of Veritas Loom Product. Loom Application developers can interact with Loom via REST APIs.</p>
+<p>The target audience of this guide include Loom Platform Admin, Loom Tenant Admin and Loom Tenant Users.</p>
+<p>It gives a quick overview of how these users typically interact with Loom User Interface for performing various Loom administration, monitoring or data management actions such as gaining visibility into enterprise content repositories, running data scans or classification jobs, obtaining insights that can help govern, optimize, mitigate risk and analyze enterprise data footprint for ROT.</p>
+<div class="contents local topic" id="id1">
+<ul class="simple">
+<li><a class="reference internal" href="#loom-ui" id="id72">Loom UI</a></li>
+<li><a class="reference internal" href="#loom-dashboard" id="id73">Loom Dashboard</a></li>
+<li><a class="reference internal" href="#loom-workflows" id="id74">Loom Workflows</a></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Loom Alpha2 Release supports only DataVision Application deployed as part of Azure SaaS based Loom deployment.</p>
+</div>
+<p>Loom comprises core Loom Platform Services and Loom Applications such as InfoMap, DataVision, GDPR Readiness, SAR Lite.</p>
+<p>You can interact with Loom either via its user interface or through REST APIs.  This section focuses on the Loom Platform User Interface. For REST APIs refer to Loom Platform SDK API Guide.  Details of Loom Applications are available in specific Loom Application User Guides: DataVision App User Guide.</p>
+<p>The Loom User Inteface helps with the following:</p>
+<ul class="simple">
+<li>Managing the Loom Platform</li>
+<li>Setting up Loom Access for Tenant Admins and Tenant Users</li>
+<li>Establishing Loom Policies for enterprise data scan</li>
+<li>Discovery and visualization</li>
+</ul>
+<p>Each Loom deployment comes with a default Loom UI component.</p>
+<p>This section describes:</p>
+<ul class="simple">
+<li>Interaction with the Loom product.</li>
+<li>Key Loom UI Paradigms.</li>
+<li>The Loom Dashboard.</li>
+<li>Navigation across different user applications deployed along with Loom through the Application Manager User Interface.</li>
+</ul>
+<p>This section also highlights Loom Administration actions such as:</p>
+<ul class="simple">
+<li>User Management</li>
+<li>Administering Multi Tenancy aspects</li>
+<li>Securing access with keys</li>
+</ul>
+<p>You will also find how to:
+* Connect various data sources to gain visibility into enterprise data assets and classify them based on policies.</p>
+<ul class="simple">
+<li>Set up, create, and publish enterprise wide data access policies.</li>
+<li>Schedule jobs for data classification, policy enforcement, troubleshooting.</li>
+<li>Monitor health of a specific Loom deployment instance.</li>
+</ul>
+<div class="contents local topic" id="id2">
+<ul class="simple">
+<li><a class="reference internal" href="#loom-ui" id="id75">Loom UI</a></li>
+<li><a class="reference internal" href="#loom-dashboard" id="id76">Loom Dashboard</a></li>
+<li><a class="reference internal" href="#loom-workflows" id="id77">Loom Workflows</a></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="loom-ui">
+<h3><a class="toc-backref" href="#id75">Loom UI</a><a class="headerlink" href="#loom-ui" title="Permalink to this headline">¶</a></h3>
+<p>Once the Loom UI is launched, you are directed to the login page as shown below.</p>
+<div class="figure align-center" id="id15">
+<a class="reference internal image-reference" href="_images/Loom-login-start.png"><img alt="LoomLogin" src="_images/Loom-login-start.png" style="width: 687.5px; height: 406.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Loom Login</span></p>
+</div>
+<p id="id3">After providing valid credentials the Loom UI is shown which can be divided into the following sections:</p>
+<div class="contents local topic" id="id4">
+<ul class="simple">
+<li><a class="reference internal" href="#title-bar" id="id78">Title Bar</a></li>
+<li><a class="reference internal" href="#navigation-bar" id="id79">Navigation Bar</a></li>
+<li><a class="reference internal" href="#main-display" id="id80">Main Display</a></li>
+</ul>
+</div>
+<div class="section" id="title-bar">
+<h4><a class="toc-backref" href="#id78">Title Bar</a><a class="headerlink" href="#title-bar" title="Permalink to this headline">¶</a></h4>
+<p>The Title bar appears on the top of the Dashboard.  Besides the product logo and name it provides link to Help Topics and Logout options. It also provides option to change or update the user password.</p>
+<div class="figure align-center" id="id16">
+<a class="reference internal image-reference" href="_images/Loom-change-pwd.png"><img alt="LoomDashboard2" src="_images/Loom-change-pwd.png" style="width: 158.0px; height: 121.5px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Changing User Password</span></p>
+</div>
+</div>
+<div class="section" id="navigation-bar">
+<h4><a class="toc-backref" href="#id79">Navigation Bar</a><a class="headerlink" href="#navigation-bar" title="Permalink to this headline">¶</a></h4>
+<p>The Navigation bar appears on the left hand side of the main Loom Dashboard. Depending upon the Loom user privileges and role or persona, the items shown in the navigation bar may vary.  For example, in case of Partner Admin role, the navigation bar shows links to Dashboard, Loom Applications available in the current deployment, various organizations or tenants (customers) that have subscribed this particular deployment and Loom deployment health status and monitoring.  Other than Partner Admin, the Organization link may not appear for other users to ensure that users of one organization cannot see who else is the tenant on the same platform.  Loom has multi-tenancy built in from ground up in its architecture.</p>
+<div class="figure align-center" id="id17">
+<a class="reference internal image-reference" href="_images/LoomUI_LeftNav.png"><img alt="LoomUILeftNavigationBar" src="_images/LoomUI_LeftNav.png" style="width: 297.0px; height: 712.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Navigation Bar</span></p>
+</div>
+</div>
+<div class="section" id="main-display">
+<h4><a class="toc-backref" href="#id80">Main Display</a><a class="headerlink" href="#main-display" title="Permalink to this headline">¶</a></h4>
+<p>On the right hand side of the navigation bar, you can see the main display area. Depending upon the user privilege and context set via the navigation bar - it can display various kinds of information and results of user actions.</p>
+<div class="figure align-center" id="id18">
+<a class="reference internal image-reference" href="_images/LoomUI_MainDisplay.png"><img alt="LoomUIMainDisplayArea" src="_images/LoomUI_MainDisplay.png" style="width: 1680.0px; height: 718.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Main Display Area Showing Context Sensitive Information</span></p>
+</div>
+<p>TBD - Following content needs to be updated in Beta docs.</p>
+<ul class="simple">
+<li>How to begin using the basic interface and what actions can be performed by various Loom <a class="reference internal" href="mcdmp_concepts.html#content-loom-roles"><span class="std std-ref">Loom Roles</span></a>.</li>
+</ul>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="loom-dashboard">
+<h3><a class="toc-backref" href="#id76">Loom Dashboard</a><a class="headerlink" href="#loom-dashboard" title="Permalink to this headline">¶</a></h3>
+<p>Once you log into Loom, you can see the main Loom Dashboard. The control center of Loom is its Dashboard.  You can monitor, manage, and gain insights from the enterprise content repositories. If you have an administrative role, you can create and manage user accounts and access rights based on enterprise policies.  Based on your user persona, the Loom Dashboard offers varying controls. For example, a Loom User may not be able to see the content sources or manage them. However a Loom Platform Admin or Tenant Admin may have access to those features.</p>
+<div class="contents local topic" id="id5">
+<span id="loom-dashboard-ui"></span><ul class="simple">
+<li><a class="reference internal" href="#summary-bar" id="id81">Summary Bar</a></li>
+<li><a class="reference internal" href="#asset-map" id="id82">Asset Map</a></li>
+<li><a class="reference internal" href="#widgets" id="id83">Widgets</a></li>
+<li><a class="reference internal" href="#loom-health-dashboard" id="id84">Loom Health Dashboard</a></li>
+<li><a class="reference internal" href="#organizations" id="id85">Organizations</a></li>
+<li><a class="reference internal" href="#loom-applications" id="id86">Loom Applications</a></li>
+<li><a class="reference internal" href="#application-chooser-or-application-switcher" id="id87">Application Chooser or Application Switcher</a></li>
+<li><a class="reference internal" href="#loom-sidebar" id="id88">Loom Sidebar</a></li>
+<li><a class="reference internal" href="#multi-tenancy" id="id89">Multi Tenancy</a></li>
+<li><a class="reference internal" href="#role-based-access-control" id="id90">Role Based Access Control</a></li>
+<li><a class="reference internal" href="#access-management" id="id91">Access Management</a></li>
+<li><a class="reference internal" href="#setting-up-loom-credentials" id="id92">Setting up Loom Credentials</a></li>
+<li><a class="reference internal" href="#data-plane-orchestration" id="id93">Data Plane Orchestration</a></li>
+<li><a class="reference internal" href="#connector-framework" id="id94">Connector Framework</a></li>
+<li><a class="reference internal" href="#loom-data-sources" id="id95">Loom Data Sources</a></li>
+<li><a class="reference internal" href="#application-management" id="id96">Application Management</a></li>
+<li><a class="reference internal" href="#policy-management" id="id97">Policy Management</a></li>
+<li><a class="reference internal" href="#data-management-job-scheduling" id="id98">Data Management Job Scheduling</a></li>
+<li><a class="reference internal" href="#audit-logging" id="id99">Audit Logging</a></li>
+<li><a class="reference internal" href="#troubleshooting-loom-user-interface" id="id100">Troubleshooting Loom User Interface</a></li>
+<li><a class="reference internal" href="#error-messages" id="id101">Error Messages</a></li>
+<li><a class="reference internal" href="#related-information" id="id102">Related Information</a></li>
+</ul>
+</div>
+<div class="section" id="summary-bar">
+<h4><a class="toc-backref" href="#id81">Summary Bar</a><a class="headerlink" href="#summary-bar" title="Permalink to this headline">¶</a></h4>
+<p>The summary bar shows the number of jobs, content sources, users, tenants, applications, or connectors based on the logged-on user role.</p>
+<div class="figure align-center" id="id19">
+<a class="reference internal image-reference" href="_images/Dashboard_SummaryBar.png"><img alt="LoomDashbaordSummaryBar" src="_images/Dashboard_SummaryBar.png" style="width: 1366.0px; height: 137.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Dashboard Summary Bar</span></p>
+</div>
+<p>The table below shows details each type of user role can view in the summary bar.</p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="33%" />
+<col width="6%" />
+<col width="7%" />
+<col width="9%" />
+<col width="15%" />
+<col width="13%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">As a…</th>
+<th class="head" colspan="6">You can view the number of…</th>
+</tr>
+<tr class="row-even"><th class="head">&#160;</th>
+<th class="head">Content Sources</th>
+<th class="head">Jobs</th>
+<th class="head">Users</th>
+<th class="head">Tenants</th>
+<th class="head">Applications</th>
+<th class="head">Connectors</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-odd"><td>Platform Admin</td>
+<td>N</td>
+<td>N</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="row-even"><td>Partner Admin</td>
+<td>N</td>
+<td>N</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="row-odd"><td>Customer Admin</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="row-even"><td>Tenant Admin</td>
+<td>N</td>
+<td>N</td>
+<td>Y</td>
+<td>Y</td>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr class="row-odd"><td>Tenant User</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="asset-map">
+<h4><a class="toc-backref" href="#id82">Asset Map</a><a class="headerlink" href="#asset-map" title="Permalink to this headline">¶</a></h4>
+<p>The <strong>Asset Map</strong> shows the locations of <strong>Control Plane</strong>, <strong>Data Engine</strong> (Cloud/On Premise), or Content Sources by marking them on the world map. You can filter the markers on the map by selecting a type of asset from the right-side panel. You can zoom-in, zoom-out, or reset the map using the controls in the bottom-left corner of the <strong>Asset Map</strong>.</p>
+<div class="figure align-center" id="id20">
+<a class="reference internal image-reference" href="_images/Dashboard_Asset_Map.png"><img alt="LoomDashbaordAssetMap" src="_images/Dashboard_Asset_Map.png" style="width: 1348.0px; height: 481.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Dashboard Asset Map</span></p>
+</div>
+<p>The table below describes the details seen in the map based on the logged-on user role.</p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="40%" />
+<col width="17%" />
+<col width="16%" />
+<col width="14%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">As a…</th>
+<th class="head" colspan="4">You can view the counts and the locations of…</th>
+</tr>
+<tr class="row-even"><th class="head">&#160;</th>
+<th class="head">Control Plane</th>
+<th class="head">OnPrem Data Engine</th>
+<th class="head">Cloud Data Engine</th>
+<th class="head">Content Sources</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-odd"><td>Platform Admin</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>N</td>
+</tr>
+<tr class="row-even"><td>Partner Admin</td>
+<td>Y</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr class="row-odd"><td>Customer Admin</td>
+<td>Y</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr class="row-even"><td>Tenant Admin</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="row-odd"><td>Tenant User</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="widgets">
+<h4><a class="toc-backref" href="#id83">Widgets</a><a class="headerlink" href="#widgets" title="Permalink to this headline">¶</a></h4>
+<p>Below the <strong>Asset Map</strong> in the <strong>Dashboard</strong>, you can see a set of widgets based on the role you have logged-on as.</p>
+<blockquote>
+<div><blockquote>
+<div><ul class="simple">
+<li><strong>Platform Health</strong>: The chart shows the health of each <strong>Data Engine</strong>. The inner pie shows the overall aggregated health of the <strong>Data Engine</strong> and the outer pie shows the health of each service in the <strong>Data Engine</strong>.</li>
+</ul>
+<div class="figure align-center" id="id21">
+<a class="reference internal image-reference" href="_images/Dashboard_Platform_Health.png"><img alt="LoomDashbaordPlatformHealth" src="_images/Dashboard_Platform_Health.png" style="width: 423.0px; height: 509.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Platform Health</span></p>
+</div>
+<ul class="simple">
+<li><strong>Organization</strong>: The summary bar on the top shows the total number of <strong>Partners</strong>, <strong>Customers</strong>, <strong>Tenants</strong> and <strong>Users</strong> in the deployment. The pie charts below show the Tenant capacity (number of tenants onboarded) and the number of logged in users.</li>
+</ul>
+<div class="figure align-center" id="id22">
+<a class="reference internal image-reference" href="_images/Dashboard_Organization.png"><img alt="LoomDashbaordOrganization" src="_images/Dashboard_Organization.png" style="width: 420.0px; height: 456.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Organization</span></p>
+</div>
+<ul class="simple">
+<li><strong>Application Users</strong>: The bar chart shows the number of users by application type usage on the system.</li>
+</ul>
+<div class="figure align-center" id="id23">
+<a class="reference internal image-reference" href="_images/Dashboard_Application_Users.png"><img alt="LoomDashbaordApplicationUsers" src="_images/Dashboard_Application_Users.png" style="width: 406.0px; height: 448.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Application Users</span></p>
+</div>
+<ul class="simple">
+<li><strong>Job Types</strong>: The bar chart shows the total number of jobs by the type of job created in the system.</li>
+</ul>
+<div class="figure align-center" id="id24">
+<a class="reference internal image-reference" href="_images/Dashboard_Job_Types.png"><img alt="LoomDashbaordJobTypes" src="_images/Dashboard_Job_Types.png" style="width: 413.0px; height: 469.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Job Types</span></p>
+</div>
+<ul class="simple">
+<li><strong>Recent Active Jobs</strong>: The table shows the details of the recent jobs in active state.</li>
+</ul>
+<div class="figure align-center" id="id25">
+<a class="reference internal image-reference" href="_images/Dashboard_Recent_Active_Jobs.png"><img alt="LoomDashbaordRecentActiveJobs" src="_images/Dashboard_Recent_Active_Jobs.png" style="width: 417.0px; height: 422.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Recent Active Jobs</span></p>
+</div>
+<ul class="simple">
+<li><strong>Connectors by Location</strong>: The widget shows the various connectors supported grouped by location(on-premise or cloud).</li>
+</ul>
+<div class="figure align-center" id="id26">
+<a class="reference internal image-reference" href="_images/Dashboard_Connectors_By_Location.png"><img alt="LoomDashbaordConnectorsByLocation" src="_images/Dashboard_Connectors_By_Location.png" style="width: 884.0px; height: 461.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Connectors By Location</span></p>
+</div>
+<ul class="simple">
+<li><strong>Connectors by Type</strong>: The widget shows the list of connectors grouped by type(structured, semi-structured and unstructured)</li>
+</ul>
+<div class="figure align-center" id="id27">
+<a class="reference internal image-reference" href="_images/Dashboard_Connectors_By_Type.png"><img alt="LoomDashbaordConnectorsByType" src="_images/Dashboard_Connectors_By_Type.png" style="width: 420.0px; height: 457.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Connectors By Type</span></p>
+</div>
+</div></blockquote>
+<dl class="docutils">
+<dt>The table below shows the widgets each type of user can see.</dt>
+<dd><table border="1" class="first last docutils">
+<colgroup>
+<col width="9%" />
+<col width="28%" />
+<col width="9%" />
+<col width="11%" />
+<col width="6%" />
+<col width="11%" />
+<col width="11%" />
+<col width="14%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">As a…</th>
+<th class="head" colspan="7">You can view the counts and the locations of…</th>
+</tr>
+<tr class="row-even"><th class="head">&#160;</th>
+<th class="head">Platform Health</th>
+<th class="head">Organizations</th>
+<th class="head">Application Users</th>
+<th class="head">Job Types</th>
+<th class="head">Recent Active Jobs</th>
+<th class="head">Connectors by Type</th>
+<th class="head">Connectors by Location</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-odd"><td>Platform Admin</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>N</td>
+<td>N</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="row-even"><td>Partner Admin</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>N</td>
+<td>N</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="row-odd"><td>Customer Admin</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="row-even"><td>Tenant Admin</td>
+<td>Y</td>
+<td>N</td>
+<td>N</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="row-odd"><td>Tenant User</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+</tr>
+</tbody>
+</table>
+</dd>
+</dl>
+</div></blockquote>
+</div>
+<hr class="docutils" />
+<div class="section" id="loom-health-dashboard">
+<h4><a class="toc-backref" href="#id84">Loom Health Dashboard</a><a class="headerlink" href="#loom-health-dashboard" title="Permalink to this headline">¶</a></h4>
+<p>Following figure shows a representative image highlighting the health statistics of a typical Loom deployment.  This view is available to Partner and Tenant Admin (only? Check with UI dev and Loom Architects - TBD)</p>
+<div class="figure align-center" id="id28">
+<a class="reference internal image-reference" href="_images/loom-health-dashboard.png"><img alt="LoomHealthDashboard" src="_images/loom-health-dashboard.png" style="width: 680.5px; height: 400.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Loom Health Dashboard</span></p>
+</div>
+<p>It shows metrics related to Loom Infrastructure and Loom Services.  The Infrastructure Tab shows the following metrics:</p>
+<ul class="simple">
+<li>Status of Kubernetes Cluster</li>
+<li>Operating System used</li>
+<li>OS Version</li>
+<li>IP of the Loom Deployment</li>
+<li>Compute resources usage details and charts: CPU, Memory, Disk I/O</li>
+<li>Pictorial representation of Loom Infrastructure</li>
+</ul>
+<p>The Services tab shows… (TBD)</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="organizations">
+<h4><a class="toc-backref" href="#id85">Organizations</a><a class="headerlink" href="#organizations" title="Permalink to this headline">¶</a></h4>
+<p>This section needs to be updated for Loom UI Navigation panel entry titled ‘Organizations’. We need to highlight what an organization means in Loom context.  Is this entry viewable by only Platform Admin, Partner Admin or can this also be viewed by Tenant Admin? This needs to be highlighted.</p>
+<p>Any other Loom User actions related to Loom Usage or configuration needs to be explained as well.</p>
+<p>TBD - Need Ninad’s help in filling in more insights about what shows up when a user clicks on Organization , what the Admin is supposed to do with the information
+shown against Organizations, actions - such as add/delete/modify organizations etc.</p>
+<p>For a conceptual definition of what Organization means in Loom context - see <a class="reference internal" href="mcdmp_concepts.html#term-organizations"><span class="std std-ref">Loom Organizations</span></a>.</p>
+<div class="figure align-center" id="id29">
+<a class="reference internal image-reference" href="_images/loom-organizations.png"><img alt="LoomOrg" src="_images/loom-organizations.png" style="width: 568.5px; height: 400.5px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Loom Organizations Navigation</span></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="loom-applications">
+<h4><a class="toc-backref" href="#id86">Loom Applications</a><a class="headerlink" href="#loom-applications" title="Permalink to this headline">¶</a></h4>
+<p>Besides the Loom UI, which is an in-built application, there may be additional Loom Applications deployed within an enterprise.  Visibility &amp; Classification is one such application.  The other is GDPR Application.  These applications help to render your unstructured data in visual context and guides you towards unbiased, information-governance decision-making. These additional applications show up in the top part of Application Switcher or Application Chooser.  For details on their user interface and how to use these applications, refer to their respective user guides.</p>
+<p>For details refer to the App specific User Guides <a class="reference internal" href="mcdmp_app_ug.html#app-user-guides"><span class="std std-ref">Loom App User Guides</span></a></p>
+<div class="figure align-center" id="id30">
+<a class="reference internal image-reference" href="_images/LoomUI_ApplicationUserInterface.png"><img alt="LoomOrg" src="_images/LoomUI_ApplicationUserInterface.png" style="width: 600.0px; height: 285.75px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Loom Application Interface shows applications deployed on Loom Platform</span></p>
+</div>
+<hr class="docutils" />
+</div>
+<div class="section" id="application-chooser-or-application-switcher">
+<span id="gsg-loom-app-switcher"></span><h4><a class="toc-backref" href="#id87">Application Chooser or Application Switcher</a><a class="headerlink" href="#application-chooser-or-application-switcher" title="Permalink to this headline">¶</a></h4>
+<div class="figure align-center" id="id31">
+<a class="reference internal image-reference" href="_images/mcdmp_app_switcher.png"><img alt="AppSwitcher" src="_images/mcdmp_app_switcher.png" style="width: 303.0px; height: 821.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Loom UI Application Chooser or Switcher</span></p>
+</div>
+<p>Application Chooser or Switcher is a Loom UI component that facilitates navigating between the Loom itself and various applications that are deployed on it. Refer to the figure depicting Application Chooser above that shows a list of applications installed on top, followed by the pages on the Loom UI and recent links the user has visited. The Application Chooser is presented as a sidebar that floats in the same space used by the maximized side navigation area in Loom UI.</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="loom-sidebar">
+<span id="gsg-loom-sidebar"></span><h4><a class="toc-backref" href="#id88">Loom Sidebar</a><a class="headerlink" href="#loom-sidebar" title="Permalink to this headline">¶</a></h4>
+<div class="figure align-center" id="id32">
+<a class="reference internal image-reference" href="_images/loom_sidebar.png"><img alt="LoomSidebar" src="_images/loom_sidebar.png" style="width: 304.0px; height: 344.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Loom UI Sidebar</span></p>
+</div>
+<p>The side navigation is a framework for displaying components within the sidebar area. Implementors can build their own components and/or configure and utilizes the provided components for displaying a formatted hierarchy of links within an application. The components are displayed in a column (displayed using css flex) in the configured order. The sidebar can be in a maximized (300px wide) or minimized (60px wide) state.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="multi-tenancy">
+<h4><a class="toc-backref" href="#id89">Multi Tenancy</a><a class="headerlink" href="#multi-tenancy" title="Permalink to this headline">¶</a></h4>
+<p>Multi-tenancy means that a single instance of the Loom software and all of the supporting infrastructure serves multiple customers. Veritas Loom architecture is geared for multi-tenancy, high availability and scale. Data Protection and secure data access is supported at all levels within the Loom service ecosystem.</p>
+<p>The Alpha2 version of Loom supports Cloud-based deployment (Azure) only.  Multi-tenancy in this case refers to a SaaS deployment of Loom that can be configured and setup to be used by multiple tenants.  Each tenant has access to only the Loom resources and data that belongs to them.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="role-based-access-control">
+<h4><a class="toc-backref" href="#id90">Role Based Access Control</a><a class="headerlink" href="#role-based-access-control" title="Permalink to this headline">¶</a></h4>
+<p>Loom supports multi-tenancy. What this means is if there are several customers using the same Loom deployment, their data is secure and not-visible to any other tenant.  In terms of performance and SLAs too, the Loom architecture is built ground up to ensure multiple tenants can co-exist and the entire system can be scaled easily through its micro-services and container models.</p>
+<p>Loom users can have different types of roles.  For details refer to <a class="reference internal" href="mcdmp_concepts.html#content-loom-roles"><span class="std std-ref">Loom Roles</span></a> section in Loom Concepts and Usage Guide. Depending upon their assigned role, Loom users can perform various actions listed <a class="reference internal" href="#content-tab-loom-user-actions"><span class="std std-ref">here</span></a></p>
+</div>
+<div class="section" id="access-management">
+<span id="content-user-mngt"></span><h4><a class="toc-backref" href="#id91">Access Management</a><a class="headerlink" href="#access-management" title="Permalink to this headline">¶</a></h4>
+<div class="contents local topic" id="id6">
+<ul class="simple">
+<li><a class="reference internal" href="#about-the-loom-user-roles" id="id103">About the Loom User Roles</a></li>
+<li><a class="reference internal" href="#role-privileges-of-loom-users" id="id104">Role Privileges of Loom Users</a></li>
+<li><a class="reference internal" href="#granting-access-to-loom-users" id="id105">Granting Access to Loom Users</a></li>
+<li><a class="reference internal" href="#adding-a-customer-account" id="id106">Adding a Customer Account</a></li>
+<li><a class="reference internal" href="#loom-tenant-management" id="id107">Loom Tenant Management</a></li>
+</ul>
+</div>
+<div class="section" id="about-the-loom-user-roles">
+<h5><a class="toc-backref" href="#id103">About the Loom User Roles</a><a class="headerlink" href="#about-the-loom-user-roles" title="Permalink to this headline">¶</a></h5>
+<p>Roles specify access privileges to the Loom platform and its applications. Roles control who has access to your data on the Loom platform and the level of access they have. Loom supports multi-tenancy. This means one tenant cannot view the data of other tenants. The Loom platform allows access to users only on a need-to-know basis. For example, platform admin users cannot view or manage customer or tenant level users.</p>
+<p>The Loom platform provides five types of user roles:</p>
+<ul class="simple">
+<li>Loom Admin</li>
+<li>Partner Admin</li>
+<li>Customer Admin</li>
+<li>Tenant Admin</li>
+<li>Tenant User</li>
+</ul>
+<p>Depending on the kind of Loom deployment, one or more roles may not be available. For example, in case of Loom Alpha2, only Azure based Loom SaaS deployment is supported. In this case, only Customer Admin, Tenant Admin and Tenant User roles exist.</p>
+<p>The Loom administration role is split into several entities as appropriate for a deployment type and enterprise requirements for information management. In case of Cloud based SaaS deployment (for e.g. Azure), Veritas or its Partner would set up the SaaS infrastructure to deploy and bootstrap core components of Loom. This role is referred to as Loom Admin. A Loom admin may also have a partner admin if the SaaS provider is adding more customers instead of going via other partners. The Customer Admin role represents an organization or enterprise. This role is tasked with creation and deletion of tenants, Tenant Admins, and Tenant Users.</p>
+<p>The Tenant Administrators are in charge of bringing up their organization specific on-premises Data Engines. These Data Engines are set up to use the Veritas Data Connector framework that binds various enterprise data sources (CIFS, NFS, Box, others ) to the Loom deployment in the context of an organization and enables the end users to access, visualize and govern enterprise data assets. The Tenant Admin could further delegate the Data Source bindings to a Storage or IT Admin within their organizations by creating additional users with Tenant Admin privileges. Besides the Storage, the Tenant Admin also manage the Loom Applications such as 360 Data Analysis, GDPR (not available in Alpha1) and others that are deployed as part of Loom subscription. The Tenant Admin is entrusted with creation and deletion of Tenant user accounts for their organization and setting up policies related to data access, classification and visibility which are applicable enterprise wide.</p>
+<div class="section" id="loom-admin">
+<h6>Loom Admin<a class="headerlink" href="#loom-admin" title="Permalink to this headline">¶</a></h6>
+<p>Special Loom user privilege, the very first Loom user responsible for deploying, setting up and administrating Loom instance. Loom Admin has privileges for creating Partner Administrators and deleting them when required.</p>
+</div>
+<div class="section" id="partner-admin">
+<h6>Partner Admin<a class="headerlink" href="#partner-admin" title="Permalink to this headline">¶</a></h6>
+<p>This roles supports Veritas Partners that may want to onboard several tenants on the Loom deployment. For example, a MSP or Cloud Provider could be a Veritas Partner. A Partner Admin can create one or more Tenant Admin users as needed.</p>
+</div>
+<div class="section" id="customer-admin">
+<h6>Customer Admin<a class="headerlink" href="#customer-admin" title="Permalink to this headline">¶</a></h6>
+<p>As part of Loom trial subscription, each organization gets its own Loom Account which has Customer Admin privileges. This role is assigned with user management for the enterprise. Customer Admins can create Tenant Admins for two key functions - Tenant User Management and to deploy organization specific Loom Applications. Not all organizations may use the same set of applications.</p>
+</div>
+<div class="section" id="tenant-admin">
+<h6>Tenant Admin<a class="headerlink" href="#tenant-admin" title="Permalink to this headline">¶</a></h6>
+<p>Delegated, specialized role, created by Customer Admin during the initial stages of onboarding Loom. It has privileges to create Tenant users and perform other administrator tasks in the context of a Tenant such as IT or Storage administrator who binds enterprise data assets to the Loom Data Plane through credential/ access rights. The Tenant Admin can create end users for only their organization. Another function performed by Tenant Admin is defining and setting up enterprise / customer policies for data scans, classification, access and regulatory compliance. This feature may not be fully supported in Loom Alpha1 release.</p>
+</div>
+<div class="section" id="tenant-users">
+<h6>Tenant Users<a class="headerlink" href="#tenant-users" title="Permalink to this headline">¶</a></h6>
+<p>These are typical Loom end user accounts belonging to a particular organization that are responsible for enterprise information governance. These users will carry out various tasks on the system including monitoring enterprise data assets, exporting required data out of Loom for conducting legal inquiry, retrieving data access or data trail reports, and so on.</p>
+<div class="figure align-center" id="id33">
+<a class="reference internal image-reference" href="_images/5-user-personas.png"><img alt="LoomUserPersonaRoles" src="_images/5-user-personas.png" style="width: 525.0px; height: 368.25px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Loom Roles and User Personas</span></p>
+</div>
+</div>
+</div>
+<div class="section" id="role-privileges-of-loom-users">
+<h5><a class="toc-backref" href="#id104">Role Privileges of Loom Users</a><a class="headerlink" href="#role-privileges-of-loom-users" title="Permalink to this headline">¶</a></h5>
+<p>Depending upon their assigned role, Loom Admin users can add or assign other roles as well as perform various actions summarized in the following two tables. For example, a Loom Admin can add other Partner Admins, Customer Admin, and Tenant Admin roles. However, a Customer Admin can only add other Tenant Admins and Tenant Users.</p>
+<table border="1" class="longtable docutils" id="id34">
+<caption><span class="caption-text">Table: Loom User Role Permissions</span><a class="headerlink" href="#id34" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="19%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="15%" />
+<col width="16%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td rowspan="2">As a…</td>
+<td colspan="5">You can create…</td>
+</tr>
+<tr class="row-even"><td>Platform Admin</td>
+<td>Partner Admin</td>
+<td>Customer Admin</td>
+<td>Tenant Admin</td>
+<td>Tenant User</td>
+</tr>
+<tr class="row-odd"><td>Platform Admin</td>
+<td>✕</td>
+<td>✔</td>
+<td>✔</td>
+<td>✕</td>
+<td>✕</td>
+</tr>
+<tr class="row-even"><td>Partner Admin</td>
+<td>✕</td>
+<td>✔</td>
+<td>✔</td>
+<td>?</td>
+<td>?</td>
+</tr>
+<tr class="row-odd"><td>Customer Admin</td>
+<td>✕</td>
+<td>✕</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+</tr>
+<tr class="row-even"><td>Tenant Admin</td>
+<td>✕</td>
+<td>✕</td>
+<td>✕</td>
+<td>✔</td>
+<td>✔</td>
+</tr>
+<tr class="row-odd"><td>Tenant User</td>
+<td>✕</td>
+<td>✕</td>
+<td>✕</td>
+<td>✕</td>
+<td>✕</td>
+</tr>
+</tbody>
+</table>
+<span id="content-tab-loom-user-actions"></span><table border="1" class="longtable docutils" id="id35">
+<caption><span class="caption-text">Table: Actions performed by Loom Users</span><a class="headerlink" href="#id35" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="72%" />
+<col width="28%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>User Management Action</strong></td>
+<td><strong>Loom Role</strong></td>
+</tr>
+<tr class="row-even"><td>Loom Deployment (not supported in Alpha1 Release)</td>
+<td>Loom Admin</td>
+</tr>
+<tr class="row-odd"><td>Managed Loom Deployment (Alpha1 not supported)</td>
+<td>Partner Admin</td>
+</tr>
+<tr class="row-even"><td>Creation of Customer Admin for each tenant
+Organization</td>
+<td>Loom Admin,
+Partner Admin</td>
+</tr>
+<tr class="row-odd"><td>Creation of Tenant Admin for user management within
+an enterprise for Loom usage</td>
+<td>Customer Admin</td>
+</tr>
+<tr class="row-even"><td>Creation of tenant users (end users) for the
+Organization</td>
+<td>Tenant Admin</td>
+</tr>
+<tr class="row-odd"><td>Setting up of on-premise Data Engine to plug in
+enterprise on-premise data sources through the
+Loom Connector Framework component</td>
+<td>Tenant Admin</td>
+</tr>
+<tr class="row-even"><td>Deploying organization specific Loom Applications
+for data analysis and governance</td>
+<td>Tenant Admin</td>
+</tr>
+<tr class="row-odd"><td>Setting up organization specific policies for data
+access, classification scans, filtering etc.</td>
+<td>Tenant Admin</td>
+</tr>
+<tr class="row-even"><td>Login and use Loom Dashboard and other data analysis
+features for information governance</td>
+<td>Tenant Users</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="granting-access-to-loom-users">
+<h5><a class="toc-backref" href="#id105">Granting Access to Loom Users</a><a class="headerlink" href="#granting-access-to-loom-users" title="Permalink to this headline">¶</a></h5>
+<p>You can create users with roles based on your role in the hierarchical order. For example, a Platform Admin can add a Partner Admin or a Customer Admin or a Customer admin can only add a Tenant Admin.</p>
+<p>The procedure for adding admin/user and assigning a role remains the same, except for the role of the logged-on user assigning the role.</p>
+<div class="section" id="to-add-a-user">
+<h6>To add a user<a class="headerlink" href="#to-add-a-user" title="Permalink to this headline">¶</a></h6>
+<ol class="arabic">
+<li><p class="first">In the navigation pane on the left, click <strong>Organisations &gt; Users.</strong></p>
+</li>
+<li><p class="first">In the Users pane, select <strong>Partner Admin</strong> or <strong>Customer Admin</strong> or <strong>Tenant Admin</strong>, or <strong>Tenant User.</strong></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The roles available for assignment depend on role of the logged-on user.</p>
+</div>
+<ul class="simple">
+<li>Click <strong>Add</strong> to open the <strong>Add User</strong> dialog box.</li>
+<li>Enter a <strong>First Name</strong>, <strong>Last Name</strong>, and <em>Email Id*</em> in the respective fields.</li>
+<li>From the <strong>Role</strong> drop-down, select a role (<strong>Partner Admin</strong> or <strong>Customer Admin</strong> or <strong>Tenant Admin</strong> or <strong>Tenant User</strong>), then click <strong>Save</strong> to save and add the user details.</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="adding-a-customer-account">
+<h5><a class="toc-backref" href="#id106">Adding a Customer Account</a><a class="headerlink" href="#adding-a-customer-account" title="Permalink to this headline">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must be logged on as Partner Admin to add customer accounts.</p>
+</div>
+<div class="section" id="to-add-a-customer-account">
+<h6>To add a customer account<a class="headerlink" href="#to-add-a-customer-account" title="Permalink to this headline">¶</a></h6>
+<ol class="arabic">
+<li><p class="first">Access <strong>Organizations &gt; Customers</strong> from the navigation pane on the left to add customers.</p>
+</li>
+<li><p class="first">Click <strong>Add</strong> to open the Add Customer Account dialog box.</p>
+</li>
+<li><p class="first">Enter the following details for the new customer account.
+* <strong>Account Name</strong>
+* <strong>Billing ID</strong></p>
+</li>
+<li><p class="first">Enter the following details for the administrator.
+* <strong>First Name</strong>
+* <strong>Last Name</strong>
+* <strong>Email</strong></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <strong>Tenant Name</strong> is populated by default based on the entry in the First Name field.</p>
+</div>
+</li>
+<li><p class="first">Click <strong>Next</strong>.</p>
+</li>
+<li><p class="first">Turn on the applications for the current customer account using the toggle button.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">For Alpha2, <strong>360 Data Analysis</strong> is the only available application and is selected by default.</p>
+</div>
+</li>
+<li><p class="first">Click <strong>Save</strong> to save the newly created customer account.</p>
+</li>
+</ol>
+<p>The newly created customer administrator receives an email to update the password for logging into Loom as the Customer Admin.</p>
+<div class="figure align-center" id="id36">
+<a class="reference internal image-reference" href="_images/Add_Customer.png"><img alt="LoomAddCustomer" src="_images/Add_Customer.png" style="width: 600.0px; height: 518.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Adding a Loom Customer</span></p>
+</div>
+<div class="figure align-center" id="id37">
+<a class="reference internal image-reference" href="_images/Add_Customer_2.png"><img alt="LoomSelectApp" src="_images/Add_Customer_2.png" style="width: 600.0px; height: 518.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Selecting a Loom Application</span></p>
+</div>
+<div class="figure align-center" id="id38">
+<a class="reference internal image-reference" href="_images/Add_Customer_3.png"><img alt="LoomNewCustNotif" src="_images/Add_Customer_3.png" style="width: 600.0px; height: 200.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: New customer creation notification</span></p>
+</div>
+</div>
+</div>
+<div class="section" id="loom-tenant-management">
+<h5><a class="toc-backref" href="#id107">Loom Tenant Management</a><a class="headerlink" href="#loom-tenant-management" title="Permalink to this headline">¶</a></h5>
+<p>This section describes how the Customer Admin can add, delete or modify Loom Tenants</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must be logged on as Customer Admin to add and delete tenants and users.</p>
+</div>
+<div class="section" id="to-add-tenants">
+<h6>To add tenants<a class="headerlink" href="#to-add-tenants" title="Permalink to this headline">¶</a></h6>
+<ol class="arabic simple">
+<li>Access <strong>Organizations &gt; Tenants</strong> from the navigation pane on the left to add tenants.</li>
+<li>Click <strong>Add</strong> to open the <strong>Add Tenant Account</strong> dialog box.</li>
+<li>Enter the following details for the new tenant account.
+* <strong>Account Name</strong>
+* <strong>Billing ID</strong></li>
+<li>Enter the following details for the administrator.
+* <strong>First Name</strong>
+* <strong>Last Name</strong>
+* <strong>Email</strong></li>
+<li>Click <strong>Save.</strong></li>
+</ol>
+<p>The newly created tenant administrator receives an email to update the password for logging into Loom as the Tenant Admin.</p>
+<div class="figure align-center" id="id39">
+<a class="reference internal image-reference" href="_images/Add_Tenant.png"><img alt="LoomNewTenant" src="_images/Add_Tenant.png" style="width: 600.0px; height: 513.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Adding a new tenant</span></p>
+</div>
+</div>
+<div class="section" id="to-delete-tenants">
+<h6>To delete tenants<a class="headerlink" href="#to-delete-tenants" title="Permalink to this headline">¶</a></h6>
+<ol class="arabic simple">
+<li>Access <strong>Organizations -&gt; Tenants</strong> from the navigation pane on the left to delete tenants.</li>
+<li>Select a tenant from the listed tenants, and click the <strong>Delete</strong> icon.</li>
+<li>Click <strong>Yes</strong> to confirm deleting the selected tenant account.</li>
+</ol>
+<div class="figure align-center" id="id40">
+<a class="reference internal image-reference" href="_images/Delete_Tenant.png"><img alt="LoomDeleteTenatnt" src="_images/Delete_Tenant.png" style="width: 457.0px; height: 215.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Deleting a Tenant account</span></p>
+</div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="setting-up-loom-credentials">
+<h4><a class="toc-backref" href="#id92">Setting up Loom Credentials</a><a class="headerlink" href="#setting-up-loom-credentials" title="Permalink to this headline">¶</a></h4>
+<p>This section is TBD. It is meant to contain details on the initial steps for Loom onboarding - the process, obtaining credentials etc.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="data-plane-orchestration">
+<h4><a class="toc-backref" href="#id93">Data Plane Orchestration</a><a class="headerlink" href="#data-plane-orchestration" title="Permalink to this headline">¶</a></h4>
+<p>Loom utilizes a Control Plane and Data Plane architecture for scalability and performance.  For details, refer to the <a class="reference internal" href="mcdmp_concepts.html#def-term-planes"><span class="std std-ref">Concept of Planes</span></a> in the <a class="reference internal" href="mcdmp_concepts.html"><span class="doc">Loom: Concepts &amp; Glossary</span></a> Guide.</p>
+<p>By default, Loom brings up its Control Plane as part of the initial bootstrapping process.  There is no customer or tenant specific Data Plane defined.  Once the Tenant Admin account is created, each tenant needs to orchestrate their Data Plane to complete the necessary plumbing required to connect up their proprietary data sources for scanning, classification and other information governance activities.</p>
+<p>This section lists the steps required to orchestrate the Data Plane:</p>
+<p>Prerequisite:</p>
+<ul class="simple">
+<li>Tenant Admin account is active</li>
+<li>Loom Control Plane is up and running (how to verify this in Dashboard? State details)</li>
+</ul>
+<p>Bootstrapping the Data Plane - Each Tenant needs to figure out where to deploy the data plane - on cloud or on premise. In the first release, Loom supports Azure based Data Plane deployment model only.</p>
+<p>Steps on how to bootstrap / orchestrate Data Plane by a Tenant Admin</p>
+<p># Step1
+# Step2
+# Step More here…</p>
+<p>Content-TBD</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="connector-framework">
+<h4><a class="toc-backref" href="#id94">Connector Framework</a><a class="headerlink" href="#connector-framework" title="Permalink to this headline">¶</a></h4>
+<p>This section will list steps required to be performed by IT DevOps  Storage Admin or the Tenant Admin to set up the Data Source Connector framework.  (Can’t all this plumbing be done by default and user asked for whatever credentials/cloud provider specific / organization access rights related inputs?)</p>
+<p>We also need to provide a list of supported Data Sources (based on CCF capability list)</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="loom-data-sources">
+<h4><a class="toc-backref" href="#id95">Loom Data Sources</a><a class="headerlink" href="#loom-data-sources" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Data Sources Types</li>
+<li>Steps on how to add Data Sources</li>
+<li>Screenshots</li>
+</ol>
+</div></blockquote>
+<p>Content-TBD</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="application-management">
+<h4><a class="toc-backref" href="#id96">Application Management</a><a class="headerlink" href="#application-management" title="Permalink to this headline">¶</a></h4>
+<p>This section will list various Loom  Application Management Actions performed by the Loom Admin, Partner Admin and the Tenant Admin.</p>
+<p>Loom comes in-built with UI Application.  Besides that there are two additional Applications that can be deployed by the Admin.  These are:</p>
+<ul class="simple">
+<li>360 Data Analytics</li>
+<li>GDPR Application</li>
+</ul>
+<p>These Loom Applications can be deployed, upgraded or deleted (in case of optional or 3rd party applications). Note that Loom UI is available by default in all Loom deployments.</p>
+<p>Following are some of the actions related to Loom Application Management that can be performed by Admin personas.</p>
+<ul class="simple">
+<li>Installation of Loom Applications</li>
+<li>Upgrading Loom Application</li>
+<li>Uninstalling Loom Application</li>
+<li>Rollback</li>
+</ul>
+<p>Currently, only Installation of Loom Application is supported via Platform UI.</p>
+<div class="contents local topic" id="id7">
+<span id="content-loom-ui-appmgr"></span><ul class="simple">
+<li><a class="reference internal" href="#installing-a-new-loom-application" id="id108">Installing a new Loom Application</a></li>
+<li><a class="reference internal" href="#uninstalling-a-loom-application" id="id109">Uninstalling a Loom Application</a></li>
+<li><a class="reference internal" href="#upgrading-loom-application" id="id110">Upgrading Loom Application</a></li>
+<li><a class="reference internal" href="#rolling-back-loom-application-upgrade" id="id111">Rolling back Loom Application Upgrade</a></li>
+</ul>
+</div>
+<div class="section" id="installing-a-new-loom-application">
+<h5><a class="toc-backref" href="#id108">Installing a new Loom Application</a><a class="headerlink" href="#installing-a-new-loom-application" title="Permalink to this headline">¶</a></h5>
+<p>Loom Platform Admin role is allowed to deploy a new Loom application on the Platform. It involves uploading a tar and zipped Application binary file.  Platform UI shows the status of the file upload.  UI and screenshots TBD.</p>
+<p>In this section, we need to provide steps required to complete this action along with screen shots.</p>
+<p>Also, we need to describe what is contained in this Application binary tgz file - complete application deployment code along with the helm charts and application-info.json.</p>
+</div>
+<div class="section" id="uninstalling-a-loom-application">
+<h5><a class="toc-backref" href="#id109">Uninstalling a Loom Application</a><a class="headerlink" href="#uninstalling-a-loom-application" title="Permalink to this headline">¶</a></h5>
+<p>TBD</p>
+</div>
+<div class="section" id="upgrading-loom-application">
+<h5><a class="toc-backref" href="#id110">Upgrading Loom Application</a><a class="headerlink" href="#upgrading-loom-application" title="Permalink to this headline">¶</a></h5>
+<p>TBD</p>
+</div>
+<div class="section" id="rolling-back-loom-application-upgrade">
+<h5><a class="toc-backref" href="#id111">Rolling back Loom Application Upgrade</a><a class="headerlink" href="#rolling-back-loom-application-upgrade" title="Permalink to this headline">¶</a></h5>
+<p>TBD</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="policy-management">
+<h4><a class="toc-backref" href="#id97">Policy Management</a><a class="headerlink" href="#policy-management" title="Permalink to this headline">¶</a></h4>
+<p>This section addresses how Loom Customers can utilize Loom Policy Feature to create enterprise policies for various business functions such as gaining visibility into enterprise wide data assets, data scan policies, data access policies and more.</p>
+<div class="contents local topic" id="id8">
+<ul class="simple">
+<li><a class="reference internal" href="#overview-of-loom-policies" id="id112">Overview of Loom Policies</a></li>
+<li><a class="reference internal" href="#creating-a-new-loom-policy" id="id113">Creating a New Loom Policy</a></li>
+<li><a class="reference internal" href="#viewing-loom-policies" id="id114">Viewing Loom Policies</a></li>
+<li><a class="reference internal" href="#managing-loom-policy" id="id115">Managing Loom Policy</a></li>
+</ul>
+</div>
+<div class="section" id="overview-of-loom-policies">
+<span id="content-loom-policy-mngt"></span><h5><a class="toc-backref" href="#id112">Overview of Loom Policies</a><a class="headerlink" href="#overview-of-loom-policies" title="Permalink to this headline">¶</a></h5>
+<p>Loom platform hosts Veritas or third-party applications which provide different capabilities, such as discovery, scan, and classification of an organization’s cloud and on-premises content sources (connectors). The Loom Policy Manager provides you a framework to create policies to help you control the behavior of an application. A policy is a collection of conditions or rules that determine the scope of the policy. A policy can specify the inclusion or exclusion rules for connectors and rules that determine the filters to be applied for before the application can execute any action. For example, you may create a policy that applies to the Box for Enterprise connector, with a rule to include or exclude all PDF files owned by users in Group A. By default, a policy applies to all configured connectors.</p>
+<p>When an application is installed on the Loom platform, it can register its own policy types representing supported actions, connectors, and assets. Applications can also provide some pre-defined policies to the policy framework. One of these pre-defined policies can be marked as default. A default policy has a default schedule and asset type. If the asset corresponding to this type gets added in the system, default policy is automatically applied.</p>
+<p>For example:</p>
+<table border="1" class="longtable colwidths-given docutils" id="id41">
+<caption><span class="caption-text">Table: Policy Type and corresponding Asset Type</span><a class="headerlink" href="#id41" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Policy Type</th>
+<th class="head">Associated with Data Asset Type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Discovery</td>
+<td>Infrastructure Assets</td>
+</tr>
+<tr class="row-odd"><td>Scan</td>
+<td>Information Container such as
+file shares, folders</td>
+</tr>
+<tr class="row-even"><td>Classification</td>
+<td>Information Containers and files</td>
+</tr>
+</tbody>
+</table>
+<p>The policy framework is tenant aware and the configured policies apply to applications subscribed to by the specific tenant. The policy framework allows you to create, edit, and publish a policy.</p>
+<p>When an application is installed on the Loom platform, it dynamically adds the type of policies it can support and some pre-defined policies corresponding to the type. Thus, with every new application, new capabilities are added to the platform along with the policies.</p>
+<p>You can author, publish and monitor all configured policies from the Policies dashboard on the Loom Platform user interface.</p>
+<div class="figure align-center" id="id42">
+<a class="reference internal image-reference" href="_images/Loom-policy-dashboard.png"><img alt="Loom Policy" src="_images/Loom-policy-dashboard.png" style="width: 900.0px; height: 431.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Loom Policy Dashboard</span></p>
+</div>
+</div>
+<div class="section" id="creating-a-new-loom-policy">
+<h5><a class="toc-backref" href="#id113">Creating a New Loom Policy</a><a class="headerlink" href="#creating-a-new-loom-policy" title="Permalink to this headline">¶</a></h5>
+<p>The Loom Policy Framework allows you to create metadata management policies to enable Data Discovery, Data Scan, and Data Classification functions. Every policy defines a set of rules that govern the behavior of a Loom Application, deployed on Loom Platform, in terms of how each Loom Application can execute specific actions. You can configure multiple rules within a policy and apply them in the context of selected Loom Data Connectors.</p>
+<div class="section" id="to-create-a-new-policy">
+<h6>To Create a New Policy<a class="headerlink" href="#to-create-a-new-policy" title="Permalink to this headline">¶</a></h6>
+<ol class="arabic">
+<li><p class="first">In the <strong>Policies</strong> pane, click <strong>New Policy</strong>.</p>
+<p>Note: Alternatively, click <strong>Actions</strong> and select <strong>New Policy</strong> from the Actions drop-down.</p>
+</li>
+<li><p class="first">Enter a <strong>Policy Name</strong> and <strong>Policy Description</strong> in the respective fields.</p>
+</li>
+<li><p class="first">From the <strong>Policy type</strong> drop-down menu, select <strong>Discover, Scan</strong>, or <strong>Classify,</strong> as the case may be.</p>
+</li>
+<li><p class="first">Now choose the connectors to apply the policy rules to.  All configured connectors are displayed.</p>
+<blockquote>
+<div><p>Click <strong>Select All</strong> to choose all connectors.</p>
+</div></blockquote>
+</li>
+<li><p class="first">In the <strong>Add Policy Rules</strong> pane, create rule sets that define the application behavior for discovering, scanning, or classifying the configured connectors.</p>
+<p>You can either create new rules for the policy or select rules from an existing (already configured) policy. Click the <strong>Choose rules from an existing policy</strong> drop-down to select a pre-configured rule.</p>
+<p>To create a new rule, do the following:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Select whether you want to create an inclusion or exclusion rule. Refer to <a class="reference internal" href="mcdmp_concepts.html#term-policy-rule-sets"><span class="std std-ref">Loom Policy Rule Sets</span></a> for more details.</li>
+<li>Select whether the condition applies to a pattern, file, or folder.</li>
+<li>Click <strong>Apply rules to selected connectors</strong>.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Click <strong>Save Policy</strong> to save the configured policy or click <strong>Cancel.</strong></p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Note that the created policy remains inactive and is not applied till it is published. Publishing a policy binds it to a schedule and triggers a <a class="reference internal" href="mcdmp_concepts.html#term-loom-job"><span class="std std-ref">Loom Job</span></a> to apply the policy rules to the selected <a class="reference internal" href="mcdmp_concepts.html#term-loom-connectors"><span class="std std-ref">Loom Data Connectors</span></a>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="viewing-loom-policies">
+<h5><a class="toc-backref" href="#id114">Viewing Loom Policies</a><a class="headerlink" href="#viewing-loom-policies" title="Permalink to this headline">¶</a></h5>
+<p>Use the Policies page to review the policies definitions, publish inactive policies, and filter them based on various attributes, for example, by policy state, by application, by owner, and so on.</p>
+<div class="section" id="to-view-the-loom-policies">
+<h6>To View the Loom Policies<a class="headerlink" href="#to-view-the-loom-policies" title="Permalink to this headline">¶</a></h6>
+<ol class="arabic simple">
+<li>In the navigation pane on the left, click <strong>Policies</strong>. The following figure shows the Policies page details.</li>
+<li>In the top pane of the Policies page, click <strong>View Columns</strong> to select or remove the columns you want to view.</li>
+<li>To view Policy details, click on a <strong>Policy ID.</strong> The Policy details are displayed on the right.</li>
+</ol>
+<div class="figure align-center" id="id43">
+<a class="reference internal image-reference" href="_images/Policy-details-tab1.png"><img alt="Policydetails" src="_images/Policy-details-tab1.png" style="width: 800.0px; height: 487.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Viewing Loom Policy Details</span></p>
+</div>
+<p>The Policy Details pane displays the following Loom Policy attributes:</p>
+<ul class="simple">
+<li><strong>Policy ID</strong> - Unique identifier for each policy</li>
+<li><strong>State</strong> - Active or Inactive Policy</li>
+<li>Application context for which the policy is created</li>
+<li><strong>Policy Type(s)</strong></li>
+<li>The list of <a class="reference internal" href="mcdmp_concepts.html#term-loom-connectors"><span class="std std-ref">Loom Data Connectors</span></a> to which the policy is applied.</li>
+<li><strong>Rules Summary</strong> - indicating rule sets for inclusion or exclusion.</li>
+<li><strong>Owner</strong> - The Tenant User who has created the policy.</li>
+</ul>
+<p>The policy details differ for active and inactive policies. An active policy includes Published Jobs along with Policy Details.</p>
+<div class="figure align-center" id="id44">
+<a class="reference internal image-reference" href="_images/Policy-details-tab2.png"><img alt="Policydetailspublishedjobs" src="_images/Policy-details-tab2.png" style="width: 800.0px; height: 485.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Viewing Loom Policies Published Jobs Tab</span></p>
+</div>
+<p>Next of the <strong>Policy Details</strong> tab, if you click on the <strong>Published Jobs</strong> tab, you can see the following information:</p>
+<ul class="simple">
+<li><strong>Job name</strong></li>
+<li><strong>Asset(s)</strong></li>
+</ul>
+<p>You can also filter the listed policies by their state or by the type of the policy. For example, you may be interested in all active scan policies. Use the drop-down at the top of the list page to select the filters.</p>
+</div>
+</div>
+<div class="section" id="managing-loom-policy">
+<h5><a class="toc-backref" href="#id115">Managing Loom Policy</a><a class="headerlink" href="#managing-loom-policy" title="Permalink to this headline">¶</a></h5>
+<p>A policy is just a definition of the rules that applications can use when executing actions on connectors. Creating a policy does not automatically trigger any action for applying these rules. To trigger any action, you must bind the policy instance to a schedule. This binding operation is also referred to as publishing a policy. When you publish a policy, a job is created as per schedule ( or immediately, if there is no schedule is defined). This job is picked up by an application for execution.</p>
+<p>Additionally, you can also edit, copy (clone), or delete an existing policy.</p>
+<div class="section" id="publishing-loom-policy">
+<h6>Publishing Loom Policy<a class="headerlink" href="#publishing-loom-policy" title="Permalink to this headline">¶</a></h6>
+<p><strong>Note:</strong> Only policies that are in <strong>inactive</strong> state can be published.</p>
+<div class="section" id="to-publish-a-policy">
+<h7><strong>To Publish a Policy</strong><a class="headerlink" href="#to-publish-a-policy" title="Permalink to this headline">¶</a></h7>
+<ol class="arabic simple">
+<li>To the left of the Loom platform UI, click <strong>Policies.</strong></li>
+<li>Select an inactive policy on the <strong>Policies</strong> list page.</li>
+<li>From the <strong>Actions</strong> drop-down menu, select <strong>Publish</strong>.</li>
+<li>On the <strong>Publish</strong> page, select the <strong>Assets</strong> from the assets list filtered by <strong>Asset Types.</strong> For example, Infrastructure Assets type or Information Assets (based on Policy Type).</li>
+<li>Choose a frequency and start time for evaluating the policy rules.</li>
+<li>Add notifications if required in the <strong>Notifications</strong> pane.</li>
+<li>Click <strong>Publish and Close</strong> or <strong>Publish and Notify</strong> to publish the policy.</li>
+</ol>
+<div class="figure align-center" id="id45">
+<a class="reference internal image-reference" href="_images/policy-publish.png"><img alt="PolicyPublish" src="_images/policy-publish.png" style="width: 800.0px; height: 488.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Publish a Loom Policy</span></p>
+</div>
+</div>
+</div>
+<div class="section" id="editing-loom-policy">
+<h6>Editing Loom Policy<a class="headerlink" href="#editing-loom-policy" title="Permalink to this headline">¶</a></h6>
+<p>You can edit an existing Loom Policy. If you edit an active policy, then the changes only apply to those jobs that are created new after the policy change. All the policies that were published prior to this change will continue as per the previous policy setting.  This applies to all the jobs that began before this policy change and have not yet reached the completed state.</p>
+<div class="section" id="to-edit-a-policy">
+<h7><strong>To edit a policy</strong><a class="headerlink" href="#to-edit-a-policy" title="Permalink to this headline">¶</a></h7>
+<ol class="arabic simple">
+<li>To the left of the Loom platform UI, click <strong>Policies.</strong></li>
+<li>Select a policy in the <strong>Policies</strong> pane.</li>
+<li>From the <strong>Actions</strong> drop-down, and select <strong>Edit.</strong></li>
+<li>Edit required fields, for example, the rule sets or the connectors types to which the policy is applicable.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="cloning-loom-policy">
+<h6>Cloning Loom Policy<a class="headerlink" href="#cloning-loom-policy" title="Permalink to this headline">¶</a></h6>
+<p>You can clone an existing policy and edit specific parameters to quickly create a newer policy as per enterprise requirements.</p>
+<div class="section" id="to-clone-a-policy">
+<h7><strong>To clone a policy</strong><a class="headerlink" href="#to-clone-a-policy" title="Permalink to this headline">¶</a></h7>
+<ol class="arabic simple">
+<li>Select a policy in the <strong>Policies</strong> pane.</li>
+<li>From the <strong>Actions</strong> drop-down, and select <strong>Clone.</strong></li>
+</ol>
+</div>
+</div>
+<div class="section" id="deleting-loom-policy">
+<h6>Deleting Loom Policy<a class="headerlink" href="#deleting-loom-policy" title="Permalink to this headline">¶</a></h6>
+<p>You can choose to delete single or multiple policies.</p>
+<div class="section" id="to-delete-a-policy">
+<h7><strong>To delete a policy</strong><a class="headerlink" href="#to-delete-a-policy" title="Permalink to this headline">¶</a></h7>
+<ol class="arabic simple">
+<li>Select a policy in the <strong>Policies</strong> pane.</li>
+<li>From the <strong>Actions</strong> drop-down, and select <strong>Delete.</strong></li>
+<li>Click <strong>Confirm.</strong></li>
+</ol>
+<p>If the deleted policy is inactive (not published), it will no longer be visible on the <strong>Polices</strong> list page. If the deleted policy is active, the delete action will first delete the related job. Only after the jobs are deleted, the policy is deleted.</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="data-management-job-scheduling">
+<h4><a class="toc-backref" href="#id98">Data Management Job Scheduling</a><a class="headerlink" href="#data-management-job-scheduling" title="Permalink to this headline">¶</a></h4>
+<p>Scheduling of Jobs for enforcement of policies
+Content-TBD</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="audit-logging">
+<h4><a class="toc-backref" href="#id99">Audit Logging</a><a class="headerlink" href="#audit-logging" title="Permalink to this headline">¶</a></h4>
+<p>Audit logging is a critial functionality of Loom Core Platform which deals with business critial and sensitive customer data. Logging information like what was the data access event, which user, system, application, launched the event and the timestamp when it occurred can provide useful information to  system administrators when needed.</p>
+<p>Loom allows the Platform Admin to facilitate audit logging of key Loom  events triggered by human user or systems and save it with relevant details so that a Loom customer, Platform, &amp; Partner administrators can use it for auditing or analysis.</p>
+<div class="section" id="loom-audit-logging-key-capabilities">
+<h5>Loom Audit Logging: Key Capabilities<a class="headerlink" href="#loom-audit-logging-key-capabilities" title="Permalink to this headline">¶</a></h5>
+<ul class="simple">
+<li>Robust framework to facilitate system wide audit logging</li>
+<li>Easy availability of logs to authorized users</li>
+<li>Meet compliance requirements</li>
+</ul>
+</div>
+<div class="section" id="loom-audit-logging-key-features">
+<h5>Loom Audit Logging: Key Features<a class="headerlink" href="#loom-audit-logging-key-features" title="Permalink to this headline">¶</a></h5>
+<ol class="arabic simple">
+<li>Easy to integrate interfaces for all platform components &amp; applications</li>
+<li>REST API &amp; Java SDK</li>
+<li>Lightweight, no performance impact on consumer or the platform</li>
+<li>Support for archival and purge of logging data to meet compliance</li>
+<li>Support for efficient query of audit logs by different keys</li>
+<li>Data Security - Partitioned customer data, Policy based access to authorized users only</li>
+</ol>
+</div>
+<div class="section" id="about-audit-logs">
+<span id="content-loom-audit-logging"></span><h5>About Audit Logs<a class="headerlink" href="#about-audit-logs" title="Permalink to this headline">¶</a></h5>
+<p>The Loom platform consists of various services on both, the Control Plane and the Data Engine layer. Every action carried out on the Loom platform logs data using the Audit-logs services. You can use the Audit Logs dashboard to view and access all the audit logs applicable to the role that you have logged in as.</p>
+<div class="figure align-center" id="id46">
+<a class="reference internal image-reference" href="_images/audit_log_dashboard.png"><img alt="LoomAuditLog" src="_images/audit_log_dashboard.png" style="width: 800.0px; height: 504.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Loom Audit Log Dashboard</span></p>
+</div>
+<p>The Audit Logs user interface is available on the Loom Platform for all the Admin roles. In the left navigation pane of Loom Dashboard, click <strong>Audit Logs</strong> to view audit logs specific to your <a class="reference internal" href="mcdmp_concepts.html#content-loom-roles"><span class="std std-ref">Loom Roles</span></a>.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="29%" />
+<col width="71%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Loom Admin Role</td>
+<td>Category of Audit Logs Accessible to this role</td>
+</tr>
+<tr class="row-even"><td>Platform Admin</td>
+<td>All the Loom  events generated in the system.</td>
+</tr>
+<tr class="row-odd"><td>Partner Admin</td>
+<td>All the Loom events generated by Customer Admin users.</td>
+</tr>
+<tr class="row-even"><td>Customer Admin</td>
+<td>All the events generated by Tenant Admin users.</td>
+</tr>
+<tr class="row-odd"><td>Tenant Admin</td>
+<td>All the events generated by users created by this Tenant
+Admin for a customer account.</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>Audit Logs</strong> dashboard provides various filters. Use predefined filters to filter the audit logs by various categories such as by origin, event type, start date and end date. If you select more than one category, the filter conditions are applied using the logical operator AND. For example, if you select the <strong>Origin</strong> as <em>Loom Platform</em> and the <strong>Event Type</strong> as <em>User Management &gt; Create</em>, a list of all events where a user has been added to the platform configuration are displayed.</p>
+<p>The following table lists the supported filters:</p>
+<table border="1" class="longtable colwidths-given docutils" id="id47">
+<caption><span class="caption-text">Table: Filters supported on Loom Platform</span><a class="headerlink" href="#id47" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Filter</td>
+<td>Purpose</td>
+</tr>
+<tr class="row-even"><td>Application</td>
+<td>The Application under which an event originates.
+For example, Loom Platform and 360 Data Analysis</td>
+</tr>
+<tr class="row-odd"><td>Event Type</td>
+<td><p class="first">The service that is triggering an event; you can enter
+Create or Update to trigger an event.  The event types
+in the <strong>Audit Logs</strong> dashboard include:</p>
+<ul class="simple">
+<li><strong>User Authentication:</strong> The actions triggered
+include Login and Logout.</li>
+</ul>
+<p>The actions triggered for all the following event types
+include <strong>Create, Update,</strong> and <strong>Delete</strong></p>
+<ul class="last simple">
+<li><strong>User Management</strong></li>
+<li><strong>Role Assignments</strong></li>
+<li><strong>Customer Management</strong></li>
+<li><strong>Tenant Management</strong></li>
+<li><strong>Resource Management</strong></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>Owner</td>
+<td>The user who initiates an action that results in an
+event</td>
+</tr>
+<tr class="row-odd"><td>Origin</td>
+<td>The back-end service that triggers an event; for
+example, cluster-manager, policy-admin</td>
+</tr>
+<tr class="row-even"><td>Start Date</td>
+<td>Filter logs from timestamp in “yyyy-MM-dd HH:mm:ssZ”
+format</td>
+</tr>
+<tr class="row-odd"><td>End Date</td>
+<td>Filter logs till timestamp in “yyyy-MM-dd HH:mm:ssZ”
+format</td>
+</tr>
+<tr class="row-even"><td>Date</td>
+<td>Timestamp of an event in “yyyy-MM-dd HH:mm:ssZ” format</td>
+</tr>
+<tr class="row-odd"><td>Event Result</td>
+<td>Status of an event; for example, success, failure</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="troubleshooting-with-loom-audit-logs">
+<h5>Troubleshooting with Loom Audit Logs<a class="headerlink" href="#troubleshooting-with-loom-audit-logs" title="Permalink to this headline">¶</a></h5>
+<p>TBD - This section does not have any content as of Alpha2 - we are working on populating this.</p>
+<hr class="docutils" />
+</div>
+</div>
+<div class="section" id="troubleshooting-loom-user-interface">
+<h4><a class="toc-backref" href="#id100">Troubleshooting Loom User Interface</a><a class="headerlink" href="#troubleshooting-loom-user-interface" title="Permalink to this headline">¶</a></h4>
+<p>TBD - This section will cover commonly known Loom User Interface related issues, troubleshooting tips and workarounds. Provide reference here to Loom Application User Guides for Application Specific Troubleshooting.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="error-messages">
+<h4><a class="toc-backref" href="#id101">Error Messages</a><a class="headerlink" href="#error-messages" title="Permalink to this headline">¶</a></h4>
+<p>For all Loom Dashboard error messages, refer to <a class="reference internal" href="gsg/dashboard_trbs_guide.html#content-gsg-trbs-guide"><span class="std std-ref">Dashboard Troubleshooting Guide</span></a></p>
+<p>This section lists some of the common actions performed by a typical user once the Loom is deployed, bootstrapped and configured to use enterprise data sources.</p>
+<div class="section" id="how-to-do-view-all-connected-enterprise-data-sources">
+<h5>How to do view all connected Enterprise Data Sources?<a class="headerlink" href="#how-to-do-view-all-connected-enterprise-data-sources" title="Permalink to this headline">¶</a></h5>
+<p>Note:  Update this section with screen by screen help / info
+Refer to <a class="reference external" href="http://jira.community.veritas.com/browse/IMP-1693/">Jira 1693</a></p>
+<div class="section" id="screen-shot-step-by-step">
+<h6>Screen Shot step by step<a class="headerlink" href="#screen-shot-step-by-step" title="Permalink to this headline">¶</a></h6>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Basic User Actions: Content-TBD  Describe the screenshot in the context of viewing connected data sources and how to filter, slice &amp; dice the view to obtain insights.</li>
+</ol>
+</div></blockquote>
+<p>Content-TBD</p>
+<hr class="docutils" />
+</div>
+</div>
+</div>
+<div class="section" id="related-information">
+<h4><a class="toc-backref" href="#id102">Related Information</a><a class="headerlink" href="#related-information" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Related Information - This subsection on the page will have links to any terms used in describing the topics above. For example, if there is any Loom specific term say ‘pipeline’, then this sub-section could provide links to the concepts / reference sections / pages that contain details about these specific terms, examples etc.</li>
+</ul>
+<hr class="docutils" />
+</div>
+</div>
+<div class="section" id="loom-workflows">
+<span id="content-loom-usage-wf"></span><h3><a class="toc-backref" href="#id77">Loom Workflows</a><a class="headerlink" href="#loom-workflows" title="Permalink to this headline">¶</a></h3>
+<p>There are two kinds of Loom Users depending upon their means of interaction with Loom deployment.</p>
+<ol class="arabic simple">
+<li>Loom UI Users:  Platform Admin, Tenant Admin, Tenant User</li>
+<li>Loom Application Developers</li>
+</ol>
+<p>This section lists all the Loom Usage Workflows for interacting with Loom Platform and deployed application ecosystem.  The following information is useful for both kinds fo Loom Users and can help them understand the high level steps required to carry out the following tasks:</p>
+<ul class="simple">
+<li>Data Governance<ul>
+<li>Registering a new Customer to access Loom deployment</li>
+<li>How to set up Loom Tenant Admin and Tenant User Accounts?</li>
+<li>Configuration and definition of Loom Policies for Information access, management and analytics</li>
+<li>Deploying Loom Applicationsa</li>
+<li>Identify PII data within the enterprise data landscape</li>
+<li>Set up policies to manage and comply with personal data and other regulations</li>
+</ul>
+</li>
+<li>Data Optimization<ul>
+<li>How connect various enterprise content repositories and discover information assets</li>
+<li>How to scan and classify enterprise data using Loom?</li>
+<li>Visualizing and understanding data location, how many copies, who is accessing what information?</li>
+</ul>
+</li>
+<li>Risk Mitigation<ul>
+<li>Monitoring enterprise information assets with Loom</li>
+<li>Identifying data access breaches</li>
+<li>Figuring out vulnerabilities in information asset access via audit logs and tracking logs</li>
+</ul>
+</li>
+<li>Data Analytics<ul>
+<li>Locate ROT data and delete it</li>
+<li>Identify which data can be moved to cloud</li>
+</ul>
+</li>
+<li>various actions such as setting up of Loom Roles, Accounts, setting up of Loom ddPolicies for enterprise data discovery, scan and visualization features and many more.</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">For alpha2, we have a skeleton of documentation ready outlining typical workflows that an early Loom adopter may need help with.  This document needs to be updated with high quality block diagrams that highlight key steps in each workflow.  In certain sub-sections, links need to be updated corresponding to the appropriate reference section in other users guides that are currently being developed, for example - the Loom Application User Guides or certain sections in Getting Started Guide itself such as Loom Dashboard, screen details etc.</p>
+</div>
+<div class="section" id="loom-access-workflows">
+<span id="usage-wf-access"></span><h4>Loom Access Workflows<a class="headerlink" href="#loom-access-workflows" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first"><strong>How can an enterprise or organization obtain Loom trial access credentials?</strong></p>
+<p>Loom Alpha1 release is available only as a Veritas managed SaaS deployment.  Customer organizations can onboard Loom via the registration process that requires filling out a form, providing
+some organization specific Loom usage information and obtaining a customer account. For details refer to <a class="reference internal" href="loom_dep_pre_rq.html#loom-early-beta-user-reg"><span class="std std-ref">Loom Registration Process</span></a>.</p>
+<p>TBD - add a picture of the Loom registration form or link to it if available online.</p>
+</li>
+<li><p class="first"><strong>How can you reset Loom password if you forget it?</strong></p>
+<p>TBD</p>
+</li>
+</ol>
+<hr class="docutils" />
+</div>
+<div class="section" id="loom-deployment-workflows">
+<span id="usage-wf-dep"></span><h4>Loom Deployment Workflows<a class="headerlink" href="#loom-deployment-workflows" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first"><strong>What is a typical high level Loom deployment and usage workflow?</strong></p>
+<p>Veritas Loom offering comprises of Loom Platform and Loom Applications such as DataVision, GDPR Readiness and GDPR SAR Lite. It can connect to and scan, classify and analyze structured as well as unstructured content repositories irrespective of whether they are located on premises or in the cloud.  Loom Platform and its applications can themselves be deployed either in the cloud or on premises.  In future releases, Loom can also be deployed in an appliance form factor on premises within an enterprise.  The initial release of Loom is available to early adopters as a Microsoft Azure deployed SaaS offering. Early adopters who would like to check out Loom to gain visibility into their cloud based content repositories simply need a Loom account to get started. However, if they would like to scan, classify and analyze any of their on premises content repositories, they need to deploy additional Loom component called Loom On-Premises Data Engine and configure it to talk to their on premises content repositories.  The figure below gives a high level workflow of steps required to setup, configure and start using Veritas Loom offering.</p>
+<div class="figure align-center" id="id48">
+<a class="reference internal image-reference" href="_static/MCDMP-WF.png"><img alt="High Level Loom Usage Workflow" src="_static/MCDMP-WF.png" /></a>
+<p class="caption"><span class="caption-text">Figure: Loom High Level Usage Workflow</span></p>
+</div>
+<ul class="simple">
+<li>Step1: Begin by registering your Loom Account.  You need to fill in a form before you obtain your Loom credentials. For details, refer to <a class="reference internal" href="loom_dep_pre_rq.html#loom-early-beta-user-reg"><span class="std std-ref">Loom Registration Process</span></a></li>
+<li>Step2: Once you submit Loom registration application to Veritas, a corresponding Customer Account is created in Loom SaaS deployment on Microsoft Azure.</li>
+<li>Step3: You receive Loom Credentials for a Customer Admin Account.  The Customer Admin can create multiple Tenant Admin accounts for use within different departments in an enterprise.</li>
+<li>Step4: The Tenant Admin within an enterprise logs in and creates Tenant Users.</li>
+<li>Step5: Each enterprise can also configure which Loom Applications they would like to subscribe and whether some or all Tenants will have access to these applications.</li>
+<li>Step6: The next step is to configure and connect enterprise content repositories so that Loom Platform and Applications can scan, analyze and classify the metadata. Step 6a is required if cloud based content repositories need to be plugged into Loom for analysis.  Step 6b refers to providing necessary cloud data source access credentials for enabling the connection and access.</li>
+<li>Step7: This step is required only if enterprise wishes to plug in their on premises content repositories. It requires an additional Loom component deployment in the enterprise data center. For details refer to <a class="reference internal" href="on_prem_dp_install_mcdmp.html#ing-com-on-prem-dp-install"><span class="std std-ref">Loom On-Premise Data Plane Deployment</span></a> Guide. Step 7b refers to configuration of on premises Loom Data Engine and Step 7c is similar to step 6b where enterprise provide the necessary on premise data source credentials for enabling the connection and access by Loom Platform and Applications for data analysis.</li>
+<li>Step8: At this juncture, Tenant users created by Tenant Admins in step 4 above are ready to access Loom Dashboard, Loom Applications and perform enterprise information management tasks such as 36- Data Management with DataVision application, data classification, scheduling data scans and analyzing results.  Tenant users can also use any of the other available Loom Applications such as GDPR Readiness and SAR Lite.</li>
+</ul>
+</li>
+<li><p class="first"><strong>What is the workflow to enable Loom for visualizing cloud based enterprise content repositories?</strong></p>
+<ul class="simple">
+<li>Step1: <strong>Pre-requisites</strong> Loom SaaS Deployment on Microsoft Azure is available for use, Customer registration request is received and processed.</li>
+<li>Step2: Loom Admin -&gt; Login -&gt; Create SaaS Data Plane (Default as part of Loom SaaS Deployment  -&gt; Create Tenant Admin Account -&gt; Share Tenant Admin Account Credentials with authorized person</li>
+<li>Step3: Loom Tenant Admin -&gt; Login using Loom Credentials provided in previous step -&gt; Choose cloud based content repositories that need to be plugged into Loom -&gt; Provide repository access credentials -&gt; Loom configuration to connect to cloud based content repositories done.</li>
+<li>Step4: Loom Tenant Admin -&gt; Monitor Loom Application availability -&gt; Only subscribed Loom Applications are available to Tenant Users -&gt; Create Tenant User Accounts.</li>
+<li>Step5: Loom Tenant Users -&gt; Access Loom Applications and scan, classify and visualize enterprise content repositories configured for use by Tenant Admin in Step3.</li>
+</ul>
+</li>
+<li><p class="first"><strong>What is the workflow to enable Loom for visualizing enterprise content repositories that are located on premises?</strong></p>
+<ul class="simple">
+<li>Step1: <strong>Pre-requisites</strong> Loom SaaS Deployment on Microsoft Azure is available for use, Customer registration request is received and processed.</li>
+<li>Step2: Loom Admin -&gt; Login -&gt; Create SaaS Data Plane (Default as part of Loom SaaS Deployment  -&gt; Create Tenant Admin Account -&gt; Share Tenant Admin Account Credentials with authorized person</li>
+<li>Step3: Loom Tenant Admin -&gt; Login using Loom Credentials provided in previous step -&gt; Choose the option to deploy on premises data engine for Loom -&gt; Send a registration request to the Loom Control Plane Cluster Manager Service -&gt; On Premises Data Plane registration response provides a time bound URL which points to the OVA format Loom Starter Kit - &gt; Download this OVA Kit and deploy Loom On Premises Data Engine as per the detailed instructions provided in the <a class="reference internal" href="on_prem_dp_install_mcdmp.html#ing-com-on-prem-dp-install"><span class="std std-ref">Loom On-Premise Data Plane Deployment</span></a> -&gt; Establish secure communication between on premises Data Engine and Loom Control Plane which resides on Azure cloud in the Loom SaaS Deployment -&gt; Choose from one of the supported on premises content repository type as per enterprise needs -&gt; Provide repository access credentials -&gt; Loom configuration to connect to on premises content repositories done.</li>
+<li>Step4: Loom Tenant Admin -&gt; Monitor Loom Application availability -&gt; Only subscribed Loom Applications are available to Tenant Users -&gt; Create Tenant User Accounts.</li>
+<li>Step5: Loom Tenant Users -&gt; Access Loom Applications and scan, classify and visualize enterprise content repositories configured for use by Tenant Admin in Step3.</li>
+</ul>
+</li>
+<li><p class="first"><strong>Who are the key personas in an enterprise that engage with Loom for initial configuration?</strong></p>
+<p>Here is a list of key personas in an enterprise that will engage with Loom Platform and Loom Application ecosystem for initial configuration:</p>
+<dl class="docutils">
+<dt>Business Lead</dt>
+<dd><ul class="first last simple">
+<li>Licensing and metering</li>
+<li>Buy/approve capabilities and capacity according to meter</li>
+<li>Report generation</li>
+</ul>
+</dd>
+<dt>DevOps (Internal Veritas or Service Provider acting on behalf of one or more of their customers)</dt>
+<dd><blockquote class="first">
+<div><ul class="simple">
+<li>Deploy Platform</li>
+<li>Configure tenants</li>
+<li>Add capabilities to the platform</li>
+<li>Delete tenants</li>
+<li>Key management</li>
+<li>Rebuild and recover tenants</li>
+<li>Capacity management</li>
+<li>Resource management</li>
+<li>Platform incident management</li>
+<li>Platform level reporting</li>
+<li>System/Storage Admin (Internal to the customer)</li>
+<li>Configure credentials and connections</li>
+<li>Policy configuration.</li>
+<li>Role management to enable actions such as copy/move/archive/delete etc</li>
+<li>Alert notification and management</li>
+</ul>
+</div></blockquote>
+<dl class="last docutils">
+<dt>Tenant Admins</dt>
+<dd><ul class="first last simple">
+<li>Tenant User Management</li>
+<li>Support CISO / Legal / DPO Loom users</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+<li><p class="first"><strong>Who are the key executive personas within an enterprise that benefit from Loom and what functions can Loom support for them?</strong></p>
+<blockquote>
+<div><dl class="docutils">
+<dt>CISO - Chief Information Security Officer</dt>
+<dd><ul class="first last simple">
+<li>Gain visibility into enterprise Data Assets</li>
+<li>Obtain detailed audit log for critical business asset accesses, unauthorized accesses and PII or other risks associated with enterprise data assets.</li>
+</ul>
+</dd>
+<dt>CFO/ITFD/BU Finance lead - IT Financial insight derived from DataVision</dt>
+<dd><ul class="first last simple">
+<li>Cost of storage definition using internal figures for fully loaded cost definition</li>
+<li>Tier definition</li>
+<li>Cost of platforms/tenants</li>
+<li>Predictive analytics and recommendations</li>
+<li>Authorizations</li>
+<li>Notifications to drive actions</li>
+</ul>
+</dd>
+<dt>Legal</dt>
+<dd><ul class="first last simple">
+<li>List of Loom related actions / insights TBD</li>
+</ul>
+</dd>
+<dt>DPO - Data Protection Officer</dt>
+<dd><ul class="first last simple">
+<li>Subject Access Request ownership and case report.</li>
+<li>Access to data processing dashboards</li>
+<li>Access to personal data risk assessment dashboards</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+<hr class="docutils" />
+</div>
+<div class="section" id="loom-user-management-workflows">
+<span id="usage-wf-user-mngt"></span><h4>Loom User Management Workflows<a class="headerlink" href="#loom-user-management-workflows" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first"><strong>How can an enterprise delegate Loom access to different types of user roles?</strong></p>
+<p>Loom Platform has four pre-defined roles:</p>
+<table class="hlist"><tr><td><ul class="simple">
+<li>Platform Admin</li>
+</ul>
+</td><td><ul class="simple">
+<li>Customer Admin or Partner Admin</li>
+</ul>
+</td><td><ul class="simple">
+<li>Tenant Admin</li>
+</ul>
+</td><td><ul class="simple">
+<li>Tenant User</li>
+</ul>
+</td></tr></table>
+<p>For details on each of these Loom User Roles, refer to <a class="reference internal" href="mcdmp_concepts.html#content-loom-roles"><span class="std std-ref">Loom Roles</span></a> section and <a class="reference internal" href="#gsg-interacting-mcdmp"><span class="std std-ref">Interacting with Loom</span></a> User Management section.</p>
+</li>
+<li><p class="first"><strong>What are some of the typical Loom actions performed by a Customer Admin or Partner Admin?</strong></p>
+<p>Loom Customer or Partner Admin performs the following workflows:</p>
+<ul class="simple">
+<li>Creation of Tenant Admin account (TBD - link this to Getting Started Guide section detailing how to do this action with screenshots et all.)</li>
+<li>Loom Application Deployment (TBD - link this to Getting Started Guide section on Application Manager, Application Switcher)</li>
+<li>Others TBD</li>
+</ul>
+</li>
+<li><p class="first"><strong>What are some of the typical Loom actions performed by a Tenant Admin?</strong></p>
+<p>Loom Tenant Admin is entrusted with the following user management workflows:</p>
+<ul class="simple">
+<li>Loom Tenant User Role Creation  (TBD - link this to Getting Started Guide section detailing how to do this action with screenshots et all.)</li>
+<li>Managing Loom Tenant User  (TBD - link this to Getting Started Guide section detailing how to do this action with screenshots et all.)s</li>
+<li>Deployment and configuration of Tenant specific data sources via Loom data connectors. (TBD - link this to Getting Started Guide section detailing how to do this action with screenshots et all.)s</li>
+<li>Others TBD</li>
+</ul>
+</li>
+<li><p class="first"><strong>What is the typical high level Loom usage workflow by a Tenant User?</strong></p>
+<p>Following is a typical Loom usage workflow by a Tenant User:</p>
+<ul class="simple">
+<li>Login - &gt; Verify Enterprise Data is Plugged in via connectors in the Loom Dashboard -&gt; Visibility - &gt; Locate PII/other tagged data-&gt;Export data to csv -&gt; Share report with Enterprise CISO /DPO as needed -&gt; Logout</li>
+<li>Login -&gt; View Data Classification Job Status -&gt; Logout</li>
+<li>Login -&gt; Create new data analysis or classification or scan job based on enterprise policy -&gt; Schedule job -&gt; monitor job -&gt; respond to job alert notification-&gt;logout</li>
+</ul>
+</li>
+<li><p class="first"><strong>What are the most common Tenant User Loom actions?</strong></p>
+<p>Loom Tenant Users can perform any of the workflows listed in <a class="reference internal" href="#usage-wf-datavision"><span class="std std-ref">DataVision Workflows</span></a> section.  These are typically related to gaining visibility into enterprise data assets, analyzing and classifying enterprise data assets, monitoring unauthorized data access, generating reports for CSO, DPO and Legal departments for compliance purposes.</p>
+<ul class="simple">
+<li>Visibility into Enterprise Data Assets - what data is located where and is accessed by whom?</li>
+<li>Classify Enterprise Data - obtain a list of assets that contain PII.</li>
+<li>Address GDPR Compliance and investigate GDPR readiness.</li>
+<li>Respond to GDPR - SAR Request by identifying, obtaining required data and performing recommended action on that data - delete, redact or others.</li>
+</ul>
+</li>
+</ol>
+<hr class="docutils" />
+</div>
+<div class="section" id="datavision-workflows">
+<span id="usage-wf-datavision"></span><h4>DataVision Workflows<a class="headerlink" href="#datavision-workflows" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first"><strong>How to connect organization’s data sources located on premise in order to perform 360 data analysis?</strong></p>
+<p>Refer to Getting Started Guide, Loom Dashboard section for details on how to add various enterprise data connectors. Reference link TBD. Veritas Connection Center Usage Guide will get merged into the Getting Started Guide for Loom.</p>
+</li>
+<li><p class="first"><strong>How to utilize Loom Classification Feature for 360 Data Analysis?</strong></p>
+<p>Refer to Loom DataVision Application Guide for details on this workflow.</p>
+</li>
+<li><p class="first"><strong>How to configure Loom Data Classification Policies?</strong></p>
+<p>TBD</p>
+</li>
+<li><p class="first">How to find out the status of Loom Data Classification Job status?</p>
+<p>TBD</p>
+</li>
+<li><p class="first">Others for Alpha2 Release are TBD.</p>
+<p>TBD</p>
+</li>
+</ol>
+<hr class="docutils" />
+</div>
+<div class="section" id="gdpr-workflows">
+<span id="usage-wf-gdpr"></span><h4>GDPR  Workflows<a class="headerlink" href="#gdpr-workflows" title="Permalink to this headline">¶</a></h4>
+<p>Section TBD</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="sarlite-workflows">
+<span id="usage-wf-sarlite"></span><h4>SARLite Workflows<a class="headerlink" href="#sarlite-workflows" title="Permalink to this headline">¶</a></h4>
+<p>Section TBD</p>
+<hr class="docutils" />
+</div>
+</div>
+</div>
+<div class="section" id="platform-technical-specifications">
+<span id="content-platform-tech-specs"></span><h2><a class="toc-backref" href="#id67">Platform Technical Specifications</a><a class="headerlink" href="#platform-technical-specifications" title="Permalink to this headline">¶</a></h2>
+<p>This section lists outlines the basic system requirements for Multi-Cloud Data Management Platform. The ideal infrastructure components and versions of associated software depends on your deployment model. This information is intended as a general guideline.  Refer to your product release notes for specifics.</p>
+<div class="section" id="scalability-specifications">
+<span id="content-mcdmp-scalability-specs"></span><h3><a class="toc-backref" href="#id68">Scalability Specifications</a><a class="headerlink" href="#scalability-specifications" title="Permalink to this headline">¶</a></h3>
+<p>This section needs to be populated with information pertaining to the topics listed below regarding what kind of scalability is offered by Loom Platform.</p>
+<p>Marking this section as Content-TBD</p>
+<ul class="simple">
+<li>Scalability (PB of data, users, files, others)</li>
+<li>Max number of application deployments</li>
+<li>Deployment resource specifications (Cloud resources, VM resources, Kubernetes, other resources)</li>
+<li>Software version (if any) [for underlying SW used to build Loom Platform]</li>
+</ul>
+</div>
+<div class="section" id="supported-data-types-data-sources-technologies">
+<span id="content-mcdmp-supports-tech-specs"></span><h3><a class="toc-backref" href="#id69">Supported Data Types, Data Sources &amp; Technologies</a><a class="headerlink" href="#supported-data-types-data-sources-technologies" title="Permalink to this headline">¶</a></h3>
+<p>This section provides information related to the data storage types, storage technologies &amp; protocols, storage provided by 3rd party cloud providers, web browser technologies and others that are supported in the specified release of Loom Platform.</p>
+<div class="section" id="supported-cloud-providers">
+<h4>Supported Cloud Providers<a class="headerlink" href="#supported-cloud-providers" title="Permalink to this headline">¶</a></h4>
+<p>Following table lists various Cloud Providers that are supported by Loom Platform.  Different Cloud Storage technologies used, version number and related Loom Platform features that depend on these Cloud Services are mentioned below:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="28%" />
+<col width="58%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Cloud</td>
+<td>Cloud Services/Version</td>
+<td>Loom Platform Release / Version / Date / Feature</td>
+</tr>
+<tr class="row-even"><td>Microsoft
+Azure</td>
+<td>Azure Container Service(?)
+Kubernetes on Azure
+Others(?)</td>
+<td>SaaS Deployment Model / Beta / 121517
+Feature - Control Plane on Azure
+Feature - Data Plane on Azure</td>
+</tr>
+<tr class="row-odd"><td>Oracle</td>
+<td>?</td>
+<td>?</td>
+</tr>
+<tr class="row-even"><td>AWS</td>
+<td>?</td>
+<td>?</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="supported-data-sources">
+<h4>Supported Data Sources<a class="headerlink" href="#supported-data-sources" title="Permalink to this headline">¶</a></h4>
+<p>Following table lists various kinds of enterprise data storage technologies that are supported by Loom Platform along with version details and release number or name (alpha, beta, post beta, etc.).</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="28%" />
+<col width="58%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Data Source
+Type</td>
+<td>Version Details</td>
+<td>Loom Platform Release / Version / Date / Feature</td>
+</tr>
+<tr class="row-even"><td>Microsoft
+Azure Storage</td>
+<td>Azure Blob Service
+Version ?</td>
+<td>SaaS Deployment Model / Beta / 121517
+Feature - Enterprise Data Source Support</td>
+</tr>
+<tr class="row-odd"><td>Box Drive</td>
+<td>?</td>
+<td>?</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="other-data-sources-in-future">
+<span id="future-data-sources"></span><h4>Other Data Sources (In Future)<a class="headerlink" href="#other-data-sources-in-future" title="Permalink to this headline">¶</a></h4>
+<p>Other potential data sources that will be supported in future by Loom Platform are listed below:</p>
+<ol class="arabic simple">
+<li>On Premise<ul>
+<li>Data Type: Structured, Unstructured</li>
+<li>Native File System: CIFS, NFS shared storage</li>
+<li>Applications: SharePoint, Exchange, Veritas NetBackup, Backup Exec, EV(?)</li>
+<li>Databases: MS SQL Server, Oracle</li>
+<li>Content Management Information Systems (CMIS): Documentum, Livelink, Filenet</li>
+</ul>
+</li>
+<li>Cloud Data Sources<ul>
+<li>Azure Blob &amp; File Storage</li>
+<li>Azure SQL</li>
+<li>AWS S3</li>
+<li>Box</li>
+<li>OneDrive</li>
+<li>Google GDrive</li>
+<li>Google Cloud Platform Blob Storage</li>
+<li>GMail</li>
+<li>Exchange Online</li>
+<li>SharePoint Online</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="web-browsers-support">
+<span id="web-browser-version"></span><h4>Web Browsers Support<a class="headerlink" href="#web-browsers-support" title="Permalink to this headline">¶</a></h4>
+<p>Loom Platform UI components (Platform UI App, others?) will only support the following browsers in the beta release:</p>
+<ol class="arabic simple">
+<li>Chrome (version x.y and above),</li>
+<li>Firefox (version x.y and above),</li>
+<li>IE (version x.y and above),</li>
+<li>Safari (version x.y and above).</li>
+</ol>
+<p>Please note, only Chrome and Firefox support will be available during the Phase 1 of Beta. Refer to the following figure for Veritas Design Library Browser support Roadmap in the near future.</p>
+<div class="figure align-center" id="id49">
+<a class="reference internal image-reference" href="_images/VDL-browser-support-future.png"><img alt="Loom Web Browser support Roadmap" src="_images/VDL-browser-support-future.png" style="width: 509.25px; height: 148.5px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Loom Web Browser support Roadmap</span></p>
+</div>
+</div>
+<div class="section" id="additional-information">
+<span id="content-mcdmp-additional-specs"></span><h4>Additional Information<a class="headerlink" href="#additional-information" title="Permalink to this headline">¶</a></h4>
+<p>Following is the additional data items that need to be populated regarding what all storage, technologies, products, protocols, compliance standards that Loom supports.  This information needs to be updated with inputs from Loom Engineering Team. Marking it as Content-TBD.</p>
+<ul class="simple">
+<li>Storage Protocols</li>
+<li>Feature Integration with Veritas DLP (?)</li>
+<li>Bare minimum VM/Control Plane Deployment/Data Plane Deployment Infrastructure needs</li>
+<li>Bundled Loom Applications – Loom UI, 360 Data Analysis, GDPR</li>
+<li>Support for 3rd party Applications(?)</li>
+<li>Data Encryption(?)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="loom-platform-software-dependency-versions">
+<span id="content-gsg-mcdmp-dep-ver"></span><h3><a class="toc-backref" href="#id70">Loom Platform Software Dependency Versions</a><a class="headerlink" href="#loom-platform-software-dependency-versions" title="Permalink to this headline">¶</a></h3>
+<p>Veritas Multi-Cloud Data Management Platform utilizes several third party and open source components.  This section lists the software dependencies and the version details of those components.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="38%" />
+<col width="32%" />
+<col width="30%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Software/Component</td>
+<td>Version</td>
+<td>Comments</td>
+</tr>
+<tr class="row-even"><td>ElasticSearch</td>
+<td>5.5x</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Cassandra</td>
+<td>3.11</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</div>
+</div>
+<div class="section" id="next-steps">
+<h2><a class="toc-backref" href="#id71">Next Steps</a><a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a></h2>
+<p>We hope you found the Getting Started Guide helpful!</p>
+<p>You’ve just scratched the surface of what you can do with Loom.
+Want to learn more? Here are a few other helpful resources you can jump into</p>
+<ul class="simple">
+<li>Try out Loom feature name ….</li>
+<li>Learn to easily identify data flow…in ‘placeholder link’ section.</li>
+<li>Easily support GDPR compliance by ‘placeholder link’ reference.</li>
+<li>Or simply jump into the next section ad learn about ‘placeholder link’ Topic related to Information Management.</li>
+</ul>
+<p>~</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="mcdmp_concepts.html" class="btn btn-neutral float-right" title="Loom: Concepts &amp; Glossary" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome to Loom User Guides Documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Veritas Technologies LLC.
+      Last updated on Apr 7, 2018, 11:51:10 PM.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+    <p>
+    <ul>
+    <a href="../pform-idocs/archive_index.html" style="float:left;">Loom Documentation Archives</a>
+    </ul>
+    </p>
+     
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.7.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

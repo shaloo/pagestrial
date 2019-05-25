@@ -1,0 +1,13 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introducing DevX}{3}{chapter.1}
+\contentsline {chapter}{\numberline {2}DevX Elevator Pitch}{5}{chapter.2}
+\contentsline {chapter}{\numberline {3}DevX Use Cases}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Inter-dependent Micro Service Architecture Integration Testing}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}New Loom Feature Development or Loom Application Development}{9}{section.3.2}
+\contentsline {section}{\numberline {3.3}Flexibility in choosing the type of test infrastructure}{9}{section.3.3}
+\contentsline {section}{\numberline {3.4}Replicating Test Environments across teams and geographies}{10}{section.3.4}
+\contentsline {chapter}{\numberline {4}How to use DevX?}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}DevX Workflow}{11}{section.4.1}
+\contentsline {chapter}{\numberline {5}DevX Security}{13}{chapter.5}
+\contentsline {chapter}{\numberline {6}DevX Tutorial Video}{15}{chapter.6}
+\contentsline {chapter}{\numberline {7}Other DevX References}{17}{chapter.7}

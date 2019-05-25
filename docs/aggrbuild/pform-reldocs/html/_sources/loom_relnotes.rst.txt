@@ -1,0 +1,45 @@
+.. _content_loom_relnotes:
+
+###################
+Loom Release Notes
+###################
+
+This document contains references to all Veritas Loom Release Notes. See the table below.
+
+*************
+Loom Overview
+*************
+
+Loom is the Veritas Data Management Platform.
+
+It is a unified, flexible, scalable and extensible ecosystem comprising of multi-cloud data management micro-services and standard apps for information discovery, compliance, governance, risk mitigation, data resource consolidation and operational efficiency.
+
+* Loom brings together all the value that Veritas has to offer to enterprise customers.
+
+* Provides capability to access multiple enterprise data sources irrespective of where they are located: on premise, in the public cloud or geographically dispersed across the globe.
+
+* Cutting Edge scalable architecture comprising of core micro-services required to develop enterprise data management applications and RESTful APIs.
+
+*********************
+Loom Current Release
+*********************
+The latest release of Loom is Version 0.6.0 (Alpha2).
+
+For latest Loom Release note, browse `Loom Alpha2 Release Note`_. The table below lists all Loom Release Notes in reverse chronological order.
+
+.. list-table:: Loom Release Details 
+   :widths: 15 10 30
+   :header-rows: 1
+
+   * - Release Version
+     - Date
+     - Description
+   * - `Loom Alpha2 Release Note`_ 
+     - 01/22/2018
+     - First Release 
+   * - `Loom Alpha1 Release Note`_ 
+     - 03/26/2018 
+     - Alpha2 Version 0.6.0
+
+.. _Loom Alpha1 Release Note:  http://10.67.141.149/shaloo/aggr/pform-reldocs/html/relnotes/rn-loom-alpha1.html
+.. _Loom Alpha2 Release Note:  http://10.67.141.149/shaloo/aggr/pform-reldocs/html/relnotes/rn-loom-alpha2.html

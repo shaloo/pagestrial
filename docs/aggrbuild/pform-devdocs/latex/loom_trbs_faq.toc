@@ -1,0 +1,58 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}FAQ: Loom General}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}What Apps will be available when Loom launches in summer 2018?}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Will there be any functionality loss when Information Map and Data Insight are rolled into one product?}{4}{section.1.2}
+\contentsline {section}{\numberline {1.3}Will Data Insight be able to look at NetBackup catalog data?}{4}{section.1.3}
+\contentsline {section}{\numberline {1.4}When will the On-Premises version of Loom be released?}{4}{section.1.4}
+\contentsline {chapter}{\numberline {2}How-to Size Loom Deployment (SaaS) on Microsoft Azure}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Deployment Overview}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Pre-requisites for Loom Deployment on Azure}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}Sizing: Loom SaaS Deployment on Azure}{6}{section.2.4}
+\contentsline {section}{\numberline {2.5}Best Practices for Loom Azure Deployment Sizing}{7}{section.2.5}
+\contentsline {section}{\numberline {2.6}References}{7}{section.2.6}
+\contentsline {chapter}{\numberline {3}How-to Size On Premises Loom Data Engine Deployment}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Overview of Loom On-Premises Data Engine Deployment}{9}{section.3.2}
+\contentsline {section}{\numberline {3.3}Pre-Requisites for Loom On-Premises Data Engine Deployment}{9}{section.3.3}
+\contentsline {section}{\numberline {3.4}Best Practices for Sizing}{10}{section.3.4}
+\contentsline {chapter}{\numberline {4}Loom Application Manager Troubleshooting Guide}{11}{chapter.4}
+\contentsline {chapter}{\numberline {5}FAQ: Loom Platform Monitoring}{13}{chapter.5}
+\contentsline {chapter}{\numberline {6}FAQ: Loom Platform Dashboard}{15}{chapter.6}
+\contentsline {chapter}{\numberline {7}FAQ: Loom Tenant \& User Management}{17}{chapter.7}
+\contentsline {chapter}{\numberline {8}FAQ: Loom Policy Management}{19}{chapter.8}
+\contentsline {chapter}{\numberline {9}FAQ: Loom Digital Information Management Job Scheduling}{21}{chapter.9}
+\contentsline {chapter}{\numberline {10}FAQ: Loom Applications Management}{23}{chapter.10}
+\contentsline {chapter}{\numberline {11}FAQ: Loom DataVision Application}{25}{chapter.11}
+\contentsline {section}{\numberline {11.1}What is DataVision?}{25}{section.11.1}
+\contentsline {section}{\numberline {11.2}Is DataVision a part of standard Loom Deployment?}{26}{section.11.2}
+\contentsline {section}{\numberline {11.3}Can I de-install DataVision?}{26}{section.11.3}
+\contentsline {section}{\numberline {11.4}Which Loom Services does DataVision Application depend upon?}{26}{section.11.4}
+\contentsline {section}{\numberline {11.5}What can I do with Loom DataVision Application?}{26}{section.11.5}
+\contentsline {section}{\numberline {11.6}How do I gain visibility into cloud based enterprise content sources?}{27}{section.11.6}
+\contentsline {section}{\numberline {11.7}How do I gain visibility into enterprise content sources located on premises?}{27}{section.11.7}
+\contentsline {section}{\numberline {11.8}Are there pre-configured data visibility, scan and classification policies?}{27}{section.11.8}
+\contentsline {section}{\numberline {11.9}DataVision: Does it show alerts and notifications related to enterprise data access breaches?}{27}{section.11.9}
+\contentsline {section}{\numberline {11.10}How do I configure DataVision to gain visibility into Enterprise Content Repositories?}{27}{section.11.10}
+\contentsline {section}{\numberline {11.11}Does DataVision provide a means to gain insight into PII data?}{27}{section.11.11}
+\contentsline {section}{\numberline {11.12}Other FAQ}{27}{section.11.12}
+\contentsline {chapter}{\numberline {12}FAQ: Loom GDPR Application}{29}{chapter.12}
+\contentsline {chapter}{\numberline {13}FAQ: Loom SAR Lite Application}{31}{chapter.13}
+\contentsline {section}{\numberline {13.1}What is SAR?}{31}{section.13.1}
+\contentsline {section}{\numberline {13.2}What is SAR Lite?}{31}{section.13.2}
+\contentsline {section}{\numberline {13.3}Does it support review or redaction of files?}{32}{section.13.3}
+\contentsline {section}{\numberline {13.4}What features does SAR Lite offer?}{32}{section.13.4}
+\contentsline {section}{\numberline {13.5}Does SAR Lite warn the user about insufficient resources for responding to SAR request?}{32}{section.13.5}
+\contentsline {section}{\numberline {13.6}Does SAR Lite provide integration into any ticketing or workflow systems?}{32}{section.13.6}
+\contentsline {chapter}{\numberline {14}FAQ: Loom Security}{33}{chapter.14}
+\contentsline {section}{\numberline {14.1}What are the high level security principles of Loom Platform and its Applications?}{33}{section.14.1}
+\contentsline {section}{\numberline {14.2}Does Loom support secured sign on?}{33}{section.14.2}
+\contentsline {section}{\numberline {14.3}Does it support Role Based Access Control?}{34}{section.14.3}
+\contentsline {section}{\numberline {14.4}Does Loom Platform and its Applications store any Customer data?}{34}{section.14.4}
+\contentsline {section}{\numberline {14.5}Data Residency Considerations for Loom}{34}{section.14.5}
+\contentsline {section}{\numberline {14.6}Physical Data Security Considerations}{34}{section.14.6}
+\contentsline {section}{\numberline {14.7}What are the technical controls for Loom infrastructure, Application and Data Security policies?}{34}{section.14.7}
+\contentsline {chapter}{\numberline {15}FAQ: General Loom Troubleshooting}{37}{chapter.15}
+\contentsline {section}{\numberline {15.1}Loom Activation and Access}{37}{section.15.1}
+\contentsline {chapter}{\numberline {16}FAQ: Loom Debugging \& Troubleshooting}{39}{chapter.16}
+\contentsline {chapter}{\numberline {17}Loom Deployment Troubleshooting Guide}{41}{chapter.17}

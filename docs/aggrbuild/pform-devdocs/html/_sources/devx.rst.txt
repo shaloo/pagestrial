@@ -1,0 +1,189 @@
+.. _content_all_devx:
+
+################
+DevX User Guide
+################
+
+.. contents::
+   :depth: 2
+   :local:
+
+.. _para_intro:
+
+-----
+
+*****************
+Introducing DevX
+*****************
+DevX Tool can help you speed up Loom Integration Testing, Loom Application development and integration with Veritas Products. Key audience comprises of Veritas Product Dev, Service Integration Dev, Micro-service based product development and verification Engineers who need a fast, reliable way to obtain cluster resources on demand and return it to the pool for other Veritas users.
+
+The following slide captures the value proposition of DevX Tool in a single line:
+
+.. figure:: /_static/devx/devx-1-line-value-prop.png
+   :scale: 80%
+   :align: center
+   :alt: DevXValueProp
+
+   Figure: DevX Value Proposition
+
+DevX provides runtime Kubernetes cluster infrastructure for deploying one or more inter-dependent container based micro-services quickly through REST APIs. DevX supports one micro-service per container setup that is hosted using Kubernetes and defined using Helm, Kube OpenAPI Spec definitions. 
+
+.. _para_ep:
+
+-----
+
+********************
+DevX Elevator Pitch
+********************
+The core value proposition of DevX is automation of micro-services application development environment.  The figure below explains at a very high level some of the key features offered by DevX.
+
+.. figure:: /_static/devx/what-is-devx.png
+   :scale: 100%
+   :align: center
+   :alt: DevXEP
+
+   Figure: What is DevX?
+
+The following figure shows the main DevX web interface. In future, there will be a more sophisticated product UI that will be available for this tool.
+
+.. figure:: /_static/devx/devx-dashboard.png
+   :scale: 100%
+   :align: center
+   :alt: DevXDashboard
+
+   Figure: DevX Web Interface
+
+The key points of DevX Elevator Pitch are highlighted in the figure below:
+
+.. figure:: /_static/devx/devx-elevator-pitch.png
+   :scale: 100%
+   :align: center
+   :alt: DevXElevatorPitch
+
+   Figure: DevX Elevator Pitch
+
+.. _para_usecases:
+
+-----
+
+****************
+DevX Use Cases
+****************
+
+* Inter-dependent Micro Service Architecture Integration Testing
+* New Loom Feature Development or Loom Application Development
+* Flexibility in choosing the type of test infrastructure
+* Replicating Test Environments across teams and geographies
+
+================================================================
+Inter-dependent Micro Service Architecture Integration Testing
+================================================================
+
+Micro-services architecture based products are fairly complex. Inter-dependency of these micro-services and variance in the rate of evolution of co-dependent services can cause a significant spurt in integration testing and validation efforts.  This also drives up the need for cluster resources, especially when HA, replication and other inter-linked features come into the picture. For products such as Loom, developers often require different versions of inter-dependent micro-services and there is a need to quickly validate a micro-service that is under development, whether it works with one or more newly updated or bug-fixed micro-service dependency. DevX Tool can immensely help in such cases by quickly spinning up test cluster resources and once a developer has completed the use of the cluster, all the resources are automatically returned to the DevX pool for other developers to use.  This not only boosts developer productivity but also channelizes and optimizes shared resource usage in complex micro-services cluster environments.
+
+=============================================================
+New Loom Feature Development or Loom Application Development
+=============================================================
+
+Loom deployment architecture is fairly complex. There are several moving blocks, each of which themselves are under evolution. In such cases, it can be tricky to identify and obtain a recommended development environment setup. For new feature development or application development, getting a verified and recommended Loom environment, which is approved and known to work, and can be used as a base to enhance one or more micro-services or create a new Loom Application which is deployed on Loom itself, can be a time consuming task, prone to errors.  DevX Tool can help you choose the right environment for your specific Loom development needs. You can choose from DevX Environment Directory Listing and Build repository (Artifactory) Listing interfaces and rest assured that you will be able to obtain and spin up your Kubernetes test cluster in a jiffy.
+
+========================================================
+Flexibility in choosing the type of test infrastructure
+========================================================
+
+DevX offers a generic Kubernetes test cluster on any cloud, VMware based resources on-premises or OpenStack based infrastructure. Each developer need not have to worry about provider specific credentials or deployment specifics.  DevX takes care of that part.  Developers can simply use their enterprise SSO credentials to avail DevX API benefits and web based interface to get started with DevX. 
+
+==========================================================
+Replicating Test Environments across teams and geographies
+==========================================================
+
+DevX ,in future, will also enable users to snapshot complex deployment environments and replicate them elsewhere.  This can significantly speed up and ease replication of test environments during testing and production phases or during shared development of micro-services based products and Applications using such products or deployed on a micro-services platform architecture.
+
+The following figure highlights benefits of DevX Tool:
+
+.. figure:: /_static/devx/devx-benefits.png
+   :scale: 125%
+   :align: center
+   :alt: DevXBenefits
+   
+   Figure: DevX Benefits
+
+.. _para_how_to_use:
+
+-----
+
+*****************
+How to use DevX?
+***************** 
+
+DevX Tool provides REST APIs for all its functionality of Kubernetes Cluster Abstraction. Refer to `DevX Canary Site`_ for details and list of DevX APIs available for use.
+
+======================
+DevX Workflow
+======================
+
+Following are the basic instructions to get started with DevX:
+
+#. Step 1: **Authenticate**
+
+   Before you can get started with DevX, you need to authenticate yourself using your Veritas SSO credentials at the `DevX Canary Site`_.  You can use this web interface directly to authenticate yourself.
+
+.. note: To be updated in next revision
+   [Show screenshots here]
+
+#. Step 2: **List available DevX Environment Definitions**
+
+   Next, you can obtain a list of available DevX environments and use one of them to setup your cluster.  Alternatively you can create (and delete) your own cluster environment using DevX APIs. 
+
+.. note: To be updated in next revision
+   [Show screenshots here]
+
+#. Step 3: **List available builds to be deployed**
+
+   To help developers identify which Loom or other micro-service builds are available for deployment and their version numbers, DevX provides Artifactory API which acts as a directory of builds that can be deployed for application development and testing.
+
+.. note: To be updated in next revision
+   [Show screenshots here]
+
+
+#. Step 4: **Execute**
+
+   Once you have specified the environment and which builds to deploy, you can Execute DevX Environment of your choice – using its ID or ??? (List environment API returns ID, right?). TBD -   How does one ‘activate’ the cluster and access it (by name?) – how do you get its IP address? TBD
+
+.. note: To be updated in next revision
+   [Show screenshots here]
+
+#. Step 5: **Scale up on down on demand**:
+
+   Scale DevX Environment of your choice – Replication factor, per microservice, load balancing and controller functionality are abstracted internally.  How to??
+
+.. note: To be updated in next revision
+   [Show screenshots here]
+
+.. _para_sec:
+
+-----
+
+***************
+DevX Security
+***************
+DevX and Kubernetes APIs authenticate users who present credentials, and then authorize them based on their Veritas SSO and role. Developers typically make REST API calls from web interface via their browsers. Every container that runs on the cluster is associated with a service account. This account is also used to list and pull,push images, builds and deployment components.
+
+.. _para_tutorial:
+
+-----
+
+********************
+DevX Tutorial Video
+********************
+The following is a placeholder video that shows a typical DevX usage flow.  We plan to provide specific short videos to describe how to do specific tasks using DevX in subsequent revisions.  
+
+Click on this link to see sample `DevX Tutorial Video`_.
+
+***********************
+Other DevX References
+***********************
+TBD
+
+.. _DevX Canary Site: http://devx-swagger-canary.cicd.veritas.com
+.. _ DevX Tutorial Video: https://veritas.webex.com/mw3200/mywebex/nbrshared.do

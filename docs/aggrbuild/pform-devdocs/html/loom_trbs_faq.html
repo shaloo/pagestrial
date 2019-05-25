@@ -1,0 +1,949 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Loom How-To, FAQ and Troubleshooting Guide &mdash; Loom 0.7.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Loom 0.7.0 documentation" href="index.html"/>
+        <link rel="next" title="Loom SDK API Documentation" href="mcdmp_devdocs.html"/>
+        <link rel="prev" title="Loom: Installation &amp; Deployment Guide" href="loom_installation_guide.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Loom
+          
+
+          
+            
+            <img src="_static/loom.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.7.0 (Beta-1-Dev)
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="loom_installation_guide.html">Loom Deployment Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Loom Troubleshooting Guide &amp; FAQ</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#faq-loom-general">FAQ: Loom General</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-apps-will-be-available-when-loom-launches-in-summer-2018">What Apps will be available when Loom launches in summer 2018?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#will-there-be-any-functionality-loss-when-information-map-and-data-insight-are-rolled-into-one-product">Will there be any functionality loss when Information Map and Data Insight are rolled into one product?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#will-data-insight-be-able-to-look-at-netbackup-catalog-data">Will Data Insight be able to look at NetBackup catalog data?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#when-will-the-on-premises-version-of-loom-be-released">When will the On-Premises version of Loom be released?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-size-loom-deployment-saas-on-microsoft-azure">How-to Size Loom Deployment (SaaS) on Microsoft Azure</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#deployment-overview">Deployment Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pre-requisites-for-loom-deployment-on-azure">Pre-requisites for Loom Deployment on Azure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sizing-loom-saas-deployment-on-azure">Sizing: Loom SaaS Deployment on Azure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#best-practices-for-loom-azure-deployment-sizing">Best Practices for Loom Azure Deployment Sizing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-size-on-premises-loom-data-engine-deployment">How-to Size On Premises Loom Data Engine Deployment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#overview-of-loom-on-premises-data-engine-deployment">Overview of Loom On-Premises Data Engine Deployment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pre-requisites-for-loom-on-premises-data-engine-deployment">Pre-Requisites for Loom On-Premises Data Engine Deployment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#best-practices-for-sizing">Best Practices for Sizing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#loom-application-manager-troubleshooting-guide">Loom Application Manager Troubleshooting Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#faq-loom-platform-monitoring">FAQ: Loom Platform Monitoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#faq-loom-platform-dashboard">FAQ: Loom Platform Dashboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#faq-loom-tenant-user-management">FAQ: Loom Tenant &amp; User Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#faq-loom-policy-management">FAQ: Loom Policy Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#faq-loom-digital-information-management-job-scheduling">FAQ: Loom Digital Information Management Job Scheduling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#faq-loom-applications-management">FAQ: Loom Applications Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#faq-loom-datavision-application">FAQ: Loom DataVision Application</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-datavision">What is DataVision?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#is-datavision-a-part-of-standard-loom-deployment">Is DataVision a part of standard Loom Deployment?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#can-i-de-install-datavision">Can I de-install DataVision?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#which-loom-services-does-datavision-application-depend-upon">Which Loom Services does DataVision Application depend upon?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-can-i-do-with-loom-datavision-application">What can I do with Loom DataVision Application?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-gain-visibility-into-cloud-based-enterprise-content-sources">How do I gain visibility into cloud based enterprise content sources?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-gain-visibility-into-enterprise-content-sources-located-on-premises">How do I gain visibility into enterprise content sources located on premises?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#are-there-pre-configured-data-visibility-scan-and-classification-policies">Are there pre-configured data visibility, scan and classification policies?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#datavision-does-it-show-alerts-and-notifications-related-to-enterprise-data-access-breaches">DataVision: Does it show alerts and notifications related to enterprise data access breaches?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-configure-datavision-to-gain-visibility-into-enterprise-content-repositories">How do I configure DataVision to gain visibility into Enterprise Content Repositories?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#does-datavision-provide-a-means-to-gain-insight-into-pii-data">Does DataVision provide a means to gain insight into PII data?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#other-faq">Other FAQ</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#faq-loom-gdpr-application">FAQ: Loom GDPR Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#faq-loom-sar-lite-application">FAQ: Loom SAR Lite Application</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-sar">What is SAR?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-sar-lite">What is SAR Lite?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#does-it-support-review-or-redaction-of-files">Does it support review or redaction of files?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-features-does-sar-lite-offer">What features does SAR Lite offer?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#does-sar-lite-warn-the-user-about-insufficient-resources-for-responding-to-sar-request">Does SAR Lite warn the user about insufficient resources for responding to SAR request?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#does-sar-lite-provide-integration-into-any-ticketing-or-workflow-systems">Does SAR Lite provide integration into any ticketing or workflow systems?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#faq-loom-security">FAQ: Loom Security</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-are-the-high-level-security-principles-of-loom-platform-and-its-applications">What are the high level security principles of Loom Platform and its Applications?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#does-loom-support-secured-sign-on">Does Loom support secured sign on?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#does-it-support-role-based-access-control">Does it support Role Based Access Control?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#does-loom-platform-and-its-applications-store-any-customer-data">Does Loom Platform and its Applications store any Customer data?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-residency-considerations-for-loom">Data Residency Considerations for Loom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#physical-data-security-considerations">Physical Data Security Considerations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-are-the-technical-controls-for-loom-infrastructure-application-and-data-security-policies">What are the technical controls for Loom infrastructure, Application and Data Security policies?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#faq-general-loom-troubleshooting">FAQ: General Loom Troubleshooting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#loom-activation-and-access">Loom Activation and Access</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#faq-loom-debugging-troubleshooting">FAQ: Loom Debugging &amp; Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#loom-deployment-troubleshooting-guide">Loom Deployment Troubleshooting Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mcdmp_devdocs.html">Platform SDK API Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="devx.html">DevX User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mcdmp_docx_res.html">DocX Resources</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Loom</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Loom How-To, FAQ and Troubleshooting Guide</li>
+    
+    
+    <p>
+        <a href="https://stash.veritas.com/projects/MCDMP/repos/pform-docs/browse/source/loom_trbs_faq.rst" class="fa fa-bitbucket" aria-hidden="true">&nbsp; Edit on Bitbucket</a>
+    
+          <a href="../latex/loom_trbs_faq.pdf" class="fa" style="float:right;">Download PDF</a>
+    
+    </p> 
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="loom-how-to-faq-and-troubleshooting-guide">
+<span id="trbs-faq-content"></span><h1>Loom How-To, FAQ and Troubleshooting Guide<a class="headerlink" href="#loom-how-to-faq-and-troubleshooting-guide" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#faq-loom-general" id="id10">FAQ: Loom General</a></li>
+<li><a class="reference internal" href="#how-to-size-loom-deployment-saas-on-microsoft-azure" id="id11">How-to Size Loom Deployment (SaaS) on Microsoft Azure</a></li>
+<li><a class="reference internal" href="#how-to-size-on-premises-loom-data-engine-deployment" id="id12">How-to Size On Premises Loom Data Engine Deployment</a></li>
+<li><a class="reference internal" href="#loom-application-manager-troubleshooting-guide" id="id13">Loom Application Manager Troubleshooting Guide</a></li>
+<li><a class="reference internal" href="#faq-loom-platform-monitoring" id="id14">FAQ: Loom Platform Monitoring</a></li>
+<li><a class="reference internal" href="#faq-loom-platform-dashboard" id="id15">FAQ: Loom Platform Dashboard</a></li>
+<li><a class="reference internal" href="#faq-loom-tenant-user-management" id="id16">FAQ: Loom Tenant &amp; User Management</a></li>
+<li><a class="reference internal" href="#faq-loom-policy-management" id="id17">FAQ: Loom Policy Management</a></li>
+<li><a class="reference internal" href="#faq-loom-digital-information-management-job-scheduling" id="id18">FAQ: Loom Digital Information Management Job Scheduling</a></li>
+<li><a class="reference internal" href="#faq-loom-applications-management" id="id19">FAQ: Loom Applications Management</a></li>
+<li><a class="reference internal" href="#faq-loom-datavision-application" id="id20">FAQ: Loom DataVision Application</a></li>
+<li><a class="reference internal" href="#faq-loom-gdpr-application" id="id21">FAQ: Loom GDPR Application</a></li>
+<li><a class="reference internal" href="#faq-loom-sar-lite-application" id="id22">FAQ: Loom SAR Lite Application</a></li>
+<li><a class="reference internal" href="#faq-loom-security" id="id23">FAQ: Loom Security</a></li>
+<li><a class="reference internal" href="#faq-general-loom-troubleshooting" id="id24">FAQ: General Loom Troubleshooting</a></li>
+<li><a class="reference internal" href="#faq-loom-debugging-troubleshooting" id="id25">FAQ: Loom Debugging &amp; Troubleshooting</a></li>
+<li><a class="reference internal" href="#loom-deployment-troubleshooting-guide" id="id26">Loom Deployment Troubleshooting Guide</a></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="faq-loom-general">
+<span id="faq-loom-gen"></span><h2><a class="toc-backref" href="#id10">FAQ: Loom General</a><a class="headerlink" href="#faq-loom-general" title="Permalink to this headline">¶</a></h2>
+<div class="contents local topic" id="id1">
+<ul class="simple">
+<li><a class="reference internal" href="#what-apps-will-be-available-when-loom-launches-in-summer-2018" id="id27">What Apps will be available when Loom launches in summer 2018?</a></li>
+<li><a class="reference internal" href="#will-there-be-any-functionality-loss-when-information-map-and-data-insight-are-rolled-into-one-product" id="id28">Will there be any functionality loss when Information Map and Data Insight are rolled into one product?</a></li>
+<li><a class="reference internal" href="#will-data-insight-be-able-to-look-at-netbackup-catalog-data" id="id29">Will Data Insight be able to look at NetBackup catalog data?</a></li>
+<li><a class="reference internal" href="#when-will-the-on-premises-version-of-loom-be-released" id="id30">When will the On-Premises version of Loom be released?</a></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This Guide is currently in preview and subject to change until the product release.</p>
+</div>
+<div class="section" id="what-apps-will-be-available-when-loom-launches-in-summer-2018">
+<h3><a class="toc-backref" href="#id27">What Apps will be available when Loom launches in summer 2018?</a><a class="headerlink" href="#what-apps-will-be-available-when-loom-launches-in-summer-2018" title="Permalink to this headline">¶</a></h3>
+<p>SaaS Information Map, DataVision, GDPR Readiness and GDPR Subject Access Request (SAR) apps will be available at launch.</p>
+<p>The SaaS Information Map App will be included in Data Management 360 suites and will also be available on its own - just as Information Map was previously. All existing Information Map customers will be entitled to (and migrated to) the Information Map App. The Information Map App will include all functionality present in Information Map as of the Loom launch date.</p>
+<p>The SaaS DataVision App will be available for separate purchase from other apps on Loom. It will include all the functionality of the Information Map App. It will also include Information Classification, built-in actions and some features found in Data Insight 6 as well as workflows to solve business challenges like data center consolidation.</p>
+<p>The SaaS GDPR Readiness App will be available for separate purchase from other apps on Loom. It builds on the output of the DataVision App with GDPR-specific workflows. These workflows are designed to simplify GDPR readiness and help with more a comprehensive understanding of personal data when responding to Subject Access Requests (SARs).</p>
+<p>The SaaS GDPR Subject Access Request (SAR) App will be available for separate purchase from other apps on Loom. Its capabilities will be enhanced if purchased together with the SaaS GDPR Readiness App. It will include workflows designed to streamline SAR requests, providing significant value in locating and identifying personal data in unstructured data repositories.</p>
+</div>
+<div class="section" id="will-there-be-any-functionality-loss-when-information-map-and-data-insight-are-rolled-into-one-product">
+<h3><a class="toc-backref" href="#id28">Will there be any functionality loss when Information Map and Data Insight are rolled into one product?</a><a class="headerlink" href="#will-there-be-any-functionality-loss-when-information-map-and-data-insight-are-rolled-into-one-product" title="Permalink to this headline">¶</a></h3>
+<p>It’s likely that we won’t put all Data Insight functionality into Loom apps – we’re working on mapping this so that we can be fully transparent on this point. We plan to implement use cases that are relevant and valuable to our customers and prospects into Loom apps rather than simply copying all Data Insight features/functionality. In addition, the plan for the platform includes functionality not available in Data Insight, such as visibility into additional data sources and built-in actions.</p>
+</div>
+<div class="section" id="will-data-insight-be-able-to-look-at-netbackup-catalog-data">
+<h3><a class="toc-backref" href="#id29">Will Data Insight be able to look at NetBackup catalog data?</a><a class="headerlink" href="#will-data-insight-be-able-to-look-at-netbackup-catalog-data" title="Permalink to this headline">¶</a></h3>
+<p>We have no plans to integrate Data Insight with the NetBackup catalog at this time. Loom will have visibility into NetBackup catalog data.</p>
+</div>
+<div class="section" id="when-will-the-on-premises-version-of-loom-be-released">
+<h3><a class="toc-backref" href="#id30">When will the On-Premises version of Loom be released?</a><a class="headerlink" href="#when-will-the-on-premises-version-of-loom-be-released" title="Permalink to this headline">¶</a></h3>
+<p>We are currently targeting July 2018 for SKU availability (transactability) for the SaaS version of Loom. We expect the fully On-Premises version of Loom to be available in the second half of calendar 2018.</p>
+<hr class="docutils" />
+</div>
+</div>
+<div class="section" id="how-to-size-loom-deployment-saas-on-microsoft-azure">
+<span id="ht-loom-sizing"></span><h2><a class="toc-backref" href="#id11">How-to Size Loom Deployment (SaaS) on Microsoft Azure</a><a class="headerlink" href="#how-to-size-loom-deployment-saas-on-microsoft-azure" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This Guide is currently in preview and subject to change until the product release.</p>
+</div>
+<div class="section" id="introduction">
+<h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h3>
+<p>Use this information to learn about sizing a typical Loom deployment on Microsoft Azure in a SaaS model.</p>
+<p>Veritas Loom is a Digital Information Management Platform that comprises of the core Loom Services that make the Platform and Loom Applications.  In the initial release, two Loom Applications are available:</p>
+<ul class="simple">
+<li>DataVision - Provides complete visibility into an enterprise’s structured and unstructured data through enterprise configurable data classification and access policies</li>
+<li>GDPR - Offers basic coverage for enterprise GDPR readiness and compliance</li>
+</ul>
+<p>Enterprises can visualize, classify and gain insights into their data irrespective of where it is located - in the cloud or on premises.  For analyzing data on premises, enterprises are required to deploy an on premises Loom Data Engine component.  Such an additional component is not required to analyze cloud based enterprise data.  For sizing details related to Loom On Premises Data Engine Deployment, refer to the <a class="reference internal" href="#ht-loom-op-de-sizing"><span class="std std-ref">How-to Size On Premises Loom Data Engine Deployment</span></a>.</p>
+</div>
+<div class="section" id="deployment-overview">
+<h3>Deployment Overview<a class="headerlink" href="#deployment-overview" title="Permalink to this headline">¶</a></h3>
+<p>This section will give a very high level system diagram indicating key Loom components that get deployed in Microsoft Azure.  This is for cloud based Loom Deployment Option. The most frequently asked questions about Loom Deployment are:</p>
+<ul class="simple">
+<li>How do I size it?</li>
+<li>What will it cost me?</li>
+</ul>
+<p>Loom Sizing depends on two key factors:</p>
+<ul class="simple">
+<li>What are the typical enterprise needs regarding security, availability and desired performance levels for enterprise data scanning for gaining visibility and access control?</li>
+<li>Availability of Loom Performance Matrix that captures key Loom Digital Information Management functionality, given a specific number of enterprise users, overall enterprise data size that needs to be scanned and analyzed, the frequency of scans, number of enterprise data sources, shared storage type and many others.</li>
+</ul>
+<p>Performance and costs are related. Many of the factors listed above contribute to the blueprint that could offer best options based on costs for Loom Deployment sizing on Azure in terms of storage, storage transactions, networking, and other enterprise needs.</p>
+<p>Following figure captures a typical Loom Deployment on Microsoft Azure.</p>
+</div>
+<div class="section" id="pre-requisites-for-loom-deployment-on-azure">
+<h3>Pre-requisites for Loom Deployment on Azure<a class="headerlink" href="#pre-requisites-for-loom-deployment-on-azure" title="Permalink to this headline">¶</a></h3>
+<p>This section lists pre-requisites for Loom Deployment on Azure that need to be considered for Loom Sizing.</p>
+<p>If you are looking at actual Loom Deployment on Azure, refer to the specific instructions in <a class="reference internal" href="loom_installation_guide.html#file-cloud-azure-dep-guide"><span class="std std-ref">Azure Deployment Guide</span></a>.</p>
+<p>Following is a list of key information points that you need to be ready with.  These vary from organization to organization and based on some of these factors, Loom Deployment Sizing may vary.</p>
+<ul class="simple">
+<li>Hardware Considerations</li>
+<li>Software Considerations</li>
+<li>Networking Considerations</li>
+<li>Security Considerations</li>
+<li>High Availability Considerations</li>
+<li>Total number of Customers that need to be supported by a Loom Deployment in terms of total Tenants, number of Loom Users per Tenant , and total number of concurrent users of Loom Deployment</li>
+<li>Total Enterprise Content Repository Numbers,</li>
+<li>Total Data (bytes) per Enterprise Content repository</li>
+<li>Expected Information Classification Scan Performance or typical time window to complete a scan</li>
+</ul>
+</div>
+<div class="section" id="sizing-loom-saas-deployment-on-azure">
+<span id="sizing-loom-saas-azure"></span><h3>Sizing: Loom SaaS Deployment on Azure<a class="headerlink" href="#sizing-loom-saas-deployment-on-azure" title="Permalink to this headline">¶</a></h3>
+<p>Loom requires minimum 8 nodes with at least 30GB Memory to support 10 Tenants per Customer through a Azure based SaaS deployment. There may be additional nodes needed in case on-premises data sources have to be connected to Loom deployment in the cloud. That may need to deploy additional nodes on premises for setting up an on-premises Loom Data Engine component. Refer to <a class="reference external" href="http://10.67.141.149/shaloo/aggr/pform-ugdocs/html/on_prem_dp_install_mcdmp.html#ing-com-on-prem-dp-install" title="(in Loom v0.7.0 (Beta-1-Dev))"><span>Loom On-Premise Data Plane Deployment</span></a> for instructions on how to set up and on premises Loom Data Engine for gaining visibility or classifying data located on premises. For sizing the Loom On Premises Data Engine Deployment, refer to <a class="reference internal" href="#ht-loom-op-de-sizing"><span class="std std-ref">How-to Size On Premises Loom Data Engine Deployment</span></a>.</p>
+<p>The following table provides some insights related to Loom SaaS Deployment on Azure in terms of sizing:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Category</th>
+<th class="head">Insight</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Number of Nodes</td>
+<td>TBD</td>
+</tr>
+<tr class="row-odd"><td>Number of CPUs</td>
+<td>TBD</td>
+</tr>
+<tr class="row-even"><td>Memory / RAM</td>
+<td>TBD</td>
+</tr>
+<tr class="row-odd"><td>OS</td>
+<td>TBD</td>
+</tr>
+<tr class="row-even"><td>Storage Needs</td>
+<td>TBD</td>
+</tr>
+<tr class="row-odd"><td>Disk speed</td>
+<td>TBD</td>
+</tr>
+<tr class="row-even"><td>Disk Layout</td>
+<td>TBD</td>
+</tr>
+<tr class="row-odd"><td>External Storage</td>
+<td>TBD</td>
+</tr>
+<tr class="row-even"><td>Additional NICs</td>
+<td>TBD</td>
+</tr>
+<tr class="row-odd"><td>Privilege Access</td>
+<td>TBD</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">Other latest details for Loom Deployment on Azure Sizing TBD. See <a class="reference internal" href="#sizing-ref"><span class="std std-ref">References</span></a> section below for Engineering Links that might be useful to build the documentation content related to Loom Sizing.  Need Engineering help to confirm and come up with actual sizing guidelines before the product release.</p>
+</div>
+</div>
+<div class="section" id="best-practices-for-loom-azure-deployment-sizing">
+<h3>Best Practices for Loom Azure Deployment Sizing<a class="headerlink" href="#best-practices-for-loom-azure-deployment-sizing" title="Permalink to this headline">¶</a></h3>
+<p>This section is WIP.  Need more inputs to make it useful for Loom on-boarders.</p>
+<table border="1" class="longtable colwidths-given docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Customer Requirements</th>
+<th class="head">Loom Sizing BluePrints</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Loom SaaS Deployment for 10
+Tenants</td>
+<td>Minimum 8 nodes with 30GB RAM
+more nodes if HA is needed as well</td>
+</tr>
+<tr class="row-odd"><td>Loom Default Applications
+for 5 users per tenant</td>
+<td><p class="first">The virtual servers or nodes hosting
+Loom in SaaS Deployment must have the
+following configuration in terms of CPU
+RAM and IO performance:</p>
+<ul class="last simple">
+<li>CPU Configuration/Sizing TBD for Azure</li>
+<li>Minimum RAM needed TBD</li>
+<li>IO Performance TBD</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>Loom DataVision Application
+for &lt;5 users per Tenant
+and &lt; 100 connectors,
+and &lt; 1PB total data that
+needs to be scanned
+or total scan window &lt;72 hrs</td>
+<td>Sizing TBD</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The following reference section will be removed from this How-to guide once we have captured all the correct facts and latest Loom Sizing info from these near the product release time.</p>
+</div>
+</div>
+<div class="section" id="references">
+<span id="sizing-ref"></span><h3>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://confluence.community.veritas.com/x/O5e1Bw">December Alpha1 Scope</a></li>
+<li><a class="reference external" href="https://confluence.community.veritas.com/x/nCTsBw">Production Capacity Planning</a></li>
+</ul>
+<p><em>Section author: Shaloo Shalini &lt;<a class="reference external" href="mailto:shaloo&#46;shalini&#37;&#52;&#48;veritas&#46;com">shaloo<span>&#46;</span>shalini<span>&#64;</span>veritas<span>&#46;</span>com</a>&gt;</em></p>
+<hr class="docutils" />
+</div>
+</div>
+<div class="section" id="how-to-size-on-premises-loom-data-engine-deployment">
+<span id="ht-loom-op-de-sizing"></span><h2><a class="toc-backref" href="#id12">How-to Size On Premises Loom Data Engine Deployment</a><a class="headerlink" href="#how-to-size-on-premises-loom-data-engine-deployment" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This Guide is currently in preview and subject to change until the product release.</p>
+</div>
+<div class="section" id="id2">
+<h3>Introduction<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>Use this information to learn about sizing a typical Loom Data Engine deployment for enabling Loom Data Information Management of on-premises enterprise content repositories.</p>
+<p>Veritas Loom is a Digital Information Management Platform that comprises of the core Loom Services that make the Platform and Loom Applications.  In the initial release, two Loom Applications are available:</p>
+<ul class="simple">
+<li>DataVision - Provides complete visibility into an enterprise’s structured and unstructured data through enterprise configurable data classification and access policies</li>
+<li>GDPR - Offers basic coverage for enterprise GDPR readiness and compliance</li>
+</ul>
+<p>Enterprises can visualize, classify and gain insights into their data irrespective of where it is located - in the cloud or on premises.  For analyzing data on premises, enterprises are required to deploy an on premises Loom Data Engine component.  Such an additional component is not required to analyze cloud based enterprise data.</p>
+</div>
+<div class="section" id="overview-of-loom-on-premises-data-engine-deployment">
+<h3>Overview of Loom On-Premises Data Engine Deployment<a class="headerlink" href="#overview-of-loom-on-premises-data-engine-deployment" title="Permalink to this headline">¶</a></h3>
+<p>Describe various Components of Loom  - Core Platform, Control and Data Planes, Loom Applications, Loom Data Adapters that hook into cloud and on premises content repositories. Highlight via a system level diagram key components of Loom On Premises data engine, in terms of number of VMs, containers, internet connections, ports, data flow.</p>
+<p>Explain how Digital Information Management is done by Loom, no data is copied only metadata is gathered and on-premises data engine is a means to do the same in a secured manner.</p>
+</div>
+<div class="section" id="pre-requisites-for-loom-on-premises-data-engine-deployment">
+<h3>Pre-Requisites for Loom On-Premises Data Engine Deployment<a class="headerlink" href="#pre-requisites-for-loom-on-premises-data-engine-deployment" title="Permalink to this headline">¶</a></h3>
+<p>This section highlights key considerations before the actual deployment.  Once you have figured out the sizing details specific to your organization, you can actually deploy the Loom On Premises Data Engine by following the detailed instructions in <a class="reference external" href="http://10.67.141.149/shaloo/aggr/pform-ugdocs/html/on_prem_dp_install_mcdmp.html#ing-com-on-prem-dp-install" title="(in Loom v0.7.0 (Beta-1-Dev))"><span>Loom On-Premise Data Plane Deployment</span></a> Guide.</p>
+<p>Before you begin deploying Loom On-Premises Data Engine in your organization, make sure the following requirements are in place:</p>
+<p>Hardware</p>
+<ul class="simple">
+<li>Physical Servers - Details of CPU and memory TBD</li>
+<li>Virtual Machines - Number of VMs utilized by Loom components on premises, configuration for each VM in terms of CPU and memory, storage</li>
+<li>Local Storage  - Details of Storage device or servers, Minimum IOPS support needed for Loom</li>
+</ul>
+<p>Networking</p>
+<ul class="simple">
+<li>Ports available for Loom components on-premises to communicate with the Loom Platform Deployment in the cloud</li>
+<li>Firewall / Security configurations</li>
+<li>Loom VM networking requirements</li>
+</ul>
+<p>Privileged Access</p>
+<ul class="simple">
+<li>Which Loom components require privileged access / root access during deployment or deployment phases</li>
+<li>Loom Cloud Deployment Customer Account must be created before deploying the Loom on Premises data engine component</li>
+</ul>
+<p>Software</p>
+<ul class="simple">
+<li>Virtualization - VMWare - version</li>
+<li>Operating System - Version details</li>
+<li>Third party tools / software / Open Source software needed for on premises Loom Data Engine Deployment</li>
+</ul>
+</div>
+<div class="section" id="best-practices-for-sizing">
+<h3>Best Practices for Sizing<a class="headerlink" href="#best-practices-for-sizing" title="Permalink to this headline">¶</a></h3>
+<p>This section is a placeholder and basic skeleton for reference.</p>
+<p>Sizing Guidelines for Loom On-Premises Data Engine deployment are in the works.  Waiting on Deployment/Architecture team to provide inputs for the same.  This is a skeleton document that needs more Performance Engineering / Deployment inputs.</p>
+<table border="1" class="longtable colwidths-given docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Enterprise Need</strong></th>
+<th class="head"><strong>Loom Sizing Best Practise</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Data Security</td>
+<td>SSL, other Loom security related insights and networking configuration inputs</td>
+</tr>
+<tr class="row-odd"><td>IO Performance</td>
+<td>What kind of storage is needed for Loom Persistent components if any on premises?</td>
+</tr>
+<tr class="row-even"><td>Data Visibility</td>
+<td>Recommended hardware and networking configuration for Enterprises with Petabytes
+or Exabytes of data on premises.</td>
+</tr>
+<tr class="row-odd"><td>Repository Scan</td>
+<td>Typical number of users and scan jobs issued per day, provide some metrics
+regarding how many bytes of data can be scanned on premises in a given time frame
+through Loom Data Engine deployed on premises using a specific blueprint</td>
+</tr>
+<tr class="row-even"><td>GDPR query rate</td>
+<td>Provide basic blueprint that supports n number of Loom GDPR Application queries
+for say k number of enterprise GDPR users and p number of data scan jobs</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</div>
+</div>
+<div class="section" id="loom-application-manager-troubleshooting-guide">
+<span id="trbs-loom-app-mgr"></span><h2><a class="toc-backref" href="#id13">Loom Application Manager Troubleshooting Guide</a><a class="headerlink" href="#loom-application-manager-troubleshooting-guide" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This Guide is currently in preview and subject to change until the product release.</p>
+</div>
+<hr class="docutils" />
+</div>
+<div class="section" id="faq-loom-platform-monitoring">
+<span id="faq-loom-monitoring"></span><h2><a class="toc-backref" href="#id14">FAQ: Loom Platform Monitoring</a><a class="headerlink" href="#faq-loom-platform-monitoring" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This Guide is currently in preview and subject to change until the product release.</p>
+</div>
+<hr class="docutils" />
+</div>
+<div class="section" id="faq-loom-platform-dashboard">
+<span id="faq-loom-dashboard"></span><h2><a class="toc-backref" href="#id15">FAQ: Loom Platform Dashboard</a><a class="headerlink" href="#faq-loom-platform-dashboard" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This Guide is currently in preview and subject to change until the product release.</p>
+</div>
+<hr class="docutils" />
+</div>
+<div class="section" id="faq-loom-tenant-user-management">
+<span id="faq-loom-ten-usr-mngt"></span><h2><a class="toc-backref" href="#id16">FAQ: Loom Tenant &amp; User Management</a><a class="headerlink" href="#faq-loom-tenant-user-management" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This Guide is currently in preview and subject to change until the product release.</p>
+</div>
+<hr class="docutils" />
+</div>
+<div class="section" id="faq-loom-policy-management">
+<span id="faq-loom-policy-mngt"></span><h2><a class="toc-backref" href="#id17">FAQ: Loom Policy Management</a><a class="headerlink" href="#faq-loom-policy-management" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This Guide is currently in preview and subject to change until the product release.</p>
+</div>
+<hr class="docutils" />
+</div>
+<div class="section" id="faq-loom-digital-information-management-job-scheduling">
+<span id="faq-loom-job-scheduling"></span><h2><a class="toc-backref" href="#id18">FAQ: Loom Digital Information Management Job Scheduling</a><a class="headerlink" href="#faq-loom-digital-information-management-job-scheduling" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This Guide is currently in preview and subject to change until the product release.</p>
+</div>
+<hr class="docutils" />
+</div>
+<div class="section" id="faq-loom-applications-management">
+<span id="faq-loom-app-mngt"></span><h2><a class="toc-backref" href="#id19">FAQ: Loom Applications Management</a><a class="headerlink" href="#faq-loom-applications-management" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This Guide is currently in preview and subject to change until the product release.</p>
+</div>
+<hr class="docutils" />
+</div>
+<div class="section" id="faq-loom-datavision-application">
+<span id="faq-datavision-app"></span><h2><a class="toc-backref" href="#id20">FAQ: Loom DataVision Application</a><a class="headerlink" href="#faq-loom-datavision-application" title="Permalink to this headline">¶</a></h2>
+<div class="contents local topic" id="id3">
+<ul class="simple">
+<li><a class="reference internal" href="#what-is-datavision" id="id31">What is DataVision?</a></li>
+<li><a class="reference internal" href="#is-datavision-a-part-of-standard-loom-deployment" id="id32">Is DataVision a part of standard Loom Deployment?</a></li>
+<li><a class="reference internal" href="#can-i-de-install-datavision" id="id33">Can I de-install DataVision?</a></li>
+<li><a class="reference internal" href="#which-loom-services-does-datavision-application-depend-upon" id="id34">Which Loom Services does DataVision Application depend upon?</a></li>
+<li><a class="reference internal" href="#what-can-i-do-with-loom-datavision-application" id="id35">What can I do with Loom DataVision Application?</a></li>
+<li><a class="reference internal" href="#how-do-i-gain-visibility-into-cloud-based-enterprise-content-sources" id="id36">How do I gain visibility into cloud based enterprise content sources?</a></li>
+<li><a class="reference internal" href="#how-do-i-gain-visibility-into-enterprise-content-sources-located-on-premises" id="id37">How do I gain visibility into enterprise content sources located on premises?</a></li>
+<li><a class="reference internal" href="#are-there-pre-configured-data-visibility-scan-and-classification-policies" id="id38">Are there pre-configured data visibility, scan and classification policies?</a></li>
+<li><a class="reference internal" href="#datavision-does-it-show-alerts-and-notifications-related-to-enterprise-data-access-breaches" id="id39">DataVision: Does it show alerts and notifications related to enterprise data access breaches?</a></li>
+<li><a class="reference internal" href="#how-do-i-configure-datavision-to-gain-visibility-into-enterprise-content-repositories" id="id40">How do I configure DataVision to gain visibility into Enterprise Content Repositories?</a></li>
+<li><a class="reference internal" href="#does-datavision-provide-a-means-to-gain-insight-into-pii-data" id="id41">Does DataVision provide a means to gain insight into PII data?</a></li>
+<li><a class="reference internal" href="#other-faq" id="id42">Other FAQ</a></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This Guide is currently in preview and subject to change until the product release.</p>
+</div>
+<div class="section" id="what-is-datavision">
+<h3><a class="toc-backref" href="#id31">What is DataVision?</a><a class="headerlink" href="#what-is-datavision" title="Permalink to this headline">¶</a></h3>
+<p>DataVision is a <a class="reference external" href="http://10.67.141.149/shaloo/aggr/pform-ugdocs/html/mcdmp_concepts.html#term-application" title="(in Loom v0.7.0 (Beta-1-Dev))"><span>Loom Application</span></a> that is part of every standard Loom Deployment. Loom Applications are business process workflows designed to allow an enterprise to automate and scale their ability to better utilize their distributed data assets for different business objectives. Enterprises looking for top line growth, better customer insight, compliance or optimizing IT operational costs through digital information management can deploy Loom Applications such as DataVision to orchestrate various data services and capabilities in order to achieve their business objectives through a given workflow.</p>
+<p>DataVision leverages Veritas technological innovations that provide universal enterprise data visibility and classification features through predefined workflows. It enables enterprises to ”see” their data and be able to take necessary actions to delete and move the right data from source to target, assigning appropriate permissions automatically. DataVision can help organizations make informed decision and move to the cloud or consolidate data centers.</p>
+</div>
+<div class="section" id="is-datavision-a-part-of-standard-loom-deployment">
+<h3><a class="toc-backref" href="#id32">Is DataVision a part of standard Loom Deployment?</a><a class="headerlink" href="#is-datavision-a-part-of-standard-loom-deployment" title="Permalink to this headline">¶</a></h3>
+<p>Yes. By default, every Loom Deployment, be it on cloud or on-premises contains DataVision as a pre-installed component.</p>
+</div>
+<div class="section" id="can-i-de-install-datavision">
+<h3><a class="toc-backref" href="#id33">Can I de-install DataVision?</a><a class="headerlink" href="#can-i-de-install-datavision" title="Permalink to this headline">¶</a></h3>
+<p>No.</p>
+</div>
+<div class="section" id="which-loom-services-does-datavision-application-depend-upon">
+<h3><a class="toc-backref" href="#id34">Which Loom Services does DataVision Application depend upon?</a><a class="headerlink" href="#which-loom-services-does-datavision-application-depend-upon" title="Permalink to this headline">¶</a></h3>
+<p>DataVision Application utilizes several Loom Services such as those listed below. All the core Loom micro-services need to be in a healthy and working state so that DataVision can operate normally.</p>
+<ul class="simple">
+<li>Data insights Ingestion</li>
+<li>Identity &amp; Access Management</li>
+<li>Key Management</li>
+<li>Service Discovery Registry</li>
+<li>Workflow Management</li>
+<li>Policy Management</li>
+<li>Application Service</li>
+<li>Cluster Manager</li>
+<li>Notification, Monitoring and Logging Services</li>
+<li>Information Asset Service</li>
+<li>More TBD</li>
+</ul>
+</div>
+<div class="section" id="what-can-i-do-with-loom-datavision-application">
+<h3><a class="toc-backref" href="#id35">What can I do with Loom DataVision Application?</a><a class="headerlink" href="#what-can-i-do-with-loom-datavision-application" title="Permalink to this headline">¶</a></h3>
+<p>Enterprise users can gain complete visibility into enterprise information assets and content repositories irrespective of where the enterprise data is located, on premises or in the cloud with Veritas Loom DataVision Application. It provides capability to plug into disparate enterprise content repositories via smart adapter ecosystem that caters to more than 20 types of Enterprise storage assets and content repositories.  Besides providing a unified pane of glass to drill into enterprise content repositories and understand what is stored where and owned by whom, DataVision also allows intelligent data classification and helps enterprises to figure out vulnerabilities such as PII and other confidential and critical data that needs to be better protected or audited.</p>
+<p>For details on how to use DataVision Application, refer to the <a class="reference external" href="http://10.67.141.149/shaloo/aggr/pform-ugdocs/html/mcdmp_app_ug.html#mcdmp-vis-app-ug" title="(in Loom v0.7.0 (Beta-1-Dev))"><span class="xref std std-ref">Loom DataVision User Guide</span></a></p>
+</div>
+<div class="section" id="how-do-i-gain-visibility-into-cloud-based-enterprise-content-sources">
+<h3><a class="toc-backref" href="#id36">How do I gain visibility into cloud based enterprise content sources?</a><a class="headerlink" href="#how-do-i-gain-visibility-into-cloud-based-enterprise-content-sources" title="Permalink to this headline">¶</a></h3>
+<p>TBD</p>
+</div>
+<div class="section" id="how-do-i-gain-visibility-into-enterprise-content-sources-located-on-premises">
+<h3><a class="toc-backref" href="#id37">How do I gain visibility into enterprise content sources located on premises?</a><a class="headerlink" href="#how-do-i-gain-visibility-into-enterprise-content-sources-located-on-premises" title="Permalink to this headline">¶</a></h3>
+<p>TBD</p>
+</div>
+<div class="section" id="are-there-pre-configured-data-visibility-scan-and-classification-policies">
+<h3><a class="toc-backref" href="#id38">Are there pre-configured data visibility, scan and classification policies?</a><a class="headerlink" href="#are-there-pre-configured-data-visibility-scan-and-classification-policies" title="Permalink to this headline">¶</a></h3>
+<p>TBD</p>
+</div>
+<div class="section" id="datavision-does-it-show-alerts-and-notifications-related-to-enterprise-data-access-breaches">
+<h3><a class="toc-backref" href="#id39">DataVision: Does it show alerts and notifications related to enterprise data access breaches?</a><a class="headerlink" href="#datavision-does-it-show-alerts-and-notifications-related-to-enterprise-data-access-breaches" title="Permalink to this headline">¶</a></h3>
+<p>TBD</p>
+</div>
+<div class="section" id="how-do-i-configure-datavision-to-gain-visibility-into-enterprise-content-repositories">
+<h3><a class="toc-backref" href="#id40">How do I configure DataVision to gain visibility into Enterprise Content Repositories?</a><a class="headerlink" href="#how-do-i-configure-datavision-to-gain-visibility-into-enterprise-content-repositories" title="Permalink to this headline">¶</a></h3>
+<p>TBD</p>
+</div>
+<div class="section" id="does-datavision-provide-a-means-to-gain-insight-into-pii-data">
+<h3><a class="toc-backref" href="#id41">Does DataVision provide a means to gain insight into PII data?</a><a class="headerlink" href="#does-datavision-provide-a-means-to-gain-insight-into-pii-data" title="Permalink to this headline">¶</a></h3>
+<p>Yes. Refer to the DataVision User Guide for details on how to configure it for identifying Enterprise PII data.</p>
+</div>
+<div class="section" id="other-faq">
+<h3><a class="toc-backref" href="#id42">Other FAQ</a><a class="headerlink" href="#other-faq" title="Permalink to this headline">¶</a></h3>
+<p>TBD</p>
+<hr class="docutils" />
+</div>
+</div>
+<div class="section" id="faq-loom-gdpr-application">
+<span id="faq-gdpr-app"></span><h2><a class="toc-backref" href="#id21">FAQ: Loom GDPR Application</a><a class="headerlink" href="#faq-loom-gdpr-application" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This Guide is currently in preview and subject to change until the product release.</p>
+</div>
+<hr class="docutils" />
+</div>
+<div class="section" id="faq-loom-sar-lite-application">
+<span id="faq-sar-lite-app"></span><h2><a class="toc-backref" href="#id22">FAQ: Loom SAR Lite Application</a><a class="headerlink" href="#faq-loom-sar-lite-application" title="Permalink to this headline">¶</a></h2>
+<div class="contents local topic" id="id4">
+<ul class="simple">
+<li><a class="reference internal" href="#what-is-sar" id="id43">What is SAR?</a></li>
+<li><a class="reference internal" href="#what-is-sar-lite" id="id44">What is SAR Lite?</a></li>
+<li><a class="reference internal" href="#does-it-support-review-or-redaction-of-files" id="id45">Does it support review or redaction of files?</a></li>
+<li><a class="reference internal" href="#what-features-does-sar-lite-offer" id="id46">What features does SAR Lite offer?</a></li>
+<li><a class="reference internal" href="#does-sar-lite-warn-the-user-about-insufficient-resources-for-responding-to-sar-request" id="id47">Does SAR Lite warn the user about insufficient resources for responding to SAR request?</a></li>
+<li><a class="reference internal" href="#does-sar-lite-provide-integration-into-any-ticketing-or-workflow-systems" id="id48">Does SAR Lite provide integration into any ticketing or workflow systems?</a></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This Guide is currently in preview and subject to change until the product release.</p>
+</div>
+<div class="section" id="what-is-sar">
+<h3><a class="toc-backref" href="#id43">What is SAR?</a><a class="headerlink" href="#what-is-sar" title="Permalink to this headline">¶</a></h3>
+<p>As part of GDPR Compliance enterprises are obliged to respond to legal request made to obtain information from the enterprise about any personal data that the enterprise might possess, how that data is stored, used and shared.  This is referred to as SAR or ‘<a class="reference external" href="https://gdpr-info.eu/art-15-gdpr/">Subject Access Request</a>’.</p>
+</div>
+<div class="section" id="what-is-sar-lite">
+<h3><a class="toc-backref" href="#id44">What is SAR Lite?</a><a class="headerlink" href="#what-is-sar-lite" title="Permalink to this headline">¶</a></h3>
+<p>SAR Lite is a <a class="reference external" href="http://10.67.141.149/shaloo/aggr/pform-ugdocs/html/mcdmp_concepts.html#term-application" title="(in Loom v0.7.0 (Beta-1-Dev))"><span>Loom Application</span></a> that is part of every standard Loom Deployment. Loom Applications are business process workflows designed to allow an enterprise to automate and scale their ability to better utilize their distributed data assets for different business objectives. Enterprises looking for top line growth, better customer insight, compliance or optimizing IT operational costs through digital information management can deploy Loom Applications such as DataVision to orchestrate various data services and capabilities in order to achieve their business objectives through a given workflow.</p>
+<p>As part of GDPR Readiness and compliance, enterprises must have capability to obtain timely insights into their content repositories and identify ‘<a class="reference external" href="https://gdpr-info.eu/art-4-gdpr/">Personal Data</a>’ corresponding to a ‘<a class="reference external" href="https://gdpr-info.eu/art-4-gdpr/">Data Subject</a>’. The Loom ‘SAR Lite` Application can help enterprises obtain the smallest minimum subset of this personal data that comprises of files and information about those files and content, for a given Data Subject. This information is based on enterprise content repository meta-data scans, data classification and analysis features offered by Loom Platform and harnessed by the SAR Lite Application that sits on this digital information management platform.</p>
+</div>
+<div class="section" id="does-it-support-review-or-redaction-of-files">
+<h3><a class="toc-backref" href="#id45">Does it support review or redaction of files?</a><a class="headerlink" href="#does-it-support-review-or-redaction-of-files" title="Permalink to this headline">¶</a></h3>
+<p>No</p>
+</div>
+<div class="section" id="what-features-does-sar-lite-offer">
+<h3><a class="toc-backref" href="#id46">What features does SAR Lite offer?</a><a class="headerlink" href="#what-features-does-sar-lite-offer" title="Permalink to this headline">¶</a></h3>
+<p>Following is a high level feature and capability summary of Loom SAR Lite Application. This list is WIP and we will refine it near product release.</p>
+<ul class="simple">
+<li>Feature to help audit SAR request handling by an enterprise in terms of:
+- When was a SAR request received?
+- When was the request validated?
+- What did the Data Subject actually ask for in terms of enterprise data?</li>
+<li>Single, unified system of records for all enterprise ‘Subject Access Requests’.</li>
+<li>Query Engine that can figure out the location of Personal Data belonging to the Data Subject within an organization’s content repository ecosystem, irrespective of whether it is located on cloud or on premises.</li>
+<li>SAR Search Summary Preview feature that lets enterprises to confirm the data access prior to extraction in response to the SAR request.</li>
+<li>Choice of SAR Response data storage location (for all SAR requests) once data is extracted for further action such as review or redaction.</li>
+</ul>
+</div>
+<div class="section" id="does-sar-lite-warn-the-user-about-insufficient-resources-for-responding-to-sar-request">
+<h3><a class="toc-backref" href="#id47">Does SAR Lite warn the user about insufficient resources for responding to SAR request?</a><a class="headerlink" href="#does-sar-lite-warn-the-user-about-insufficient-resources-for-responding-to-sar-request" title="Permalink to this headline">¶</a></h3>
+<p>Yes. In the first version, SAR Lite will warn the user if the specified storage location for depositing the data extracted as part of SAR response is insufficient.</p>
+</div>
+<div class="section" id="does-sar-lite-provide-integration-into-any-ticketing-or-workflow-systems">
+<h3><a class="toc-backref" href="#id48">Does SAR Lite provide integration into any ticketing or workflow systems?</a><a class="headerlink" href="#does-sar-lite-provide-integration-into-any-ticketing-or-workflow-systems" title="Permalink to this headline">¶</a></h3>
+<p>No</p>
+<hr class="docutils" />
+</div>
+</div>
+<div class="section" id="faq-loom-security">
+<span id="id5"></span><h2><a class="toc-backref" href="#id23">FAQ: Loom Security</a><a class="headerlink" href="#faq-loom-security" title="Permalink to this headline">¶</a></h2>
+<div class="contents local topic" id="id6">
+<ul class="simple">
+<li><a class="reference internal" href="#what-are-the-high-level-security-principles-of-loom-platform-and-its-applications" id="id49">What are the high level security principles of Loom Platform and its Applications?</a></li>
+<li><a class="reference internal" href="#does-loom-support-secured-sign-on" id="id50">Does Loom support secured sign on?</a></li>
+<li><a class="reference internal" href="#does-it-support-role-based-access-control" id="id51">Does it support Role Based Access Control?</a></li>
+<li><a class="reference internal" href="#does-loom-platform-and-its-applications-store-any-customer-data" id="id52">Does Loom Platform and its Applications store any Customer data?</a></li>
+<li><a class="reference internal" href="#data-residency-considerations-for-loom" id="id53">Data Residency Considerations for Loom</a></li>
+<li><a class="reference internal" href="#physical-data-security-considerations" id="id54">Physical Data Security Considerations</a></li>
+<li><a class="reference internal" href="#what-are-the-technical-controls-for-loom-infrastructure-application-and-data-security-policies" id="id55">What are the technical controls for Loom infrastructure, Application and Data Security policies?</a></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This Guide is currently in preview and subject to change until the product release.</p>
+</div>
+<p>Loom is delivered in its first release as a Microsoft Azure based SaaS offering managed by Veritas. Security is the most critical and important consideration for cloud based services. There are several aspects of security including secure connections, encryption of data in motion and controlled, authorized access to data at rest. This document contains some of the frequently asked questions related to Loom Security by early adopters.</p>
+<div class="section" id="what-are-the-high-level-security-principles-of-loom-platform-and-its-applications">
+<h3><a class="toc-backref" href="#id49">What are the high level security principles of Loom Platform and its Applications?</a><a class="headerlink" href="#what-are-the-high-level-security-principles-of-loom-platform-and-its-applications" title="Permalink to this headline">¶</a></h3>
+<p>Veritas Loom Platform and Application Ecosystem ensures that all communication between different components and sub-systems is secured using industry standard encryption protocols. Loom architecture is designed to be a multi-tenant system from ground up. For each tenant, an encrypted filesystem is created at the time of tenant creation to secure the data at rest. Loom ensures that the encryption key used is unique for each tenant. Loom core platform comprises of a dedicated micro-service for tenant key management functionality.</p>
+</div>
+<div class="section" id="does-loom-support-secured-sign-on">
+<h3><a class="toc-backref" href="#id50">Does Loom support secured sign on?</a><a class="headerlink" href="#does-loom-support-secured-sign-on" title="Permalink to this headline">¶</a></h3>
+<p>Yes. Administrative and end-user accounts can be managed using Loom Admin Dashboard. Not yet integrated with other Identity Management Services such as Active Directory Federation Services (ADFS).</p>
+</div>
+<div class="section" id="does-it-support-role-based-access-control">
+<h3><a class="toc-backref" href="#id51">Does it support Role Based Access Control?</a><a class="headerlink" href="#does-it-support-role-based-access-control" title="Permalink to this headline">¶</a></h3>
+<p>Loom offers Role Based Access control such that Administrative accounts can be segregated from the Loom user accounts.</p>
+</div>
+<div class="section" id="does-loom-platform-and-its-applications-store-any-customer-data">
+<h3><a class="toc-backref" href="#id52">Does Loom Platform and its Applications store any Customer data?</a><a class="headerlink" href="#does-loom-platform-and-its-applications-store-any-customer-data" title="Permalink to this headline">¶</a></h3>
+<p>Yes.</p>
+<p>TBD - List of Metadata stored by Loom</p>
+</div>
+<div class="section" id="data-residency-considerations-for-loom">
+<h3><a class="toc-backref" href="#id53">Data Residency Considerations for Loom</a><a class="headerlink" href="#data-residency-considerations-for-loom" title="Permalink to this headline">¶</a></h3>
+<p>TBD - In what physical locations does the Customer data get stored in Loom SaaS deployment Context?  Is it in EMEA or elsewhere? One location or multiple locations?</p>
+</div>
+<div class="section" id="physical-data-security-considerations">
+<h3><a class="toc-backref" href="#id54">Physical Data Security Considerations</a><a class="headerlink" href="#physical-data-security-considerations" title="Permalink to this headline">¶</a></h3>
+<p>TBD - Veritas Loom is deployed using a third party Cloud Provider service.  What all data security standards are complied to by that provider?  List all the ones supported by Azure cloud from amongst - say ISO 27001, ISO 9001, SOC, the PCI Data Security Standard and the US Government’s Federal Risk and Authorization Management Program (FedRAMP).</p>
+</div>
+<div class="section" id="what-are-the-technical-controls-for-loom-infrastructure-application-and-data-security-policies">
+<h3><a class="toc-backref" href="#id55">What are the technical controls for Loom infrastructure, Application and Data Security policies?</a><a class="headerlink" href="#what-are-the-technical-controls-for-loom-infrastructure-application-and-data-security-policies" title="Permalink to this headline">¶</a></h3>
+<p>The following technical controls support Loom infrastructure, application, and data security policies.</p>
+<p><strong>Infrastructure Security:</strong>
+TBD - Firewalls, Virtual Private Clouds (VPC), Load Balancers</p>
+<p><strong>Application Security:</strong>
+TBD - Role Based Access Control, User Session persistence and cookies (does Loom support it for June release?), Audit Logs and History</p>
+<p><strong>Data Security:</strong>
+Data in transit - Encryption is supported. All data sent to or retrieved from the Loom Azure based SaaS deployment is over HTTPS; encrypted and secured using Transport Layer Security (TLS). This security mechanism covers Loom Platform and Application users that interact with the system through a browser as well as the data transferred between on-premise Loom Data Engine and Loom SaaS deployment. This includes the metadata uploaded by the Loom On Premises Data Engine and configuration information that is retrieved by it.</p>
+<p>Data at rest - All customer data in the Veritas Loom deployment is encrypted at rest Advanced Encryption Standard (AES) encryption. This applies to all customer data whether uploaded, entered via the web application or generated data such as exports.</p>
+<p>TBD - Need to verify how this is taken care of by Loom - whether there is PPOD / tenant specific keys (I think)</p>
+<p>Each customer is randomly allocated a unique 256-bit AES master key which is used to encrypt and protect the keys used for actual data encryption, which are 128-bit AES keys. The master key is generated by and stored within a physical Key Management System. The master key can never leave the KMS and hence is kept separate from the encrypted data.</p>
+<p>Multiple 128-bit AES keys are used to encrypt data within different repositories, such as databases and Object Storage. For example, each batch of metadata uploaded from the on-premise Loom Data Engine is assigned a new, randomly generated 128-bit AES key. The batch is then encrypted before being stored in Object Storage for subsequent processing.</p>
+<hr class="docutils" />
+</div>
+</div>
+<div class="section" id="faq-general-loom-troubleshooting">
+<span id="ifaq-loom-trbs-general"></span><h2><a class="toc-backref" href="#id24">FAQ: General Loom Troubleshooting</a><a class="headerlink" href="#faq-general-loom-troubleshooting" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This Guide is currently in preview and subject to change until the product release.</p>
+</div>
+<div class="contents local topic" id="id7">
+<ul class="simple">
+<li><a class="reference internal" href="#loom-activation-and-access" id="id56">Loom Activation and Access</a></li>
+</ul>
+</div>
+<p>This document is intended for early Loom Platform and Loom Application adopters such as Platform Admin, Tenant Admin and Tenant users.  It addresses general queries related to accessing and using Loom Platform and applications deployed on the Platform.</p>
+<div class="section" id="loom-activation-and-access">
+<h3><a class="toc-backref" href="#id56">Loom Activation and Access</a><a class="headerlink" href="#loom-activation-and-access" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first"><strong>Cannot login with my access credentials into Loom deployment.</strong></p>
+<p>Please verify that you are accessing and trying to log in to the exact specified Loom Production Deployment setup prescribed in your ‘Welcome Email. Use the login credentials shared in ‘Welcome email’ for your pre-registered customer account to log in. For the very first login, you will be required to reset the default password. Make sure you have successfully completed that step.</p>
+</li>
+<li><p class="first"><strong>First time user cannot login, tried to reset password but no reset email received.</strong></p>
+<p>During the very first login to Loom Platform UI, a Loom user will be asked to reset the default password that is shared via the ‘Welcome email’. This is your very first interaction with Loom Platform.  If you have not completed this step, you cannot login into Loom User Interface.  Once you have successfully logged into Loom at least once, using your non-default password, you will be able to reset your password using the ‘reset password’ link.</p>
+</li>
+<li><p class="first"><strong>Where can I get help and support for Loom? Is there an email ID for the same?</strong></p>
+<p>For any Loom Platform or Loom Application support issues, you can drop an email on <a class="reference external" href="mailto:DL-CPO-LOOM-BETA-FEEDBACK&#37;&#52;&#48;veritas&#46;com">DL-CPO-LOOM-BETA-FEEDBACK<span>&#64;</span>veritas<span>&#46;</span>com</a>.</p>
+</li>
+</ol>
+<hr class="docutils" />
+</div>
+</div>
+<div class="section" id="faq-loom-debugging-troubleshooting">
+<span id="faq-debug"></span><h2><a class="toc-backref" href="#id25">FAQ: Loom Debugging &amp; Troubleshooting</a><a class="headerlink" href="#faq-loom-debugging-troubleshooting" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This Guide is currently in preview and subject to change until the product release.</p>
+</div>
+<p>This document is intended for Loom developers and Loom Application developers. It answers basic queries about how to debug and troubleshoot Loom issues.</p>
+<ol class="arabic simple">
+<li><strong>How do I debug Loom User Login and First time access issues?</strong>
+Ensure correct Loom deployment is being accessed.  Validate login credentials.  Refer to Loom RBAC / IDM Troubleshooting FAQ for pointers to tools and utilities for debugging Loom issues in this regard.</li>
+<li><strong>User cannot see Assets that should show up after connecting Loom content repositories. How can I debug and narrow down the real cause?</strong>
+Asset DB and Asset Management involves complex interactions between Loom Control and Data Plane.  You need to ensure that the end-to-end data pipeline is intact and working properly and there is no data leakage.  To investigate this indepth, refer to <cite>:ref:loom_assetdb_debugging</cite>.</li>
+<li><strong>Other questions</strong>
+TBD</li>
+</ol>
+<hr class="docutils" />
+</div>
+<div class="section" id="loom-deployment-troubleshooting-guide">
+<span id="trbs-loom-deployment"></span><h2><a class="toc-backref" href="#id26">Loom Deployment Troubleshooting Guide</a><a class="headerlink" href="#loom-deployment-troubleshooting-guide" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This Guide is currently in preview and subject to change until the product release.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="mcdmp_devdocs.html" class="btn btn-neutral float-right" title="Loom SDK API Documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="loom_installation_guide.html" class="btn btn-neutral" title="Loom: Installation &amp; Deployment Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Veritas Technologies LLC.
+      Last updated on Apr 7, 2018, 11:18:09 PM.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+    <p>
+    <ul>
+    <a href="../pform-idocs/archive_index.html" style="float:left;">Loom Documentation Archives</a>
+    </ul>
+    </p>
+     
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.7.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

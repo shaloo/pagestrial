@@ -1,0 +1,17 @@
+:orphan:
+
+.. _lic_overview:
+
+===================================
+Loom License and Subscription Model
+===================================
+
+Based on the deployment model chosen, Veritas Multi-Cloud Data Management Platform can be Licensed for metered usage or as per subscription, amount of enterprise data, kind and type of Platform applications deployed and Platform features used.
+
+As a placeholder, we have a license outline created here for Loom. We need to review and flesh it out in more detail.
+
+.. note::
+
+   Refer to Prasad Varakur, Joshua Stageberg and Romen Kuloor for details on Loom Packaging, subscription, Trial and Licensing Terms and Conditions until this document is updated with finalized data.
+
+.. include:: /lic/mcdmp_lic_outline.inc

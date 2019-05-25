@@ -1,0 +1,21 @@
+.. Loom documentation master file, created by
+   sphinx-quickstart on Thu Aug  3 16:59:23 2017.
+   Loom team can adapt this file completely to Veritas Branding requirements,
+   but it should at least contain the root `toctree` directive.
+
+Welcome to Loom Product Collateral!
+=====================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Table of Contents
+
+   Loom Data Sheet <mcdmp_ds.rst>
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`search`
+
+.. * :ref:`modindex`

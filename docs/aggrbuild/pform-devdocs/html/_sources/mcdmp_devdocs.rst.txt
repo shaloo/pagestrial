@@ -1,0 +1,229 @@
+.. _content_mcdmp_devdocs:
+
+############################
+Loom SDK API Documentation
+############################
+
+The target audience for this section of Loom documentation are the Loom App developers and 3rd party developers trying to build Enterprise Information Management Applications that run on Loom.
+
+This is programmer's SDK Guide.
+
+For basic concepts on Loom, refer to :ref:`content_mcdmp_concepts` documentation.
+
+Loom is comprised of several information management micro-services which can be used for several information management functionalities such as filtering data, scanning data, classifying data, gaining visibility into what kind of enterprise data is stored across enterprise data assets and more. The micro-service based Loom architecture is built from ground up to facilitate development of Data Management  Applications running on top of the core Loom Platform. One such application is in-built with Loom Alpha1 Deployment - 360 Data Analysis. This application addresses enterprise needs for data management such as Visibility, Classification and capability to securely connect to all enterprise data sources irrespective of wherever they are - in the cloud or on premise. In future, there may be additional in-built applications with core Loom services that will be part of Loom deployment. For e.g., application to address enterprise GDPR use case.
+
+Post Alpha1 release, Loom will offer enterprises the capability to develop 3rd party data management applications and deploy them on the Loom ecosystem. This can be done by using the REST based Loom APIs that will be part of the future releases.
+
+This document lists Loom SDK APIs as a developer reference.  It will be refined and populated as Loom evolves beyond Alpha1 release. As of now, this document is organized as follows:
+
+For each service, there is a dedicated section covering basic overview of the service, how it can be used and for what purpose. This is followed by Service API listing as per the service .json file.  Next, there is a FAQ document covering some of the frequently asked questions about the service usage. In some cases you may find a service troubleshooting guide and additional information. For e.g., in case of Identity and Access Management service, there is additional guideline and best practice document covering password rules.
+
+----
+
+.. contents::
+   :depth: 2
+   :local:
+
+----
+
+************************
+Loom Licensing Service
+************************
+
+.. include:: /devdocs/lics/srv_lics_gsg.inc
+
+.. include:: /devdocs/lics/srv_lics_json.inc
+
+.. include:: /devdocs/lics/srv_lics_faq.inc
+
+.. include:: /devdocs/lics/srv_lics_trbs.inc
+
+----
+
+********************
+Platform UI Service
+********************
+
+.. include:: /devdocs/pui/srv_pui_gsg.inc
+
+.. include:: /devdocs/pui/srv_pui_json.inc
+
+.. include:: /devdocs/pui/srv_pui_faq.inc
+
+.. include:: /devdocs/pui/srv_pui_trbs.inc
+
+----
+
+******************************************
+Platform UI Angular Shared Module Service
+******************************************
+
+.. include:: /devdocs/asvc/srv_asvc_gsg.inc
+
+.. include:: /devdocs/asvc/srv_asvc_api.inc
+
+.. include:: /devdocs/asvc/srv_asvc_faq.inc
+
+.. include:: /devdocs/asvc/srv_asvc_trbs.inc
+
+----
+
+********************************
+Loom Policy Management Service
+********************************
+
+.. include:: /devdocs/plcy/srv_plcy_gsg.inc
+
+.. include:: /devdocs/plcy/srv_plcy_json.inc
+
+.. include:: /devdocs/plcy/srv_plcy_faq.inc
+
+.. include:: /devdocs/plcy/srv_plcy_trbs.inc
+
+----
+
+**********************************
+Application Manager Service
+**********************************
+
+.. include:: /devdocs/appmgr/srv_appmgr_gsg.inc
+
+.. include:: /devdocs/appmgr/srv_appmgr_json.inc
+
+.. include:: /devdocs/appmgr/srv_appmgr_faq.inc
+
+.. include:: /devdocs/appmgr/srv_appmgr_trbs.inc
+
+----
+
+**********************************
+Identity & Access Manager Service
+**********************************
+
+.. include:: /devdocs/idm/srv_idm_gsg.inc
+
+.. include:: /devdocs/idm/srv_idm_json.inc
+
+.. include:: /devdocs/idm/srv_idm_faq.inc
+
+.. include:: /devdocs/idm/srv_idm_trbs.inc
+
+.. include:: /devdocs/idm/srv_idm_pwd_guide.inc
+
+----
+
+********************
+Job Manager Service
+********************
+
+.. include:: /devdocs/jobm/srv_jobm_gsg.inc
+
+.. include:: /devdocs/jobm/srv_jobm_json.inc
+
+.. include:: /devdocs/jobm/srv_jobm_faq.inc
+
+.. include:: /devdocs/jobm/srv_jobm_trbs.inc
+
+----
+
+**********************
+Asset Manager Service
+**********************
+
+.. include:: /devdocs/asm/srv_asm_gsg.inc
+
+.. include:: /devdocs/asm/srv_asm_json.inc
+
+.. include:: /devdocs/asm/srv_asm_faq.inc
+
+.. include:: /devdocs/asm/srv_asm_trbs.inc
+
+----
+
+***********************
+Asset Database Service
+***********************
+
+.. include:: /devdocs/asdb/srv_asdb_gsg.inc
+
+.. include:: /devdocs/asdb/srv_asdb_json.inc
+
+.. include:: /devdocs/asdb/srv_asdb_faq.inc
+
+.. include:: /devdocs/asdb/srv_asdb_trbs.inc
+
+----
+
+************************
+Key Management Service
+************************
+
+.. include:: /devdocs/kms/srv_kms_gsg.inc
+
+.. include:: /devdocs/kms/srv_kms_json.inc
+
+.. include:: /devdocs/kms/srv_kms_faq.inc
+
+.. include:: /devdocs/kms/srv_kms_trbs.inc
+
+----
+
+************************
+Cluster Manager Service
+************************
+
+.. include:: /devdocs/clsm/srv_clsm_gsg.inc
+
+.. include:: /devdocs/clsm/srv_clsm_json.inc
+
+.. include:: /devdocs/clsm/srv_clsm_faq.inc
+
+.. include:: /devdocs/clsm/srv_clsm_trbs.inc
+
+----
+
+************************
+Object Browser Service
+************************
+
+.. include:: /devdocs/objb/srv_objb_gsg.inc
+
+.. include:: /devdocs/objb/srv_objb_json.inc
+
+.. include:: /devdocs/objb/srv_objb_faq.inc
+
+.. include:: /devdocs/objb/srv_objb_trbs.inc
+
+----
+
+************************
+Audit Logs Service
+************************
+
+.. include:: /devdocs/audit/srv_audit_gsg.inc
+
+.. include:: /devdocs/audit/srv_audit_json.inc
+
+.. include:: /devdocs/audit/srv_audit_faq.inc
+
+.. include:: /devdocs/audit/srv_audit_trbs.inc
+
+----
+
+****************************
+Loom Platform API Sample App
+****************************
+
+.. include:: /devdocs/sampleapp/angular_sample_app.inc
+
+.. include:: /devdocs/sampleapp/how-to-build-loom-apps.inc
+
+****************************
+Loom Platform Debuggability 
+****************************
+
+.. include:: /devdocs/ldebug/loom_debug_overview.inc
+
+----
+
+.. include:: /devdocs/ldebug/assetdb_debug.inc

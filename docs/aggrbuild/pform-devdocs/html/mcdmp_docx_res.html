@@ -1,0 +1,719 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>DocX: Resources &mdash; Loom 0.7.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Loom 0.7.0 documentation" href="index.html"/>
+        <link rel="prev" title="DevX User Guide" href="devx.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Loom
+          
+
+          
+            
+            <img src="_static/loom.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.7.0 (Beta-1-Dev)
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="loom_installation_guide.html">Loom Deployment Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loom_trbs_faq.html">Loom Troubleshooting Guide &amp; FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mcdmp_devdocs.html">Platform SDK API Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="devx.html">DevX User Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">DocX Resources</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#mcdmp-shared-development-of-documentation">MCDMP Shared development of Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-s-in-a-name">What’s in a name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#objective">Objective</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shared-doc-development-process-highlights">Shared Doc Development Process Highlights</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-it-works">How it works</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-contribute">How to contribute</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#use-cases-applying-model-to-mcdmp-documentation-workflows">Use Cases: Applying model to MCDMP Documentation Workflows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#feedback-on-how-to-improve">Feedback on how to improve</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#loom-doc-style-guide">Loom Doc Style Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#goals-and-audience">Goals and Audience</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-use-this-guide">How to use this Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#restructured-text-style-guide">Restructured Text Style Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#documentation-do-s">Documentation Do’s</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#documentation-do-not-s">Documentation Do not’s</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#loom-doc-templates">Loom Doc Templates</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#template-loom-service-faq">Template: Loom Service FAQ</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#loom-service-name">Loom Service Name</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#template-loom-xyz-service-troubleshooting-guide">Template: Loom XYZ Service Troubleshooting Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#service-issue-lorem-ipsum">Service Issue Lorem Ipsum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#another-service-issue-lorem-ipsum">Another Service Issue Lorem Ipsum</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Loom</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>DocX: Resources</li>
+    
+    
+    <p>
+        <a href="https://stash.veritas.com/projects/MCDMP/repos/pform-docs/browse/source/mcdmp_docx_res.rst" class="fa fa-bitbucket" aria-hidden="true">&nbsp; Edit on Bitbucket</a>
+    
+          <a href="../latex/mcdmp_docx_res.pdf" class="fa" style="float:right;">Download PDF</a>
+    
+    </p> 
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="docx-resources">
+<span id="docx-res"></span><h1>DocX: Resources<a class="headerlink" href="#docx-resources" title="Permalink to this headline">¶</a></h1>
+<p>DocX is the agile shared document development methodology used to develop all documentation related to Multi-Cloud Data Management Platform. You may wish to refer to <a class="reference external" href="https://confluence.community.veritas.com/display/EDMP/DocX%3A+All+Resources">DocX Developer Resources</a> in addition to the DocX Process Guide and the DocX Style Guide listed below.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#mcdmp-shared-development-of-documentation" id="id11">MCDMP Shared development of Documentation</a><ul>
+<li><a class="reference internal" href="#what-s-in-a-name" id="id12">What’s in a name</a></li>
+<li><a class="reference internal" href="#objective" id="id13">Objective</a></li>
+<li><a class="reference internal" href="#shared-doc-development-process-highlights" id="id14">Shared Doc Development Process Highlights</a></li>
+<li><a class="reference internal" href="#how-it-works" id="id15">How it works</a></li>
+<li><a class="reference internal" href="#how-to-contribute" id="id16">How to contribute</a></li>
+<li><a class="reference internal" href="#use-cases-applying-model-to-mcdmp-documentation-workflows" id="id17">Use Cases: Applying model to MCDMP Documentation Workflows</a></li>
+<li><a class="reference internal" href="#feedback-on-how-to-improve" id="id18">Feedback on how to improve</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#loom-doc-style-guide" id="id19">Loom Doc Style Guide</a><ul>
+<li><a class="reference internal" href="#goals-and-audience" id="id20">Goals and Audience</a></li>
+<li><a class="reference internal" href="#how-to-use-this-guide" id="id21">How to use this Guide</a></li>
+<li><a class="reference internal" href="#restructured-text-style-guide" id="id22">Restructured Text Style Guide</a></li>
+<li><a class="reference internal" href="#documentation-do-s" id="id23">Documentation Do’s</a></li>
+<li><a class="reference internal" href="#documentation-do-not-s" id="id24">Documentation Do not’s</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#loom-doc-templates" id="id25">Loom Doc Templates</a><ul>
+<li><a class="reference internal" href="#template-loom-service-faq" id="id26">Template: Loom Service FAQ</a></li>
+<li><a class="reference internal" href="#template-loom-xyz-service-troubleshooting-guide" id="id27">Template: Loom XYZ Service Troubleshooting Guide</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="mcdmp-shared-development-of-documentation">
+<span id="content-all-mcdmp-doc-process"></span><h2><a class="toc-backref" href="#id11">MCDMP Shared development of Documentation</a><a class="headerlink" href="#mcdmp-shared-development-of-documentation" title="Permalink to this headline">¶</a></h2>
+<div class="contents local topic" id="id1">
+<ul class="simple">
+<li><a class="reference internal" href="#what-s-in-a-name" id="id28">What’s in a name</a></li>
+<li><a class="reference internal" href="#objective" id="id29">Objective</a></li>
+<li><a class="reference internal" href="#shared-doc-development-process-highlights" id="id30">Shared Doc Development Process Highlights</a></li>
+<li><a class="reference internal" href="#how-it-works" id="id31">How it works</a></li>
+<li><a class="reference internal" href="#how-to-contribute" id="id32">How to contribute</a></li>
+<li><a class="reference internal" href="#use-cases-applying-model-to-mcdmp-documentation-workflows" id="id33">Use Cases: Applying model to MCDMP Documentation Workflows</a></li>
+<li><a class="reference internal" href="#feedback-on-how-to-improve" id="id34">Feedback on how to improve</a></li>
+</ul>
+</div>
+<div class="section" id="what-s-in-a-name">
+<h3><a class="toc-backref" href="#id28">What’s in a name</a><a class="headerlink" href="#what-s-in-a-name" title="Permalink to this headline">¶</a></h3>
+<p>The very first thing we’d like to do as part of MCDMP Shared Doc Development Process building, is to rename TechDocs.  The reason being, Rohini thinks that the name should not get confused with InfoDev as this effort is not to replace InfoDev but to augment it and strengthen it.  The TechDocs initiative is to bring in agile documentation practices from contemporary open source world, leaders in IT into Veritas documentation efforts.</p>
+<p>You can participate in TechDocs renaming exercise.  Simply click this link <a class="reference external" href="https://www.surveymonkey.com/r/P85V5FP">TechDocs Rename Survey</a>, and vote.  If you don’t like any of the alternatives listed there, suggest your own.</p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/techdocs-rename.png"><img alt="Techdocs rename" src="_images/techdocs-rename.png" style="width: 387.75px; height: 318.75px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Some alternative names for TechDocs</span></p>
+</div>
+</div>
+<div class="section" id="objective">
+<h3><a class="toc-backref" href="#id29">Objective</a><a class="headerlink" href="#objective" title="Permalink to this headline">¶</a></h3>
+<p>MCDMP Platform is comprised of a set of micro-services that work in tandem to offer rich functionality for information management.  The overall objective is to be the Platform of choice for Enterprise Information Management solutions from Veritas but also third parties. MCDMP allows end users to utilize its rich functionality through REST APIs. To facilitate the onboarding process, MCDMP TechDocs proposes a shared documentation development process similar to the one followed successfully by several popular open source software projects.</p>
+<p>This document outlines MCDMP process for shared development of technical documents including the following:</p>
+<ul class="simple">
+<li>Getting Started Guide</li>
+<li>Installation Guide</li>
+<li>Concepts and User Guide</li>
+<li>SDK API Documentation</li>
+<li>MCDMP FAQ</li>
+<li>Others (TBD)</li>
+</ul>
+</div>
+<div class="section" id="shared-doc-development-process-highlights">
+<h3><a class="toc-backref" href="#id30">Shared Doc Development Process Highlights</a><a class="headerlink" href="#shared-doc-development-process-highlights" title="Permalink to this headline">¶</a></h3>
+<p>Here are some of key highlights of MCDMP Shared Documentation Development Process.  Please note, this is a draft as of now and we hope to refine it further in the days to come, as we build MCDMP itself.</p>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/shared-doc-dev-model.png"><img alt="Shared doc dev model" src="_images/shared-doc-dev-model.png" style="width: 716.25px; height: 386.25px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Shared Document Development Model for MCDMP</span></p>
+</div>
+<div class="figure align-center" id="id5">
+<a class="reference internal image-reference" href="_images/shared-doc-vision.png"><img alt="Shared doc dev model vision" src="_images/shared-doc-vision.png" style="width: 822.75px; height: 420.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Vision: Shared Document Development Model for MCDMP</span></p>
+</div>
+<div class="figure align-center" id="id6">
+<a class="reference internal image-reference" href="_images/shared-doc-arch.png"><img alt="Shared doc dev model arch" src="_images/shared-doc-arch.png" style="width: 723.0px; height: 451.5px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Architecture: Shared Document Development Model for MCDMP</span></p>
+</div>
+</div>
+<div class="section" id="how-it-works">
+<h3><a class="toc-backref" href="#id31">How it works</a><a class="headerlink" href="#how-it-works" title="Permalink to this headline">¶</a></h3>
+<p>The following figure is a placeholder for now.  It shows how the MCDMP Shared documentation development process is intended to function.</p>
+<div class="figure align-center" id="id7">
+<a class="reference internal image-reference" href="_images/shared-doc-howitworks.png"><img alt="Shared doc dev model howitworks" src="_images/shared-doc-howitworks.png" style="width: 810.0px; height: 388.5px;" /></a>
+<p class="caption"><span class="caption-text">Figure: How it works: Shared Document Development Model for MCDMP</span></p>
+</div>
+</div>
+<div class="section" id="how-to-contribute">
+<h3><a class="toc-backref" href="#id32">How to contribute</a><a class="headerlink" href="#how-to-contribute" title="Permalink to this headline">¶</a></h3>
+<p>In this section, we list some high level bullet points on how various MCDMP personnel can contribute to the document content development initiative as we all progress along  building MCDMP itself.</p>
+<div class="figure align-center" id="id8">
+<a class="reference internal image-reference" href="_images/shared-doc-howtocontrib.png"><img alt="Shared doc dev model howtocontrib" src="_images/shared-doc-howtocontrib.png" style="width: 807.0px; height: 424.5px;" /></a>
+<p class="caption"><span class="caption-text">Figure: How to Contrbute: Shared Document Development Model for MCDMP</span></p>
+</div>
+</div>
+<div class="section" id="use-cases-applying-model-to-mcdmp-documentation-workflows">
+<h3><a class="toc-backref" href="#id33">Use Cases: Applying model to MCDMP Documentation Workflows</a><a class="headerlink" href="#use-cases-applying-model-to-mcdmp-documentation-workflows" title="Permalink to this headline">¶</a></h3>
+<p>A process is as good as its functioning.  We have drafted the process and believe it works, as is proven by several open source projects and companies such as Google, Twitter and Microsoft that have adopted similar agile documentation methodologies.  In this section, we list potential use cases for this process, to begin with.  The process must address these satisfactorily and needs to evolve as more use cases for documentation arise in future.</p>
+<div class="figure align-center" id="id9">
+<a class="reference internal image-reference" href="_images/shared-doc-usecases.png"><img alt="Shared doc dev model howitworks" src="_images/shared-doc-usecases.png" style="width: 782.25px; height: 385.5px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Architecture: Shared Document Development Model for MCDMP</span></p>
+</div>
+</div>
+<div class="section" id="feedback-on-how-to-improve">
+<h3><a class="toc-backref" href="#id34">Feedback on how to improve</a><a class="headerlink" href="#feedback-on-how-to-improve" title="Permalink to this headline">¶</a></h3>
+<p>Have you tried contributing to TechDocs yet? If not, I’d encourage you to do the same and give the process a shot.  If something needs tweaking or can be made easier, better towards better scalability, document legibility or understanding, feel free to send your suggestions to <a class="reference external" href="mailto://shaloo&#46;shalini&#37;&#52;&#48;veritas&#46;com">TechDocs Support</a>.</p>
+</div>
+</div>
+<div class="section" id="loom-doc-style-guide">
+<h2><a class="toc-backref" href="#id19">Loom Doc Style Guide</a><a class="headerlink" href="#loom-doc-style-guide" title="Permalink to this headline">¶</a></h2>
+<p>How do we make it really easy and simple for Loom users to adopt the platform?</p>
+<p>The very basic ingredient is the Platform itself. It needs to be flexible, scalable, intuitive, easy to deploy and quick to gather information insights. Besides that, one of the key enablers towards facilitating onboarding is Loom user documentation. Documentation that satisfies the following criteria:</p>
+<ul class="simple">
+<li>Concise,</li>
+<li>Current &amp; Continuously updated,</li>
+<li>Consistent,</li>
+<li>Clear, and</li>
+<li>Comprehensive</li>
+</ul>
+<p>Loom follows a shared, scalable documentation model whereby several contributors work towards creating documentation that helps Loom user onboarding. In order to allow for more consistency across developer documentation, use this style guide.</p>
+<p>If you are not aware of the Loom process for shared development of documentation, you may want to refer to <a class="reference internal" href="#content-all-mcdmp-doc-process"><span class="std std-ref">MCDMP Shared development of Documentation</span></a> before you read this style guide.</p>
+<p>REST API Platforms such as Loom are designed to be consumed by APIs! It is important that we ensure Loom clients, or consumers, are able to implement these APIs and understand what is happening, with ease and swiftly. As we build Loom, we want to ensure that we not only provide information on these APIs to help developers integrate / debug connections and solutions around Loom, but also return back relevant data whenever a user makes a call, especially when the API call fails.</p>
+<p>A big proportion of Loom Technical documents will come from and will be consumed by developers. The Loom Documentation process is geared for the developers.  You can say, it is documentation of the developers, for the developers and by the developers. The ultimate goal is to make it really easy for developers, who don’t know what our Loom product can do, or are not sold on using it yet, to get engaged and use it faster.</p>
+<p>This guide is inspired by <a class="reference external" href="https://developers.google.com/style/">Google Style Guide</a> which is adopted by several open source projects out there. Besides that, there are other references such as <a class="reference external" href="https://www.mulesoft.com/resources/api/guidelines-api-documentation">API Documentation Guide</a>, and <a class="reference external" href="https://blog.readme.io/the-best-rest-api-template/">Best REST API Template</a>. These are in use by many projects and many engineers, who collaborate globally to create world class software and documentation, used across verticals and industries.</p>
+<div class="section" id="goals-and-audience">
+<h3><a class="toc-backref" href="#id20">Goals and Audience</a><a class="headerlink" href="#goals-and-audience" title="Permalink to this headline">¶</a></h3>
+<p>The main purpose of this style guide is to clearly list and record simple guidelines that Loom team decides to follow as documentation style during shared document development process.</p>
+<p>The guide can help developers, authors, technical writers to form a consistent approach for writing API documentation.</p>
+<p>The primary goal of this guide is to codify and record decisions that Google’s Developer Relations group makes about style. The guide can help you avoid making decisions about the same issue over and over, can provide editorial assistance on structuring and writing your documentation, and can help you keep your documentation consistent with our other documentation.</p>
+<p>This guide is not intended to be an industry standard, nor does it apply to all Veritas documentation.  This is valid only for Loom related platform and associated solutions.</p>
+</div>
+<div class="section" id="how-to-use-this-guide">
+<h3><a class="toc-backref" href="#id21">How to use this Guide</a><a class="headerlink" href="#how-to-use-this-guide" title="Permalink to this headline">¶</a></h3>
+<p>This guide is a reference document.  You can choose to read it linearly or look up specific issue or topic using the search box.</p>
+<p>For issues not covered in this guide, see <a class="reference external" href="https://developers.google.com/style/">Google Style Guide</a> or <a class="reference external" href="https://developers.google.com/style/resources">Other Style Guides</a>.</p>
+</div>
+<div class="section" id="restructured-text-style-guide">
+<h3><a class="toc-backref" href="#id22">Restructured Text Style Guide</a><a class="headerlink" href="#restructured-text-style-guide" title="Permalink to this headline">¶</a></h3>
+<p>You may also want to refer to some of the ‘coding’ standards applied to documentation files developed using Sphinx automation engine and Restructured Text formal.  See <a class="reference external" href="http://documentation-style-guide-sphinx.readthedocs.io/en/latest/style-guide.html">Sphinx Documentation Style Guide</a> for details.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="documentation-do-s">
+<h3><a class="toc-backref" href="#id23">Documentation Do’s</a><a class="headerlink" href="#documentation-do-s" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="19%" />
+<col width="81%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Purpose</th>
+<th class="head">Guidelines</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Clarity</td>
+<td><p class="first">Most of the principles that apply to good technical documentation also apply to
+accessible technical documentation:</p>
+<ul class="last simple">
+<li>Use correct grammar and punctuation.</li>
+<li>Use active voice and present tense.</li>
+<li>Write clear, simple sentences.</li>
+<li>Be consistent.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>Comprehension</td>
+<td>Include screenshots!
+Users find screenshots very helpful, particularly annotated screenshots.
+When using screenshots as figures, remember to circle the relevant buttons, add
+arrows pointing out mentioned links, or highlight key sections.</td>
+</tr>
+<tr class="row-even"><td>Common norms</td>
+<td>Spell out numbers nine and under. Use numerals for 10 and up.</td>
+</tr>
+<tr class="row-odd"><td>Common norms</td>
+<td>Use comma before “and” in a list of several items.
+For example:
+“This theme is elegant, simple, and easy to use.”</td>
+</tr>
+<tr class="row-even"><td colspan="2">Loom SDK       | If you are documenting a workflow that uses Loom Platform SDK APIs, make sure
+Consistency     | you include working code samples.</td>
+</tr>
+<tr class="row-odd"><td>Shared doc
+development
+norm</td>
+<td>Do not delete, move or rename any document, page or topic which you do not own
+or did not create. Discuss and review as there may be cascading impact and
+changes required to be done for the same. Collaborate on such wide impact
+documentation changes.</td>
+</tr>
+<tr class="row-even"><td>Cross referencing
+common norm</td>
+<td>Be aware that the content of some pages is included in other pages. Make sure
+you put your content in the right place, if it is cross referenced multiple
+times and also across guides.  Follow similar principles just as in source code
+common files and function norms. This applies in particular to the Concepts and
+Usage Guide, FAQ, SDK API documentation.</td>
+</tr>
+<tr class="row-odd"><td>Loom Document
+Consistency</td>
+<td>If you are inserting a topic in an already existing piece of content, say a page
+or in a new section, ensure that you follow a consistent style, layout, grammar
+and format with the rest of the page.</td>
+</tr>
+<tr class="row-even"><td>Loom Version
+&amp; Accuracy</td>
+<td><p class="first">If your update applies to a specific version of a product or framework add or
+update a panel at the top of the page:</p>
+<ul class="simple">
+<li>Include the product version for which your update is relevant.</li>
+<li>Use ‘Available’, ‘Changed’ and ‘Deprecated’.</li>
+</ul>
+<p>Also, you could use the note directive to highlight the section you have updated
+and mention the relevant product version to which the change applies.</p>
+<p class="last">{TBD: Example of the above}</p>
+</td>
+</tr>
+<tr class="row-odd"><td><dl class="first last docutils">
+<dt>Work in Progress</dt>
+<dd>Indicator</dd>
+</dl>
+</td>
+<td><blockquote class="first">
+<div><p>In a CI/CD shared documentation development model, it is important to let others
+know if your document is workable, usable but not yet reviewed, or ready to be
+released to the outside world. In other cases, it could be a piece of work in
+progress.</p>
+<p>When you are writing a lengthy piece of documentation, you may need to publish
+it for internal users to start integrating it, even as doc reviews happen.</p>
+<p>Please mark all such drafts or unfinished work, with an
+information box at the top of the page. See example below:</p>
+</div></blockquote>
+<div class="last admonition danger">
+<p class="first admonition-title">Danger</p>
+<p class="last"><strong>Work in Progress</strong>
+This page is under construction. You are referring to a draft copy.
+Use it with caution.</p>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><dl class="first last docutils">
+<dt>Loom Document   | For API and product version numbers:</dt>
+<dd><div class="first last line-block">
+<div class="line"><br /></div>
+<div class="line-block">
+<div class="line">* Use earlier instead of lower or below, as in Loom Asset Manager 3.0 and</div>
+<div class="line-block">
+<div class="line">earlier.</div>
+</div>
+<div class="line">* Use later instead of above, as in Loom Asset Manager 7.0 and later.</div>
+<div class="line">* Include a tenths value for Loom API version numbers. For example,</div>
+<div class="line-block">
+<div class="line">“This object is available in API version 40.0 and later.”</div>
+</div>
+</div>
+</div>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="documentation-do-not-s">
+<h3><a class="toc-backref" href="#id24">Documentation Do not’s</a><a class="headerlink" href="#documentation-do-not-s" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="19%" />
+<col width="81%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Purpose</th>
+<th class="head">Guidelines</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>No Cryptics</td>
+<td><p class="first">No Loom Buzzwords please! Before you use any acronym, expand it for first time
+use, with acronym in brackets. For subsequent use, acronym is fine.</p>
+<div class="last line-block">
+<div class="line"><strong>Not recommended</strong>: Use JBMgmtSvc to schedule this task if this policy is</div>
+<div class="line">breached.</div>
+<div class="line"><br /></div>
+<div class="line"><strong>Recommeded</strong>: Use Job Management Service (JBMgmtSvc) to schedule this task</div>
+<div class="line">if privacy policy is breached. Refer to JBMgmtSvc details here (refer to link)</div>
+<div class="line">on how to set up job management schedule</div>
+<div class="line"><br /></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>No Complicated
+Language</td>
+<td><p class="first">No long sentences. Think of the twitter 140 characters generation. Avoid choppy
+sentences.</p>
+<div class="last admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Think of your audience</p>
+<dl class="last docutils">
+<dt>Compare the first paragraph below to the second in terms of complexity.</dt>
+<dd><ul class="first last simple">
+<li>When you write, imagine you speaking these very same words as if you were
+saying these to someone in a conference call or Webinar where no real
+real time clarification or feedback is possible by those who’d read it
+and try to understand what you wrote at a later point in time.</li>
+<li>When you write, imagine your audience reading what you write, at a later
+point in time. Face to face conversation allow the luxury of real-time
+clarifications, additional cues via facial expressions and tone. Written
+word is more powerful and could be confusing as it lacks that luxury.</li>
+</ul>
+</dd>
+</dl>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>Factually Correct</td>
+<td>Avoid using ‘as of now’, ‘at this time’. Evolving platforms such as Loom will
+keep changing frequently to meet user needs. Whatever you write, must be
+factually correct for the corresponding Loom features available to users.</td>
+</tr>
+<tr class="row-odd"><td>Avoid Repetition</td>
+<td>Use of repetitive phrases such as ‘To do’, or ‘Here is’, or “You can” at the
+start of each sentence is detrimental to reader attention.</td>
+</tr>
+<tr class="row-even"><td>Enterprise
+Focus</td>
+<td>Avoid current pop-culture references.</td>
+</tr>
+<tr class="row-odd"><td>Appropriate
+Language</td>
+<td>No Jokes at the expense of customers, competitors or anyone else for that
+matter.</td>
+</tr>
+<tr class="row-even"><td>Spoiler Alert</td>
+<td>Avoid trying to document or talk about future features or solutions or products
+or enhancements, even in innocuous ways.</td>
+</tr>
+<tr class="row-odd"><td>Ambiguity</td>
+<td>Avoid the modal verbs such as could, may, might, and should in technical
+documentation. Modal verbs are ambiguous and leave the reader wondering what to
+do. For details, visit <a class="reference external" href="https://developer.salesforce.com/docs/atlas.en-us.salesforce_pubs_style_guide.meta/salesforce_pubs_style_guide/style_can.htm">Modal Style Guide</a>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="loom-doc-templates">
+<span id="mcdmp-doc-template"></span><h2><a class="toc-backref" href="#id25">Loom Doc Templates</a><a class="headerlink" href="#loom-doc-templates" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="template-loom-service-faq">
+<span id="t-faq"></span><h3><a class="toc-backref" href="#id26">Template: Loom Service FAQ</a><a class="headerlink" href="#template-loom-service-faq" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="loom-service-name">
+<span id="t-faq-service-title"></span><h4>Loom Service Name<a class="headerlink" href="#loom-service-name" title="Permalink to this headline">¶</a></h4>
+<p>Update the Loom service name in the title above. For e.g., XYZ Service.</p>
+<div class="section" id="what-is-xyz-service">
+<span id="t-faq-service-what"></span><h5>What is XYZ Service?<a class="headerlink" href="#what-is-xyz-service" title="Permalink to this headline">¶</a></h5>
+<p>Describe the Loom service in terms of what it does. How does a service user benefit from it?</p>
+</div>
+<div class="section" id="service-dependencies">
+<span id="t-faq-service-dep"></span><h5>Service Dependencies<a class="headerlink" href="#service-dependencies" title="Permalink to this headline">¶</a></h5>
+<p>If there are any other Loom micro-services that you need to deploy in order to use this service, then list those.  Point to those service FAQs if available.</p>
+</div>
+<div class="section" id="when-to-use-this-service">
+<span id="t-faq-service-when"></span><h5>When to use this service?<a class="headerlink" href="#when-to-use-this-service" title="Permalink to this headline">¶</a></h5>
+<p>In brief, describe the context when this service is used.  For example, job management service is used in the context of “information classification”, whereby some long running tasks and subtasks need to be managed by the job manager service.</p>
+</div>
+<div class="section" id="service-usage-rest-api-workflow">
+<span id="t-faq-service-how"></span><h5>Service Usage REST API Workflow<a class="headerlink" href="#service-usage-rest-api-workflow" title="Permalink to this headline">¶</a></h5>
+<p>Give a high level snapshot of how a developer (user) can utilize this service and what is a typical API workflows?</p>
+</div>
+<div class="section" id="service-faq-section">
+<span id="t-faq-service-misc"></span><h5>Service FAQ Section<a class="headerlink" href="#service-faq-section" title="Permalink to this headline">¶</a></h5>
+<p>This section lists Q and A relate to this service.</p>
+<p>You may want to refer to the <a class="reference internal" href="mcdmp_devdocs.html#srv-idm-faq"><span class="std std-ref">Service FAQ: Identity &amp; Access Management</span></a> as an example.</p>
+<p>The following question and answers are listed as an example. They may not be relevant to your service. As you reuse this template, replace them with actual ones for your service.</p>
+<p><strong>What API do I need to call in order to list all the components that are part of Loom control plane, data plane?</strong></p>
+<p>Answer TBD</p>
+<p><strong>Is there an API provided by Cluster Manager Service that returns health status of a cluster?</strong></p>
+<p>Use clustermgr/v1/cluster/{clustername}/health.  Note, this returns health of a specific cluster.</p>
+<p><strong>If a developer (user) queries an object, is it possible to obtain cluster health as part of JSON query?</strong></p>
+<p>Yes. (This may need to be reviewed and reworded properly in the context when such as need arises.)</p>
+<p><strong>Is there an API that provides list of all services and nodes corresponding to a given Loom component?</strong></p>
+<p>Use clustermgr/v1/health API to obtain information about operational analytics of VMs and overall cluster.</p>
+<p><strong>Is there an API to obtain various links between Loom components?</strong></p>
+<p>No API’s defined for that.</p>
+</div>
+</div>
+</div>
+<div class="section" id="template-loom-xyz-service-troubleshooting-guide">
+<span id="t-trbs-guide"></span><h3><a class="toc-backref" href="#id27">Template: Loom XYZ Service Troubleshooting Guide</a><a class="headerlink" href="#template-loom-xyz-service-troubleshooting-guide" title="Permalink to this headline">¶</a></h3>
+<div class="contents local topic" id="id2">
+<ul class="simple">
+<li><a class="reference internal" href="#service-issue-lorem-ipsum" id="id35">Service Issue Lorem Ipsum</a></li>
+<li><a class="reference internal" href="#another-service-issue-lorem-ipsum" id="id36">Another Service Issue Lorem Ipsum</a></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This is a sample template for Loom Troubleshooting Guide.  This document is under review and subject to change during Loom Alpha release timeframe.</p>
+</div>
+<div class="section" id="service-issue-lorem-ipsum">
+<h4><a class="toc-backref" href="#id35">Service Issue Lorem Ipsum</a><a class="headerlink" href="#service-issue-lorem-ipsum" title="Permalink to this headline">¶</a></h4>
+<dl class="docutils">
+<dt><strong>Description</strong></dt>
+<dd><p class="first">Explain the issue that a Loom Service User might face.</p>
+<p class="last">Another para describing the issue in detail. You could also include screenshots or a flowchart highlighting the steps that cause this issue.</p>
+</dd>
+<dt><strong>Workaround</strong></dt>
+<dd><p class="first">Describe workaround to address the issue listed above.</p>
+<p>Another para that may list details of the workaround.</p>
+<p>This is last para of the workaround. You can add screenshots here too. For example, refer to the picture below to highlight some section or steps.</p>
+<div class="last figure align-center" id="id10">
+<a class="reference internal image-reference" href="_images/t_trbs_sample_ref.png"><img alt="TrbsImageSample" src="_images/t_trbs_sample_ref.png" style="width: 698.0px; height: 325.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure: Troubleshooting Image Sample</span></p>
+</div>
+</dd>
+<dt><strong>Other Troubleshooting Tips</strong></dt>
+<dd>List other troubleshooting tips related to this issue or point to other similar issues that may be a good reference.</dd>
+</dl>
+</div>
+<div class="section" id="another-service-issue-lorem-ipsum">
+<h4><a class="toc-backref" href="#id36">Another Service Issue Lorem Ipsum</a><a class="headerlink" href="#another-service-issue-lorem-ipsum" title="Permalink to this headline">¶</a></h4>
+<dl class="docutils">
+<dt><strong>Description</strong></dt>
+<dd>Explain the issue that a Loom Service User might face.</dd>
+<dt><strong>Workaround</strong></dt>
+<dd>Describe workaround to address the issue listed above.</dd>
+<dt><strong>Other Troubleshooting Tips</strong></dt>
+<dd>List other troubleshooting tips related to this issue or point to other similar issues that may be a good reference.</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="devx.html" class="btn btn-neutral" title="DevX User Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Veritas Technologies LLC.
+      Last updated on Apr 7, 2018, 11:18:09 PM.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+    <p>
+    <ul>
+    <a href="../pform-idocs/archive_index.html" style="float:left;">Loom Documentation Archives</a>
+    </ul>
+    </p>
+     
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.7.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

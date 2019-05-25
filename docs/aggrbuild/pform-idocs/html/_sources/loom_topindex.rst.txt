@@ -1,0 +1,109 @@
+.. _loom_topindex:
+
+############################
+Loom Documentation Site Map
+############################
+
+.. contents::
+   :depth: 1
+   :local:
+
+Welcome to Loom Documenation!
+
+If you are looking for the latest working set of Loom Documents under development, please refer to the section titled :ref:`loom_latest_docset`.  Loom Documentation corresponding to released version of Loom Platform and its applications is available in the section titled :ref:`loom_release_docset`.
+
+Loom Documenation is inspired by and totally based on open source Sphinx documentation Engine.  Loom Documentation processes, how-to and other resources for Loom Documentation contributors can be referred to in :ref:`docx_res`.
+
+The Loom team is trying out this new agile, cutting edge industry process of shared documentation development model following the footsteps of Software Industry leaders such as Microsoft, Google, AWS and many others who have open sourced their documents and involve community in keeping the documents current.  As a first step, we are keeping Loom document development open to all team members of Loom and CBU division.  In future, we plan to open this to wider contributors from within the Veritas community.  We may open it up to third party Loom Application developers outside Veritas if business demands the same.
+
+.. _loom_release_docset:
+
+****************************
+Released Loom Documenatation
+****************************
+The following table lists Loom Documentation corresponding to prior internal releases of the product.  Information contained therein may or may not reflect lastet Loom Product under development. For latest set of Loom documents under development, please refer to :ref:`loom_latest_docset`.
+
+Here is the archive containing Loom Documentation corresponding to Loom Releases made so far - :ref:`loom_archive`.
+
+.. _loom_latest_docset:
+
+****************************************
+Latest Loom Documents under development
+****************************************
+These documents comprise of the complete Loom Documentation Set. These correspond to the latest develop branch of product and documentation sources.  During Loom Product development, the documents are also being developed in tandem (where possible). Loom documentation is part of Loom build and common CICD processes. These documents under development are refreshed on a periodic basis as new content is checked into the Veritas source code repository. At times, you may see some links which are not working or break as part of continous development and validation.  We request to be patient and refer to older stable released document versions, if that helps.
+ 
+The readers are requested to share their feedback by opening a Jira ticket with "DocX:" in the ticket summary description. At this point in time, all Loom team members are invited to participate in reviewing and refining the product documentation in order to keep them accurate and help early Loom adopters.
+
+Please note, the information here may be incomplete as we are building the documents along with the Loom Product itself.  By Beta timeframe, we plan to capture 80% of the product documentation.  All end user facing documents will be 100% complete by GA timeframe.  For GA only English language is supported.  In future, localization in EU and other languages will be executed based on customer requirements and insights from TFE and PM organizations. 
+
+.. _loom_rel_docs:
+
+======================
+Loom Release Documents
+======================
+Following documents provide overall summary of the Loom Product, features, known issues and limitations and what is new in a specific product release.  It is owned by Loom Product Owners. These documents are not targeted to any particular Loom Users but available for any and all early Loom adopters. 
+
+#. :ref:`content_loom_relnotes` 
+#. `Loom Customer Registration Form`_
+
+.. _loom_collateral:
+
+========================
+Loom Product Collateral
+========================
+These are standard product collaterals such as datasheet, whitepapers and other documents that can be used as inputs by Loom Technical Field Enablement folks. It is owned by Product Management, Joshua Stageberg.
+
+#. `Loom Product Datasheet`_
+#. `Loom Security Whitepaper`_
+
+==================
+Loom User Guides
+==================
+The following user guides are targeted at Loom end users such as Platform Admin, Customer Admin, Tenant Admin and Loom Users. This subset of Loom documentation is owned by Loom Applications Team, Srinivas Kavuri, Parag Thakur.
+
+#. `Pre-requisites for onboarding Loom`_
+#. `Loom Getting Started Guide`_
+#. `Loom Concepts & Online Help Topics`_
+#. `Loom On Premises Data Engine Deployment Guide`_
+#. Loom Application User Guides:
+
+   * `Loom 360 Data Analysis Application Guide`_ 
+   * `Loom Connection Center User Guide`_
+   * `Loom Information Map Application Guide`_
+   * `Loom Information Studio Application Guide`_
+   * `Loom GDPR Readiness Application Guide`_
+   * `Loom SAR Lite Applications Guide`_
+
+======================================
+Loom Platform Developer Documentation
+======================================
+The following set of Loom documents are targeted at Loom Developers and Loom Application Developers. Until we decide to expose Loom Platform and its SDK APIs to 3rd party Loom Application developers, these documents will primarily be meant for *internal-to-Veritas* usage. Also, for the very first release, Loom Deployment is a controlled process so we do not plan to share the Loom Deployment Guide outside Veritas. Much of this documentation will not require any localization support for the initial releases of Loom.  These documents are owned by Loom Platform Team, Vibhu Pratap, Shrikant Joshi and by the Loom DevOps team, Dinesh J Naganna, Prakash S.
+
+
+#. `Loom Platform SDK API Guide`_
+#. `Loom Deployment Guide`_
+#. `Loom Troubleshooting Guide & FAQ`_
+#. `Loom DevX Environment Guide`_
+#. `Loom DocX Resources and Howtos`_
+
+.. _Loom Alpha1 Documentation: http://10.67.141.149/shaloo/Alpha1/DocX
+.. _Loom Alpha2 Documentation: http://10.67.141.149/shaloo/DocX 
+.. _Loom Release Note: http://10.67.141.149/shaloo/aggr/pform-reldocs/html/loom_relnotes.html
+.. _Loom Customer Registration Form: http://10.67.141.149/shaloo/aggr/pform-reldocs/html/_downloads/reg-form.docx
+.. _Loom Product Datasheet: http://10.67.141.149/shaloo/aggr/pform-pmdocs/html/mcdmp_ds.html 
+.. _Loom Security Whitepaper: http://10.67.141.149/shaloo/aggr/pform-pmdocs/html/mcdmp_ds.html 
+.. _Pre-requisites for onboarding Loom: http://10.67.141.149/shaloo/aggr/pform-ugdocs/html/loom_dep_pre_rq.html  
+.. _Loom Getting Started Guide: http://10.67.141.149/shaloo/aggr/pform-ugdocs/html/loom_getting_started_guide.html 
+.. _Loom Concepts & Online Help Topics: http://10.67.141.149/shaloo/aggr/pform-ugdocs/html/mcdmp_concepts.html 
+.. _Loom On Premises Data Engine Deployment Guide: http://10.67.141.149/shaloo/aggr/pform-ugdocs/html/on_prem_dp_install_mcdmp.html
+.. _Loom Information Map Application Guide: http://10.67.141.149/shaloo/aggr/pform-ugdocs/html/appug/infomap_app_ug.html
+.. _Loom Information Studio Application Guide: http://10.67.141.149/shaloo/aggr/pform-ugdocs/html/appug/infostudio_app_ug.html
+.. _Loom GDPR Readiness Application Guide: http://10.67.141.149/shaloo/aggr/pform-ugdocs/html/appug/gdpr_app_ug.html
+.. _Loom SAR Lite Applications Guide: http://10.67.141.149/shaloo/aggr/pform-ugdocs/html/appug/sar_lite_app_ug.html
+.. _Loom 360 Data Analysis Application Guide: http://10.67.141.149/shaloo/aggr/pform-ugdocs/html/mcdmp_app_ug.html#data-analysis-classification-app-user-guide
+.. _Loom Connection Center User Guide: http://10.67.141.149/shaloo/aggr/pform-ugdocs/html/mcdmp_app_ug.html#veritas-connection-center-user-guide
+.. _Loom Platform SDK API Guide: http://10.67.141.149/shaloo/aggr/pform-devdocs/html/mcdmp_devdocs.html
+.. _Loom Deployment Guide: http://10.67.141.149/shaloo/aggr/pform-devdocs/html/loom_installation_guide.html
+.. _Loom Troubleshooting Guide & FAQ: http://10.67.141.149/shaloo/aggr/pform-devdocs/html/loom_trbs_faq.html
+.. _Loom DevX Environment Guide: http://10.67.141.149/shaloo/aggr/pform-devdocs/html/devx.html
+.. _Loom DocX Resources and Howtos: http://10.67.141.149/shaloo/aggr/pform-devdocs/html/mcdmp_docx_res.html

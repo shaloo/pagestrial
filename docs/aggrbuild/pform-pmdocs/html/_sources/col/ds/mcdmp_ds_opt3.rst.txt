@@ -1,0 +1,152 @@
+:orphan:
+
+.. _mcdmp_ds_opt3:
+
+***************************
+Loom  Datasheet (Dec 2017)
+***************************
+
+.. note:: Draft (Dec 2017))
+
+Please note that the following content is a draft copy of Loom Datasheet for first release of Loom  as seen from PM (Joshua Stageberg's) vantage point. We are actively updating this as input material to marketing folks - please share your review inputs no later than EOD 12.14.2017 as marketing may need 5 working days to process the final inputs from Engineering. Thank you.
+
+-----
+
+.. figure:: /_static/ds/mcdmp_ds_header2.png
+   :scale: 75%
+   :align: center
+   :alt: Loom (first release) Datasheet 
+
+
+.. para_overview:
+
+=========
+Overview
+=========
+Today’s enterprise environment is multi-cloud. It is a fast-growing, often fragmented, and overwhelmingly complex environment. In this morass, organizations must approach digital transformation – performing analytics and employing machine learning to adapt business processes, supply chain, products and customer engagement models based on key competitive asset, enterprise data. All the while IT professionals face daily questions about whether data is protected appropriately, whether it can or should be deleted, and whether there are opportunities to utilize cheaper storage.
+
+Organizations often struggle to reorient and align with these industry shifts without significant and (sometimes) public consequences. There is a continuous tension between retaining adequate control of enterprise data assets to solve for internal policy or external regulatory guidelines and meeting end user experience expectations set by companies like Google, Amazon and FaceBook.
+
+Loom is the Veritas Multi-Cloud Data Management ecosystem comprising of core platform and data management applications. It is designed to help organizations address enterprise data management challenges by providing a unified, scalable, robust and flexible platform ecosystem to govern and eventually monetize enterprise information assets. *Our early adopter program includes previews of standard applications, user experience and configuration as well as direct interaction with our software engineering and product management teams. As early adopters of Loom, organizations can provide feedback driving meaningful change in the product and its roadmap.*
+
+.. para_early_hightlights:
+
+=================================
+Early Adopter Product Highlights
+=================================
+
+* Flexible deployment model - Loom data collection components can be deployed on-premises, while the control components are available via Veritas-provided SaaS.
+* Loom first release comprises of Veritas SaaS based deployment of Loom that can be subscribed by customers to gain visibility into Cloud data.
+* On-Premise data sources can be analyzed by deploying an additional component that uses VMware based Data Plane that is secure and protected from unauthorized access.
+* In-built 360 Data Management with Standard Applications that offer visibility into file system data assets located on-premises, or in the cloud.
+* Enables on-demand interaction with enterprise data sources, capability to aggregate data assets and analyze them.
+
+.. para_features_benefits:
+
+==========================================
+Early Adopter Product Features & Benefits
+==========================================
+
+Loom is offered with in-built 360 Data Management Applications. These Applications help organizations visualize their unstructured and structured information located in on-premises file shares. It renders information in visual context and guides users towards unbiased, data-driven information-governance decision-making. Organizations can identify areas of risk, areas of value, and areas of waste in order to minimize information risk, reduce storage cost and to achieve operational efficiencies.
+
+.. para_visualize_info
+
+------------------------
+*VISUALIZE INFORMATION*
+------------------------
+The Visibility & Classification Application provides an immersive visual experience for end users to gain actionable insights into their organization’s data sets.
+
+**Faceted Exploration:** The Visibility & Classification Application provides a geographic orientation of an organization’s data along with dashboard, entity, and list views which enable users to view information by location, by file server, by share, by a user, or through any aggregation of the above.
+
+**Guided Analysis:** Visibility & Classification Application always displays a summary of the total, stale, orphaned, and non-business data in the organization. Guided analysis allows a user to quickly identify data sets of interest to act upon.
+
+**Auto-Filters:** Quick granular filters for age, size, location, content source, owner, data store, item type and file extension allow users to infinitely refine the data sets they are analyzing. With Visibility & Classification Application, all filtering activities are optimized for real-time interactive performance; achievable through the power of a cloud service.
+
+**Consumer-Grade Usability:** The interface of the Visibility & Classification Application is designed and optimized for traditional desktops and laptops as well as tablets and touch-enabled computers
+
+.. para_cost_red:
+
+----------------------------------------------------------------------
+*COST REDUCTION, RISK REDUCTION AND OPERATIONAL EFFICIENCY USE-CASES*
+----------------------------------------------------------------------
+
+**Archive Files:** Organizations are hoarding zip, rar and other archive files. Archive files are large in nature and often not used after their initial creation. By identifying old archive files, the administrator can delete these to free up space, deferring CAPEX spending on additional storage while reducing their risk posture by eliminating over-retained data.
+
+**Audio/Video Files:** It is common to find video and audio files which have no specific business value, and which may be personal in nature. By identifying information that has no business value, organizations can alleviate the disproportional strain on storage capacity and reduce copyright liability.
+
+**Virtual Machines:** Virtual machines are being created not just for production use, but cloned or copied for QA, dev/test, data science and many other purposes. Many virtual machines are not governed after their creation. Virtual machines, or their associated virtual disks are taking up an increasing amount of storage. By identifying stale or redundant virtual machine files, administrators can delete them or move them to lower-cost storage if still required.
+
+**Remote Offices:** It is increasingly common for organizations to have remote offices with IT infrastructure, but without any IT personnel. Remote infrastructure creates IT complexity and a management headache. Visibility & Classification Application can profile the remote office, identifying data sets or whole offices which could be centralized. Centralization brings many efficiencies including less remote infrastructure, backup simplification and higher availability on centrally-managed storage.
+
+**Temporary Files:** Temporary files should only live for a short period of time. However, most are never deleted, so taking up valuable storage capacity. By identifying temporary files and deleting them, storage is freed up and less data is required to be protected.
+
+**Top Disk Offenders:** Often the largest consumers of disk space, take up a disproportionate amount of space compared to the average user. Visibility & Classification Application can quickly identify the top offenders and a remediation plan can subsequently be created. Whether that is centralized deletion or archival of data, or whether a report is sent to the end-user for them to clean up their own working areas.
+
+**Orphan Files:** Data belonging to departed employees is often left in place and never deleted or archived. Visibility & Classification Application can identify orphaned data which can then be deleted or moved to free up capacity and to reduce over-retention risks.
+
+.. para_legal_comp:
+
+------------------------------------------
+LEGAL, COMPLIANCE, AND SECURITY USE-CASES
+------------------------------------------
+
+**PST and Email Files:** Organizations are unknowingly storing emails on their unstructured storage devices. This commonly takes the form of PST files or loose .EML or .MSG files that have been created from or copied out of a mailbox. Loose email files are not under retention and not discoverable, imposing significant risk to an organization. Visibility & Classification Application can quickly identify PST files to either delete or move, or archive with Veritas™ Enterprise Vault.
+
+**Database Files:** Any database is likely to contain personally identifiable information or customer records; information which is highly governed in regulations such as GDPR and which should not be retained for longer than its original collection use. Visibility & Classification Application helps identify personal databases such as Microsoft Access as well as database dumps which have been used for backup purposes. Deleting old and redundant database files not only frees up space, but importantly, prevents personal information from being over-retained.
+
+**Focused eDiscovery Collections:** Associating potential custodians with their data enables legal teams to focus collection efforts to the specific areas of data owned by the employees involved in a particular matter.
+
+.. para_mcdmp_concepts:
+
+=================
+Loom Concepts
+=================
+
+.. figure:: /_static/Loom-Markitecture_rev.png
+   :scale: 75%
+   :align: center
+   :alt: Loom High Level Markitecture 
+
+   Figure: Loom High Level Markitecture
+
+Loom architecture revolves around cloud-native abstractions and is completely micro-services driven. It supports enterprise assets located on-premises. The figure above provides a high-level architecture of the product. Some of the key concepts of Loom are described in the table below.
+
++-------------------------+------------------------------------------------------------------------------+
+|    Control & Data       | Single Control Plane and multiple-Data Collection Plane model for efficient  |
+|    Collection           | data management and scalability. The Control Plane is geared towards workflow|
+|    components           | management and orchestration whereas Data Collection Planes are primarily    |
+|                         | focused around data source connections and data pipelining aspects.          | 
++-------------------------+------------------------------------------------------------------------------+
+|    Data Sources         | Loom can initially connect to enterprise data sources on-premises            |
+|                         | listed under “Product Highlights” above. The product will also enable        |
+|                         | applications built on top of the core Loom services to seamlessly gain       |
+|                         | enterprise data insights from the same information.                          |
++-------------------------+------------------------------------------------------------------------------+
+|    Data Analytics Job   | Loom Scheduling feature enables enterprises to pull information from systems |
+|    Scheduling           | during optimal times based on their business preferences.                    |
++-------------------------+------------------------------------------------------------------------------+
+|    Analytics Engine     | Pre-defined visualizations help organizations quickly understand and make    |
+|                         | decisions on data.                                                           |
++-------------------------+------------------------------------------------------------------------------+
+|    Classification Engine| The Integrated Classification Engine (ICE) enables organizations to quickly  |
+|                         | scan and tag data to ensure that sensitive or risky information is properly  |
+|                         | managed and protected.                                                       |
++-------------------------+------------------------------------------------------------------------------+
+|    Dashboard            | Single simple user interface for ease of administration of the product and   |
+|                         | its standard applications for 360 data management.                           |
++-------------------------+------------------------------------------------------------------------------+
+
+.. para_tech_specs:
+
+=========================
+Technical Specifications
+=========================
+
+The Technical Specifications of Loom list various infrastructure and technology related details that are required to deploy and use the product within an enterprise. For details refer to the :ref:`System Requirements section<content_platform_tech_specs_summary>`.
+
+For further information visit “Loom External Website /Sales URL” [To be updated]
+
+.. figure:: /_static/ds/mcdmp_ds_about_info.png
+   :scale: 100%
+   :align: center
+   :alt: Loom Data Sheet 

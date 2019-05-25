@@ -1,0 +1,53 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction to Loom Deployment}{3}{chapter.1}
+\contentsline {chapter}{\numberline {2}Loom: Deployment Models}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}On Premise Deployment}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Public Cloud Deployment}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Hybrid Cloud Deployment}{5}{section.2.3}
+\contentsline {chapter}{\numberline {3}Installation Prerequisites}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Planning \& Preparation}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}System Requirements}{7}{section.3.2}
+\contentsline {section}{\numberline {3.3}Verify Dependencies}{7}{section.3.3}
+\contentsline {chapter}{\numberline {4}Bootstrapping Loom}{9}{chapter.4}
+\contentsline {section}{\numberline {4.1}On-boarding multi-tier Applications on Loom}{10}{section.4.1}
+\contentsline {chapter}{\numberline {5}Loom: Cloud Deployment}{11}{chapter.5}
+\contentsline {section}{\numberline {5.1}Azure Deployment Guide}{11}{section.5.1}
+\contentsline {section}{\numberline {5.2}Overview}{12}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Azure Configuration}{13}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Loom Infrastructure Setup}{14}{subsection.5.2.2}
+\contentsline {subsubsection}{Deploying infra services}{14}{subsubsection*.41}
+\contentsline {subsection}{\numberline {5.2.3}HA / Cluster Deployment}{16}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Security \& Access Control}{16}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}Miscellaneous Setups and Azure Tuning for Loom}{17}{subsection.5.2.5}
+\contentsline {subsection}{\numberline {5.2.6}Azure Deployment Troubleshooting Guide}{17}{subsection.5.2.6}
+\contentsline {section}{\numberline {5.3}Oracle Deployment}{17}{section.5.3}
+\contentsline {chapter}{\numberline {6}Loom On-Premise Deployment}{19}{chapter.6}
+\contentsline {chapter}{\numberline {7}Loom Hybrid Deployment}{21}{chapter.7}
+\contentsline {chapter}{\numberline {8}Loom: De-installation Procedure}{23}{chapter.8}
+\contentsline {section}{\numberline {8.1}Service Shutdown}{23}{section.8.1}
+\contentsline {section}{\numberline {8.2}De-installing component A}{23}{section.8.2}
+\contentsline {section}{\numberline {8.3}Upgrading Loom}{23}{section.8.3}
+\contentsline {section}{\numberline {8.4}Cleanup Scripts}{23}{section.8.4}
+\contentsline {chapter}{\numberline {9}Deployment Troubleshooting Guide}{25}{chapter.9}
+\contentsline {section}{\numberline {9.1}Resolving Basic Loom deployment issues}{25}{section.9.1}
+\contentsline {subsection}{\numberline {9.1.1}How to begin Loom deployment troubleshooting?}{26}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {9.1.2}Where to look for more details is a Pod is not healthy?}{26}{subsection.9.1.2}
+\contentsline {subsection}{\numberline {9.1.3}How to determine which software version is deployed for each pod?}{26}{subsection.9.1.3}
+\contentsline {subsection}{\numberline {9.1.4}Looking for Dependency Health}{28}{subsection.9.1.4}
+\contentsline {subsection}{\numberline {9.1.5}Loom Tenant Creation Issues}{28}{subsection.9.1.5}
+\contentsline {subsection}{\numberline {9.1.6}Content source added but cannot view data in the Loom Application Dashboard}{30}{subsection.9.1.6}
+\contentsline {subsection}{\numberline {9.1.7}Kafka does not produce or consume any data, how to fix it?}{30}{subsection.9.1.7}
+\contentsline {section}{\numberline {9.2}Loom Service Patching}{31}{section.9.2}
+\contentsline {section}{\numberline {9.3}Troubleshooting Loom networking issues}{33}{section.9.3}
+\contentsline {section}{\numberline {9.4}Control plane Issues}{33}{section.9.4}
+\contentsline {section}{\numberline {9.5}Data plane Issues}{33}{section.9.5}
+\contentsline {section}{\numberline {9.6}Message flow between data plane/control plane}{34}{section.9.6}
+\contentsline {section}{\numberline {9.7}Tenant deployment issues}{34}{section.9.7}
+\contentsline {section}{\numberline {9.8}Security Issues}{34}{section.9.8}
+\contentsline {section}{\numberline {9.9}Issues related to Loom logs, Access logs}{34}{section.9.9}
+\contentsline {section}{\numberline {9.10}Moving to different availability set}{34}{section.9.10}
+\contentsline {section}{\numberline {9.11}Issues related to sluggish Loom Application response}{34}{section.9.11}
+\contentsline {section}{\numberline {9.12}Issues related to Loom Metrics}{34}{section.9.12}
+\contentsline {section}{\numberline {9.13}Issues related to System Load}{34}{section.9.13}
+\contentsline {chapter}{\numberline {10}Deployment FAQ}{35}{chapter.10}
+\contentsline {section}{\numberline {10.1}Question A: Related to any type of Loom deployment}{35}{section.10.1}

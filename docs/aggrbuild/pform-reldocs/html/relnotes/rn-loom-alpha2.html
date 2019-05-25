@@ -1,0 +1,564 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Release Notes: Loom (Alpha2) &mdash; Loom 0.7.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Loom 0.7.0 documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Loom
+          
+
+          
+            
+            <img src="../_static/loom.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.7.0 (Beta-1-Dev)
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../loom_relnotes.html">Loom Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../loom_registration.html">Loom Customer Registration</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Loom</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Release Notes: Loom (Alpha2)</li>
+    
+    
+    <p>
+        <a href="https://stash.veritas.com/projects/MCDMP/repos/pform-docs/browse/source/relnotes/rn-loom-alpha2.rst" class="fa fa-bitbucket" aria-hidden="true">&nbsp; Edit on Bitbucket</a>
+    
+          <a href="../../latex/loom_relnote_alpha2.pdf" class="fa" style="float:right;">Download PDF</a>
+    
+    </p> 
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="release-notes-loom-alpha2">
+<span id="content-rn-loom-alpha2"></span><h1>Release Notes: Loom (Alpha2)<a class="headerlink" href="#release-notes-loom-alpha2" title="Permalink to this headline">¶</a></h1>
+<p>Loom Alpha2 release provides new features and fixes some known issues in the earlier Loom release - Alpha1.</p>
+<p>Only Microsoft Azure based Loom SaaS deployment is available as part of the Loom Alpha2 release. This deployment is managed by Veritas.   Customer organizations can onboard Loom via the registration process that requires filling out a form, providing some organization specific Loom usage information and obtaining a customer account. For details refer to <a class="reference external" href="http://10.67.141.149/shaloo/aggr/pform-ugdocs/html/loom_dep_pre_rq.html#loom-early-beta-user-reg" title="(in Loom v0.7.0 (Beta-1-Dev))"><span class="xref std std-ref">Loom Registration Process</span></a>.</p>
+<p>This Release Note is organized as follows: It lists the new feature additions in Loom Platform at the start.  Next, it lists some of the key issues in Alpha1 Release that are fixed in Alpha2. This is followed by known limitation and issues of Loom Alpha2 Release.</p>
+<div class="section" id="what-s-new-in-loom-alpha2-release">
+<h2>What’s New in Loom Alpha2 Release<a class="headerlink" href="#what-s-new-in-loom-alpha2-release" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="content-rn-loom-common"></span><div class="section" id="new-features">
+<h3>New Features<a class="headerlink" href="#new-features" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="longtable colwidths-given docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Category</strong></th>
+<th class="head"><strong>Alpha2 Release Details</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="../_images/rn-feature.png"><img alt="rn-feature" class="align-middle" src="../_images/rn-feature.png" style="width: 49.5px; height: 15.75px;" /></a></td>
+<td><p class="first"><strong>Provides Data Classification Functionality through DataVision Application</strong></p>
+<blockquote class="last">
+<div><ul class="simple">
+<li>Supports SharePoint On-Premise, Microsoft OneDrive</li>
+<li>Native Classification</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../_images/rn-feature.png"><img alt="rn-feature" class="align-middle" src="../_images/rn-feature.png" style="width: 49.5px; height: 15.75px;" /></a></td>
+<td><blockquote class="first">
+<div><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">RHEL support may not be there in Alpha2 as on 03-24-2018 - TO BE UPDATED</p>
+</div>
+</div></blockquote>
+<p><strong>Support for RHEL 7.x Operating System</strong></p>
+<blockquote class="last">
+<div><ul>
+<li><p class="first">In order to visualize the on premises data assets via Loom’s discover, scan and
+classify functions, customers need to deploy Loom Data Engine on premises.</p>
+<p>Earlier only Ubuntu was supported but in alpha2, RHEL 7.x is also supported.</p>
+</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../_images/rn-feature.png"><img alt="rn-feature" class="align-middle" src="../_images/rn-feature.png" style="width: 49.5px; height: 15.75px;" /></a></td>
+<td><p class="first"><strong>Loom User Management</strong></p>
+<blockquote class="last">
+<div><ul class="simple">
+<li>Add, Delete, Modify Loom User and associate Loom Roles</li>
+<li>Loom Dashboard to manage and monitor the number of Tenant Users currently Logged in</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../_images/rn-feature.png"><img alt="rn-feature" class="align-middle" src="../_images/rn-feature.png" style="width: 49.5px; height: 15.75px;" /></a></td>
+<td><p class="first"><strong>Data Scan, Classify and Discovery Policy Management</strong></p>
+<blockquote class="last">
+<div><ul class="simple">
+<li>Add, Delete, Modify Loom Policy and Rule Set to suit customer business needs</li>
+<li>Policies can be configured per Loom Tenant in terms of content repository rules,
+defining how, when and what kinds of data assets will be scanned, classified.</li>
+<li>User defined policies can be applied to all Loom Applications subscribed by a
+Tenant.</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../_images/rn-feature.png"><img alt="rn-feature" class="align-middle" src="../_images/rn-feature.png" style="width: 49.5px; height: 15.75px;" /></a></td>
+<td><p class="first"><strong>Audit Logging Support</strong></p>
+<blockquote class="last">
+<div><ul class="simple">
+<li>Enables Customer Administrators to monitor and manage their subscriptions through
+audit logging of important system and usage events such as user logon,
+unauthorized access, data movement across sites and locations etc.</li>
+<li>Helps to track sensitive data or tagged data in terms of the kind of event,
+which user, which Loom Application caused the event and its timestamp.</li>
+<li>Support for archival and purge of audit logs for compliance requirements.</li>
+<li>Secured access to audit logs by authorized users only.</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../_images/rn-feature.png"><img alt="rn-feature" class="align-middle" src="../_images/rn-feature.png" style="width: 49.5px; height: 15.75px;" /></a></td>
+<td><p class="first"><strong>Better Horizontal Scalability</strong></p>
+<blockquote class="last">
+<div><ul class="simple">
+<li>Improvements in core Loom Platform Service architecture</li>
+<li>New Asset Service in Alpha2 provides scalability upto 200 million data assets.
+The architecture is capable of supporting 40-50 billion data assets, slated for
+Loom Beta-1 release.</li>
+<li>Multiple Persistence POD architecture ensures performance isolation for multiple
+tenants using the Loom Platform and the Applications deployed therein.</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fixed-in-alpha2">
+<h3>Fixed in Alpha2<a class="headerlink" href="#fixed-in-alpha2" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="longtable colwidths-given docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Category</strong></th>
+<th class="head"><strong>Alpha2 Release Details</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td rowspan="2"><a class="reference internal" href="../_images/rn-fixed.png"><img alt="rn-fixed" class="align-middle" src="../_images/rn-fixed.png" style="width: 42.0px; height: 16.5px;" /></a></td>
+<td><strong>Fixed IMP-4403: “Unknown Error” occurs if a Loom Tenant Admin user performs the
+following action:</strong></td>
+</tr>
+<tr class="row-odd"><td><ul class="first simple">
+<li>Click Loom Application Switcher then click Connectors box</li>
+<li>Page is refreshed and then it shows that an “Unknown Error” has occurred</li>
+<li>Next, the Connector Framework Page is loaded as intended</li>
+</ul>
+<p class="last">Note, this error only occurs if you try to access Connector through Application
+Switcher and not from the left hand side Loom UI Navigation Pane.</p>
+</td>
+</tr>
+<tr class="row-even"><td rowspan="2"><a class="reference internal" href="../_images/rn-fixed.png"><img alt="rn-fixed" class="align-middle" src="../_images/rn-fixed.png" style="width: 42.0px; height: 16.5px;" /></a></td>
+<td><strong>Fixed IMP-4399: Tenant User is not able to logout of Loom in case of Firefox browser</strong></td>
+</tr>
+<tr class="row-odd"><td>It has been observed that when a Loom Tenant User, using Firefox browser,
+Clicks on the Logout button in Loom UI, there is no action and user is not able to
+logout or even click the little user icon on top right corner menu bar.</td>
+</tr>
+<tr class="row-even"><td rowspan="2"><a class="reference internal" href="../_images/rn-fixed.png"><img alt="rn-fixed" class="align-middle" src="../_images/rn-fixed.png" style="width: 42.0px; height: 16.5px;" /></a></td>
+<td><strong>Fixed IMP-4310: Failure to download VMware virtual machine installer during</strong>
+<strong>of Loom Data Engine through Control Plane User Interface.</strong></td>
+</tr>
+<tr class="row-odd"><td><p class="first">Loom Customer Admin is not able to download VMware virtual machine installer during
+creation of Loom Data Engine through Control Plane User Interface.Create Data engine
+through CP GUI. Refer to the attached screen image below:</p>
+<p><a class="reference internal" href="../_images/rn-kn-iss-4310.png"><img alt="rn-iss-4310" class="align-middle" src="../_images/rn-kn-iss-4310.png" style="width: 1464.0px; height: 810.0px;" /></a></p>
+<p>When the user clicks to download the starter VM and selects option to download
+VMware installer or download the it from the right side options after creating Data
+Engine, it shows “Failure, Network Error”.</p>
+<p><strong>Workaround</strong></p>
+<p class="last">For Alpha2 release, the file will be shared manually or via other mechanism.
+In future, users can download the latest file directly from a time bound URL.</p>
+</td>
+</tr>
+<tr class="row-even"><td rowspan="2"><a class="reference internal" href="../_images/rn-fixed.png"><img alt="rn-fixed" class="align-middle" src="../_images/rn-fixed.png" style="width: 42.0px; height: 16.5px;" /></a></td>
+<td><strong>fixed IMP-4259: Data Connector Registration failed due to insufficient resources at</strong>
+<strong>the time of registration of the on-premises Data Engine.</strong></td>
+</tr>
+<tr class="row-odd"><td><p class="first">During lab testing, a cluster with 3 nodes with 2 cores and 4 GB RAM was used for
+minimal testing purposes. When the data classification pods came up on this cluster,
+connector registration started failing since the nodes in the cluster were
+overloaded. While we haven’t faced this problem after we created 4 node cluster with
+8 cores and 8 GB RAM allocation, classification can be CPU-intensive and also has
+auto-scaling feature. There can be cases when the nodes get overloaded and then the
+functionality may possibly get impacted.</p>
+<p class="last"><strong>Workaround:</strong> Refer to On Premises Data Engine <a class="reference external" href="http://10.67.141.149/shaloo/aggr/pform-ugdocs/html/on_prem_dp_install_mcdmp.html#sys-req" title="(in Loom v0.7.0 (Beta-1-Dev))"><span>System requirements</span></a> for details.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="loom-alpha2-limitations">
+<h2>Loom Alpha2  Limitations<a class="headerlink" href="#loom-alpha2-limitations" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable colwidths-given docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Category</strong></th>
+<th class="head"><strong>Alpha2 Release Details</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="../_images/rn-limitation.png"><img alt="rn-limit" class="align-middle" src="../_images/rn-limitation.png" style="width: 72.0px; height: 19.5px;" /></a></td>
+<td><p class="first"><strong>Loom Feature Limitation in Alpha2 Release:</strong></p>
+<blockquote class="last">
+<div><ul class="simple">
+<li>Loom Microsoft Azure SaaS deployment supports only 5 customers accounts</li>
+<li>For each customer account, multiple(?) Tenant accounts can be created in Alpha2.
+Further, it can support ~100 content sources per customer, ~200 million information
+assets across all those content sources</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="known-issues-workarounds">
+<h2>Known Issues &amp; Workarounds<a class="headerlink" href="#known-issues-workarounds" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable colwidths-given docutils">
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Category</strong></th>
+<th class="head"><strong>Alpha2 Release Details</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td rowspan="2"><a class="reference internal" href="../_images/rn-issue.png"><img alt="rn-issue" class="align-middle" src="../_images/rn-issue.png" style="width: 46.5px; height: 14.25px;" /></a></td>
+<td><strong>Issue IMP-10596: Policy Dashboard shows overlapped text under Display Name</strong></td>
+</tr>
+<tr class="row-odd"><td><p class="first">The Loom Dashboard “Publish Policy” screen shows fields such as Display Name,  Label
+Type and Sub-Type of Loom Policies in a list view.  Data displayed under the field
+Display Name overlaps with the data shown under the Label field. This is a known
+issue in Loom Alpha2 release and it has been addressed for future releases.</p>
+<p>Refer to the screenshot below for details:</p>
+<p class="last"><a class="reference internal" href="../_images/rn-kn-iss-10596.png"><img alt="rn-kn-iss-10596" class="align-middle" src="../_images/rn-kn-iss-10596.png" style="width: 419.4px; height: 205.8px;" /></a></p>
+</td>
+</tr>
+<tr class="row-even"><td rowspan="2"><a class="reference internal" href="../_images/rn-issue.png"><img alt="rn-issue" class="align-middle" src="../_images/rn-issue.png" style="width: 46.5px; height: 14.25px;" /></a></td>
+<td><strong>Issue IMP-10502, IMP-10503: Application Switcher and Applications dont show up</strong></td>
+</tr>
+<tr class="row-odd"><td><p class="first">Other than the very first Loom Customer Tenant Admin, none of the newly created
+Tenant Admins are able to see applications deployed on Loom Azure SaaS deployment.
+Also, the Application Switcher is not accessible in the Platform UI.</p>
+<p>Refer to the screenshot below for details:</p>
+<p><a class="reference internal" href="../_images/rn-kn-iss-10502.png"><img alt="rn-kn-iss-10502" class="align-middle" src="../_images/rn-kn-iss-10502.png" style="width: 323.7px; height: 203.7px;" /></a></p>
+<p class="last"><a class="reference internal" href="../_images/rn-kn-iss-10503.png"><img alt="rn-kn-iss-10503" class="align-middle" src="../_images/rn-kn-iss-10503.png" style="width: 383.1px; height: 244.2px;" /></a></p>
+</td>
+</tr>
+<tr class="row-even"><td rowspan="2"><a class="reference internal" href="../_images/rn-issue.png"><img alt="rn-issue" class="align-middle" src="../_images/rn-issue.png" style="width: 46.5px; height: 14.25px;" /></a></td>
+<td><strong>Issue IMP-10504: Registration of On-premises Data Engine fails a few times</strong></td>
+</tr>
+<tr class="row-odd"><td><p class="first">Registration of Loom On-Premises Data Engine fails a couple of times before actually
+getting registered successfully. Refer to the messages in UI that are encountered,
+in the sequence listed below. Only at the third click, registration is successful.</p>
+<ul>
+<li><p class="first">Error Message: Gateway timeout. Service Currently not available.</p>
+</li>
+<li><p class="first">Error Message: A different object with the same identifier value was already
+associated with the session: com.veritas.service.shared.entities.ClusterEntity#1</p>
+</li>
+<li><p class="first">Third click shows the message:</p>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">Registration</span> <span class="pre">details</span> <span class="pre">have</span> <span class="pre">been</span> <span class="pre">downloaded</span> <span class="pre">as</span> <span class="pre">a</span> <span class="pre">StarterFile.txt</span> <span class="pre">that</span> <span class="pre">you</span></code>
+<code class="docutils literal"><span class="pre">will</span> <span class="pre">upload</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">VMware</span> <span class="pre">data</span> <span class="pre">engine</span> <span class="pre">deployment</span> <span class="pre">app.</span></code></p>
+</div></blockquote>
+</li>
+</ul>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This issue only happens when new tenant is created and first time register
+request is made for on premises Data Engine.</p>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td rowspan="2"><a class="reference internal" href="../_images/rn-issue.png"><img alt="rn-issue" class="align-middle" src="../_images/rn-issue.png" style="width: 46.5px; height: 14.25px;" /></a></td>
+<td><strong>Issue IMP-4440: Context Deadline Exceeded</strong></td>
+</tr>
+<tr class="row-odd"><td><ul class="first simple">
+<li>During deployment of an on-premise Data Engine, a system hang state was observed
+whereby numerous Janus Pods were instantiated.</li>
+<li>Some of these Janus Pods are in ‘Pending’ State</li>
+<li>Loom creates one Janus Pod per Tenant in an ideal state.</li>
+<li>Multiple Janus Pods are created when tenant creation action is taken even after
+system capacity is fully used up or exceeded</li>
+<li>During on-premises Data Engine deployment, the Airflow mechanism triggers POD
+creation and returns as success. Janus pod will be pending state if there are no
+resources for supporting a new tenant.</li>
+</ul>
+<p class="last"><strong>Workaround:</strong> Delete few of the tenants in pending state or delete the ones
+which are not essential and can be deleted so that the pending pod can get available
+resources and will change to running state.</p>
+</td>
+</tr>
+<tr class="row-even"><td rowspan="2"><a class="reference internal" href="../_images/rn-issue.png"><img alt="rn-issue" class="align-middle" src="../_images/rn-issue.png" style="width: 46.5px; height: 14.25px;" /></a></td>
+<td><strong>Issue IMP-8950: Failure to connect Microsoft OneDrive Content Source.</strong></td>
+</tr>
+<tr class="row-odd"><td><p class="first">Loom Alpha2 does not support Microsoft OneDrive as a cloud content source.
+A user may not be able to add Cloud based OneDrive content source to Loom Platform
+and scan, discover, classify or visualize enterprise data in OneDrive.</p>
+<p>However, on-premises Data Engine deployment can be utilized to connect to OneDrive
+and classify data.</p>
+<p class="last"><a class="reference internal" href="../_images/rn-kn-iss-8950.png"><img alt="rn-iss-8950" class="align-middle" src="../_images/rn-kn-iss-8950.png" style="width: 994.5px; height: 592.5px;" /></a></p>
+</td>
+</tr>
+<tr class="row-even"><td rowspan="2"><a class="reference internal" href="../_images/rn-issue.png"><img alt="rn-issue" class="align-middle" src="../_images/rn-issue.png" style="width: 46.5px; height: 14.25px;" /></a></td>
+<td><strong>Issue IMP-9074: Gateway timeout error while adding Loom Data Engine.</strong></td>
+</tr>
+<tr class="row-odd"><td><p class="first">Data Engine Registration fails when determining latitude and longitude that needs to
+to be provided to Loom Cluster Manager as part of register request.
+This happens because /getlatLong call takes more time than expected.</p>
+<p><a class="reference internal" href="../_images/rn-kn-iss-9074.png"><img alt="rn-iss-9074" class="align-middle" src="../_images/rn-kn-iss-9074.png" style="width: 406.5px; height: 529.5px;" /></a></p>
+<p><strong>Workaround:</strong> To register a Data Engine, users need to invoke the following
+API call directly. Details of the call, payload are mentioned below:</p>
+<p><strong>URL:</strong>
+<a class="reference external" href="http:/">http:/</a>/&lt;&lt;ingressip&gt;&gt;/pform-cluster-manager/v1/{tenantId}/clusters/register</p>
+<p><strong>Method:</strong>
+POST</p>
+<p><strong>Request Payload:</strong>:</p>
+<div class="last highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;clusterName&quot;</span><span class="p">:</span><span class="s2">&quot;&lt;&lt;clusterName&gt;&gt;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;location&quot;</span><span class="p">:{</span>
+  <span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;&lt;&lt;city&gt;&gt;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;country&quot;</span><span class="p">:</span><span class="s2">&quot;&lt;&lt;country&gt;&gt;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;latitude&quot;</span><span class="p">:</span><span class="o">&lt;&lt;</span><span class="n">latitude</span><span class="o">&gt;&gt;</span><span class="p">,</span>
+  <span class="s2">&quot;longitude&quot;</span><span class="p">:</span><span class="o">&lt;&lt;</span><span class="n">longitude</span><span class="o">&gt;&gt;</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;deploymentType&quot;</span><span class="p">:</span><span class="s2">&quot;customer&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;clusterType&quot;</span><span class="p">:</span><span class="s2">&quot;DataPlane&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;cloudProvider&quot;</span><span class="p">:</span><span class="s2">&quot;vmware&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Veritas Technologies LLC.
+      Last updated on Apr 7, 2018, 11:02:45 PM.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+    <p>
+    <ul>
+    <a href="./top_index.html" style="float:left;">Loom Documentation Archives</a>
+    </ul>
+    </p>
+     
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.7.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

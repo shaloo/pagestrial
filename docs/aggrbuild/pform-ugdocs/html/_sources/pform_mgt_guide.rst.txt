@@ -1,0 +1,66 @@
+:orphan:
+
+.. _content_pform_mgt_guide:
+
+#################################
+  Loom Platform Management Guide
+#################################
+
+This document describes how Loom Partner and Tenant admins can use the Loom Platform UI for various business functions such as gaining visibility into enterprise wide data assets, data scan policies, data access policies and more.
+
+.. note::
+
+   Post Alpha2 release of Loom, this new Guide may get added as a new Loom User Guide.  We plan to restructure the content based on end to end reviews with qualified writers. Until then, the new updated content created as part of Alpha2 Loom Release can be referred to via the links below.  This is a stop-gap / trial arrangement until we figure out a way to bridge the Vasont based authoring system with DocX one and can utilize both to the fullest potential as per the Loom Platform Documetation requirements and strategy for *Shared Documentation Development Model*.
+
+#. Overview of the Loom Platform
+   
+   * `What is Loom`_
+   * `Why Loom`_
+   * `Loom vs Traditional Data Management`_
+   * `Loom Components`_
+   * `What can I achieve with Loom`_ 
+ 
+#. Introduction to Loom UI
+
+   * `Interacting with Loom`_
+      - `Application Switcher`_
+      - `Loom Dashboard`_
+      - `Loom Health Dashboard`_
+      - `Application User Interface`_
+
+#. `Access Management`_
+
+   * About the user roles
+   * Role privileges of Loom Users
+   * Granting Access to Loom Users
+   * Adding a Customer Account
+
+#. `Loom Policies`_
+
+   * Overview of Loom Policies
+   * Creating a new policy
+   * Viewing Loom policies
+   * Managing Policies
+
+#. `Loom Audit Logging`_
+ 
+   * About Audit Logs 
+
+
+.. References from existing and available Loom Documentation in DocX in rst format
+
+.. _What is Loom: http://docx.cicd.veritas.com/all_getting_started_guide.html#what-is-loom
+.. _Why Loom: http://docx.cicd.veritas.com/all_getting_started_guide.html#why-loom 
+.. _Loom vs Traditional Data Management: http://docx.cicd.veritas.com/all_getting_started_guide.html#loom-vs-traditional-data-management
+.. _Loom Components: http://docx.cicd.veritas.com/all_getting_started_guide.html#loom-components
+.. _What can I achieve with Loom: http://docx.cicd.veritas.com/all_getting_started_guide.html#what-a-user-can-achieve-with-loom
+
+.. _Interacting with Loom: http://docx.cicd.veritas.com/all_getting_started_guide.html#interacting-with-loom
+.. _Application Switcher: http://docx.cicd.veritas.com/all_getting_started_guide.html#application-chooser-or-application-switcher
+.. _Loom Dashboard: http://docx.cicd.veritas.com/all_getting_started_guide.html#loom-dashboard
+.. _Loom Health Dashboard: http://docx.cicd.veritas.com/all_getting_started_guide.html#loom-health-dashboard
+.. _Application User Interface: http://docx.cicd.veritas.com/all_getting_started_guide.html#loom-applications 
+
+.. _Access Management: http://docx.cicd.veritas.com/all_getting_started_guide.html#access-management
+.. _Loom Policies: http://docx.cicd.veritas.com/all_getting_started_guide.html#policy-management
+.. _Loom Audit Logging: http://docx.cicd.veritas.com/all_getting_started_guide.html#audit-logging
