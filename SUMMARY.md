@@ -1,4 +1,6 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [ShogunML](README.md)
+* [Target Users](target-users.md)
+* [Untitled](untitled.md)
 
