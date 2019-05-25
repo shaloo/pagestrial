@@ -1,2 +1,2 @@
-# pagestrial
-GitHub Pages Trial
+# Initial page
+
